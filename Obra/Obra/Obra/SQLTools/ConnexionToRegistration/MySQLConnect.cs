@@ -112,6 +112,19 @@ namespace mySQLConnect
             return false;
         }
 
+        /// <summary>
+        /// Vous pouvez supprimer une ligne de la base de donnée avec le username
+        /// </summary>
+        /// <remarks>
+        /// <para>
+        /// Attention à ne pas utiliser n'importe ou / n'importe comment
+        /// 
+        /// 
+        /// </para>
+        /// <para>
+        /// This class is thread-safe.  All members may be used by multiple threads concurrently.
+        /// </para>
+        /// </remarks>
         public bool DeleteRow(String username)
         {
             if (SQLConnectUtility.checkIfDataExist(conn, RowType.USERNAME, username))
