@@ -17,6 +17,7 @@ namespace Obra.Views
             InitializeComponent();
           Content = CreateLoginForm();
         }
+        public event EventHandler Clicked;
         View CreateLoginForm()
         {
             var usernameEntry = new Entry { Placeholder = "Username" };
@@ -27,13 +28,26 @@ namespace Obra.Views
                 VerticalOptions = LayoutOptions.Center
 
             };
+            var connectButton = new Button { BackgroundColor = Color.Aqua, Text = "Se connecter", };
+            if (connectButton.IsPressed)
+            {
+                SwitchPage();
+            }
+            async void SwitchPage()
+                {
+                    await Navigation.PushAsync(new MainPage());
+                }
 
+            
             return new StackLayout
             {
                 Children = {
       usernameEntry,
-      passwordEntry
+      passwordEntry,
+      connectButton,
+
     }
+
             };
         }
         private void PressMeButton_Clicked(object sender, EventArgs e)
