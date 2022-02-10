@@ -29,14 +29,9 @@ namespace Obra.Views
 
             };
             var connectButton = new Button { BackgroundColor = Color.Aqua, Text = "Se connecter", };
-            if (connectButton.IsPressed)
-            {
-                SwitchPage();
-            }
-            async void SwitchPage()
-                {
-                    await Navigation.PushAsync(new MainPage());
-                }
+            connectButton.Clicked += LoginButton_Clicked;
+
+           
 
             
             return new StackLayout
@@ -50,10 +45,11 @@ namespace Obra.Views
 
             };
         }
-        private void PressMeButton_Clicked(object sender, EventArgs e)
+     
+        async void LoginButton_Clicked(object sender, EventArgs e)
         {
-      
-            
+            await Navigation.PushAsync(new MainPage());
+
         }
 
     }
