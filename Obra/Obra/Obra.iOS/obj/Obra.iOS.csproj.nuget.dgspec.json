@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\valgi\\Desktop\\Supérieur\\ProjetS2\\Obra\\Obra\\Obra\\Obra\\Obra.iOS\\Obra.iOS.csproj": {}
+    "C:\\Users\\valgi\\Desktop\\Superieur\\ProjetS2\\Obra\\Obra\\Obra\\Obra\\Obra.iOS\\Obra.iOS.csproj": {}
   },
   "projects": {
-    "C:\\Users\\valgi\\Desktop\\Supérieur\\ProjetS2\\Obra\\Obra\\Obra\\Obra\\Obra.iOS\\Obra.iOS.csproj": {
+    "C:\\Users\\valgi\\Desktop\\Superieur\\ProjetS2\\Obra\\Obra\\Obra\\Obra\\Obra.iOS\\Obra.iOS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\valgi\\Desktop\\Supérieur\\ProjetS2\\Obra\\Obra\\Obra\\Obra\\Obra.iOS\\Obra.iOS.csproj",
+        "projectUniqueName": "C:\\Users\\valgi\\Desktop\\Superieur\\ProjetS2\\Obra\\Obra\\Obra\\Obra\\Obra.iOS\\Obra.iOS.csproj",
         "projectName": "Obra.iOS",
-        "projectPath": "C:\\Users\\valgi\\Desktop\\Supérieur\\ProjetS2\\Obra\\Obra\\Obra\\Obra\\Obra.iOS\\Obra.iOS.csproj",
+        "projectPath": "C:\\Users\\valgi\\Desktop\\Superieur\\ProjetS2\\Obra\\Obra\\Obra\\Obra\\Obra.iOS\\Obra.iOS.csproj",
         "packagesPath": "C:\\Users\\valgi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\valgi\\Desktop\\Supérieur\\ProjetS2\\Obra\\Obra\\Obra\\Obra\\Obra.iOS\\obj\\",
+        "outputPath": "C:\\Users\\valgi\\Desktop\\Superieur\\ProjetS2\\Obra\\Obra\\Obra\\Obra\\Obra.iOS\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -32,8 +32,8 @@
         "frameworks": {
           "xamarinios10": {
             "projectReferences": {
-              "C:\\Users\\valgi\\Desktop\\Supérieur\\ProjetS2\\Obra\\Obra\\Obra\\Obra\\Obra\\Obra.csproj": {
-                "projectPath": "C:\\Users\\valgi\\Desktop\\Supérieur\\ProjetS2\\Obra\\Obra\\Obra\\Obra\\Obra\\Obra.csproj"
+              "C:\\Users\\valgi\\Desktop\\Superieur\\ProjetS2\\Obra\\Obra\\Obra\\Obra\\Obra\\Obra.csproj": {
+                "projectPath": "C:\\Users\\valgi\\Desktop\\Superieur\\ProjetS2\\Obra\\Obra\\Obra\\Obra\\Obra\\Obra.csproj"
               }
             }
           }
@@ -69,14 +69,14 @@
         }
       }
     },
-    "C:\\Users\\valgi\\Desktop\\Supérieur\\ProjetS2\\Obra\\Obra\\Obra\\Obra\\Obra\\Obra.csproj": {
+    "C:\\Users\\valgi\\Desktop\\Superieur\\ProjetS2\\Obra\\Obra\\Obra\\Obra\\Obra\\Obra.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\valgi\\Desktop\\Supérieur\\ProjetS2\\Obra\\Obra\\Obra\\Obra\\Obra\\Obra.csproj",
+        "projectUniqueName": "C:\\Users\\valgi\\Desktop\\Superieur\\ProjetS2\\Obra\\Obra\\Obra\\Obra\\Obra\\Obra.csproj",
         "projectName": "Obra",
-        "projectPath": "C:\\Users\\valgi\\Desktop\\Supérieur\\ProjetS2\\Obra\\Obra\\Obra\\Obra\\Obra\\Obra.csproj",
+        "projectPath": "C:\\Users\\valgi\\Desktop\\Superieur\\ProjetS2\\Obra\\Obra\\Obra\\Obra\\Obra\\Obra.csproj",
         "packagesPath": "C:\\Users\\valgi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\valgi\\Desktop\\Supérieur\\ProjetS2\\Obra\\Obra\\Obra\\Obra\\Obra\\obj\\",
+        "outputPath": "C:\\Users\\valgi\\Desktop\\Superieur\\ProjetS2\\Obra\\Obra\\Obra\\Obra\\Obra\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -2088,11 +2088,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\valgi\\Desktop\\Supérieur\\ProjetS2\\Obra\\Obra\\Obra\\Obra\\Obra.iOS\\Obra.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\valgi\\Desktop\\Superieur\\ProjetS2\\Obra\\Obra\\Obra\\Obra\\Obra.iOS\\Obra.iOS.csproj",
       "projectName": "Obra.iOS",
-      "projectPath": "C:\\Users\\valgi\\Desktop\\Supérieur\\ProjetS2\\Obra\\Obra\\Obra\\Obra\\Obra.iOS\\Obra.iOS.csproj",
+      "projectPath": "C:\\Users\\valgi\\Desktop\\Superieur\\ProjetS2\\Obra\\Obra\\Obra\\Obra\\Obra.iOS\\Obra.iOS.csproj",
       "packagesPath": "C:\\Users\\valgi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\valgi\\Desktop\\Supérieur\\ProjetS2\\Obra\\Obra\\Obra\\Obra\\Obra.iOS\\obj\\",
+      "outputPath": "C:\\Users\\valgi\\Desktop\\Superieur\\ProjetS2\\Obra\\Obra\\Obra\\Obra\\Obra.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -2113,8 +2113,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\valgi\\Desktop\\Supérieur\\ProjetS2\\Obra\\Obra\\Obra\\Obra\\Obra\\Obra.csproj": {
-              "projectPath": "C:\\Users\\valgi\\Desktop\\Supérieur\\ProjetS2\\Obra\\Obra\\Obra\\Obra\\Obra\\Obra.csproj"
+            "C:\\Users\\valgi\\Desktop\\Superieur\\ProjetS2\\Obra\\Obra\\Obra\\Obra\\Obra\\Obra.csproj": {
+              "projectPath": "C:\\Users\\valgi\\Desktop\\Superieur\\ProjetS2\\Obra\\Obra\\Obra\\Obra\\Obra\\Obra.csproj"
             }
           }
         }

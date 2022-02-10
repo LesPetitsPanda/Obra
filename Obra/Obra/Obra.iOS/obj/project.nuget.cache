@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VJnxZtB3aLCukdpiLJpobOrKkw/Cw9QETXlKqmrNTHah8uCpdDrYQhcp18hJtG9e51Vbjem6Bmm2EwgcMx0KVQ==",
+  "dgSpecHash": "EXih48TIj/Z2qunA8hlEwKyi0Gg0hdhA5D4PLjTPBtTJPeFgnAzjP2VrFUYQqDqmk8HsK9WEWFElJOy8y6vlIw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\valgi\\Desktop\\Supérieur\\ProjetS2\\Obra\\Obra\\Obra\\Obra\\Obra.iOS\\Obra.iOS.csproj",
+  "projectFilePath": "C:\\Users\\valgi\\Desktop\\Superieur\\ProjetS2\\Obra\\Obra\\Obra\\Obra\\Obra.iOS\\Obra.iOS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\valgi\\.nuget\\packages\\bouncycastle.netcore\\1.8.5\\bouncycastle.netcore.1.8.5.nupkg.sha512",
     "C:\\Users\\valgi\\.nuget\\packages\\google.protobuf\\3.14.0\\google.protobuf.3.14.0.nupkg.sha512",

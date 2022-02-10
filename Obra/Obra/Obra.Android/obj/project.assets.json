@@ -3783,11 +3783,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\valgi\\Desktop\\Supérieur\\ProjetS2\\Obra\\Obra\\Obra\\Obra\\Obra.Android\\Obra.Android.csproj",
+      "projectUniqueName": "C:\\Users\\valgi\\Desktop\\Superieur\\ProjetS2\\Obra\\Obra\\Obra\\Obra\\Obra.Android\\Obra.Android.csproj",
       "projectName": "Obra.Android",
-      "projectPath": "C:\\Users\\valgi\\Desktop\\Supérieur\\ProjetS2\\Obra\\Obra\\Obra\\Obra\\Obra.Android\\Obra.Android.csproj",
+      "projectPath": "C:\\Users\\valgi\\Desktop\\Superieur\\ProjetS2\\Obra\\Obra\\Obra\\Obra\\Obra.Android\\Obra.Android.csproj",
       "packagesPath": "C:\\Users\\valgi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\valgi\\Desktop\\Supérieur\\ProjetS2\\Obra\\Obra\\Obra\\Obra\\Obra.Android\\obj\\",
+      "outputPath": "C:\\Users\\valgi\\Desktop\\Superieur\\ProjetS2\\Obra\\Obra\\Obra\\Obra\\Obra.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -3808,8 +3808,8 @@
       "frameworks": {
         "monoandroid12.0": {
           "projectReferences": {
-            "C:\\Users\\valgi\\Desktop\\Supérieur\\ProjetS2\\Obra\\Obra\\Obra\\Obra\\Obra\\Obra.csproj": {
-              "projectPath": "C:\\Users\\valgi\\Desktop\\Supérieur\\ProjetS2\\Obra\\Obra\\Obra\\Obra\\Obra\\Obra.csproj"
+            "C:\\Users\\valgi\\Desktop\\Superieur\\ProjetS2\\Obra\\Obra\\Obra\\Obra\\Obra\\Obra.csproj": {
+              "projectPath": "C:\\Users\\valgi\\Desktop\\Superieur\\ProjetS2\\Obra\\Obra\\Obra\\Obra\\Obra\\Obra.csproj"
             }
           }
         }

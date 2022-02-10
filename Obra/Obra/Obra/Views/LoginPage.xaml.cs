@@ -15,7 +15,32 @@ namespace Obra.Views
         public LoginPage()
         {
             InitializeComponent();
-            this.BindingContext = new LoginViewModel();
+          Content = CreateLoginForm();
         }
+        View CreateLoginForm()
+        {
+            var usernameEntry = new Entry { Placeholder = "Username" };
+            var passwordEntry = new Entry
+            {
+                Placeholder = "Password",
+                IsPassword = true,
+                VerticalOptions = LayoutOptions.Center
+
+            };
+
+            return new StackLayout
+            {
+                Children = {
+      usernameEntry,
+      passwordEntry
+    }
+            };
+        }
+        private void PressMeButton_Clicked(object sender, EventArgs e)
+        {
+      
+            
+        }
+
     }
 }
