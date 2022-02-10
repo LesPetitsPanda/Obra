@@ -28,12 +28,9 @@ namespace Obra.Views
                 VerticalOptions = LayoutOptions.Center
 
             };
-            var connectButton = new Button { BackgroundColor = Color.Aqua, Text = "Se connecter", };
+            var connectButton = new Button { BackgroundColor = Color.Aquamarine, Text = "Se connecter", };
             connectButton.Clicked += LoginButton_Clicked;
 
-           
-
-            
             return new StackLayout
             {
                 Children = {
