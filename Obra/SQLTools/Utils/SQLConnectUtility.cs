@@ -34,7 +34,8 @@ namespace mySQLConnectio
                 return false; }
             while (reader.Read())
             {
-                if (reader.GetString((int)rowType) == to_check)
+                Console.WriteLine(to_check);
+                if (reader.GetString(RowTypeUtils.RowTypeInt(rowType)) == to_check)
                 {
                     conn.Close();
                     return true;
