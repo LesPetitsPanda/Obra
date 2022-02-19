@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3ca202c0-7d96-45d6-8c6a-a7bac7078b03" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.Obra/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obra/SQLTools/ConnexionToRegistration/DataUpdateType.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obra/SQLTools/ConnexionToRegistration/MySQLConnect.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obra/SQLTools/ConnexionToRegistration/RowType.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obra/SQLTools/ProfessionalAccount/ProfessionalAccount.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obra/SQLTools/Utils/SQLConnectUtility.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Obra/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Obra/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obra/App.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Obra/App.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obra/MainWindow.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/Obra/MainWindow.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obra/MainWindow.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Obra/MainWindow.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obra/Obra.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Obra/Obra.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obra/obj/Debug/net6.0-windows/MainWindow.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Obra/obj/Debug/net6.0-windows/MainWindow.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obra/obj/Debug/net6.0-windows/Obra.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Obra/obj/Debug/net6.0-windows/Obra.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obra/obj/Debug/net6.0-windows/Obra.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Obra/obj/Debug/net6.0-windows/Obra.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obra/obj/Debug/net6.0-windows/Obra.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Obra/obj/Debug/net6.0-windows/Obra.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obra/obj/Debug/net6.0-windows/Obra_MarkupCompile.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obra/obj/Debug/net6.0-windows/Obra_MarkupCompile.lref" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obra/obj/Obra.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Obra/obj/Obra.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obra/obj/Obra.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/Obra/obj/Obra.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obra/obj/Obra.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/Obra/obj/Obra.csproj.nuget.g.targets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obra/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Obra/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obra/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Obra/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obra/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Obra/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obra/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Obra/obj/rider.project.restore.info" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="25Cg9Exl6q6sHemQh63hcAUgSzV" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Obra" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/Obra/Obra.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3ca202c0-7d96-45d6-8c6a-a7bac7078b03" name="Changes" comment="" />
+      <created>1645036329093</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1645036329093</updated>
+      <workItem from="1645036333784" duration="11300000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>
