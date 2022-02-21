@@ -8,19 +8,29 @@ namespace mySQLConnectio
 {
     public class SQLConnectUtility
     {
+        //SimpleHash (256 bits maybe)
+        // property
         public static string Sha1(string text)
         {
             byte[] buffer = Encoding.UTF8.GetBytes(text);
-            SHA1CryptoServiceProvider cryptoTransformSHA1 = new SHA1CryptoServiceProvider();
+            SHA1CryptoServiceProvider cryptoTransformSHA1 = new();
             byte[] outbuffer = cryptoTransformSHA1.ComputeHash(buffer);
             return Convert.ToBase64String(outbuffer);
         }
-        public static bool checkIfDataExist(MySqlConnection conn, RowType rowType, String username = "", String email = "")
+        //A simple function for check data
+        public static bool checkIfDataExist(MySqlConnection conn, RowType rowType, String username = "", String email = "", string location = "", bool isProfessional = false)
         {
             
             conn.Open();
             MySqlCommand cmd = new MySqlCommand();
-            cmd.CommandText = "registration";
+            if (isProfessional)
+            {
+                cmd.CommandText = "professional";
+            }
+            else
+            {
+                cmd.CommandText = "registration";
+            }
             cmd.Connection = conn;
             cmd.CommandType = CommandType.TableDirect;
             MySqlDataReader reader = cmd.ExecuteReader();
@@ -28,6 +38,10 @@ namespace mySQLConnectio
             if (rowType == RowType.EMAIL)
             {
                to_check = email;    
+            }
+            if(rowType == RowType.LOCATION)
+            {
+                to_check = location;
             }
             if (to_check == "") {
                 conn.Close();

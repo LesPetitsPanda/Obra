@@ -4,6 +4,7 @@ using System.Security.Cryptography;
 using System.Text;
 using MySql.Data.MySqlClient;
 using mySQLConnectio;
+using System.Collections.Generic;
 
 namespace mySQLConnect
 {
@@ -21,9 +22,13 @@ namespace mySQLConnect
         {
             conn = new MySqlConnection(connexion);
         }
+        public MySQLConnectUtility(MySqlConnection connexion)
+        {
+            conn = connexion;
+        }
         
   
-        public bool AddUser(String user, String password, String email)
+        public bool AddUser(String user, String password, String email, bool isProfessional = false)
         {
             if (SQLConnectUtility.checkIfDataExist(conn, RowType.USERNAME, user) && SQLConnectUtility.checkIfDataExist(conn, RowType.EMAIL, email))
             {
@@ -31,13 +36,59 @@ namespace mySQLConnect
                 
             }
             conn.Open();
-            String sql = "INSERT INTO registration (username, password, email) VALUES ('" + user + "','" + SQLConnectUtility.Sha1(password)+ "','" + email + "')";
+            String sql = "INSERT INTO registration (username, password, email, isProfessional) VALUES ('" + user + "','" + SQLConnectUtility.Sha1(password)+ "','" + email + "','"+ isProfessional+"')";
          MySqlCommand cmd = new MySqlCommand(sql, conn);
          cmd.ExecuteNonQuery();
          conn.Close();
          return true;
         }
 
+        public bool AddLocation(string user, string iplocation)
+        {
+            if (SQLConnectUtility.checkIfDataExist(conn, RowType.USERNAME, user))
+            {
+                conn.Open();
+                MySqlCommand cmd = new MySqlCommand();
+                cmd.CommandText = "registration";
+                cmd.Connection = conn;
+                cmd.CommandType = CommandType.TableDirect;
+                MySqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    if(reader.GetString((int)RowType.USERNAME) == user)
+                    {
+                        string sql = "UPDATE registration SET " + DataUpdateType.LOCATION.GetString() + " = '" + iplocation + "' WHERE " + DataUpdateType.USERNAME + " = '" + user + "';";
+                        MySqlCommand cmd2 = new MySqlCommand(sql,conn);
+                        cmd2.ExecuteNonQuery();
+                        conn.Close();
+                        return true;
+                    }
+                }
+                conn.Close();
+            }
+           
+            return false;
+        }
+
+        public Dictionary<string,string> getDataOfColumnMatchUsername(RowType row, bool isProfessional = false)
+        {
+            Dictionary<string,string> string_data = new Dictionary<string, string>();
+            conn.Open();
+            MySqlCommand cmd = new MySqlCommand();
+            cmd.CommandText = "registration";
+            cmd.Connection = conn;
+            cmd.CommandType = CommandType.TableDirect;
+            MySqlDataReader reader = cmd.ExecuteReader();
+            while (reader.Read())
+            {
+                if (reader.GetBoolean(5) == isProfessional)
+                {
+                    string_data.Add(reader.GetString((int)RowType.USERNAME), reader.GetString((int)RowType.LOCATION));
+                }
+            }
+            conn.Close();
+            return string_data;
+        }
         public bool VerifyPassword(String password, String user)
         {
             conn.Open();
@@ -67,7 +118,7 @@ namespace mySQLConnect
             return false;
         }
 
-        public bool UpdateData(String username, String email, DataUpdateType dataUpdateType,String new_data, String password = "")
+        public bool UpdateData(String username, String email, DataUpdateType dataUpdateType,String new_data, String password)
         {
             if (VerifyPassword(password, username))
             {

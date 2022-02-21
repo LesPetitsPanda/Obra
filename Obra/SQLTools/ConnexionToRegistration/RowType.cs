@@ -5,7 +5,9 @@
         ID = 0,
         USERNAME = 1,
         PASSWORD = 2,
-        EMAIL = 3
+        EMAIL = 3,
+        LOCATION = 4,
+
     }
     public class RowTypeUtils
     {

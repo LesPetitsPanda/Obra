@@ -9,6 +9,7 @@ namespace Obra.Pages
     {
         public LoginPage()
         {
+         
             InitializeComponent();
         }
 
