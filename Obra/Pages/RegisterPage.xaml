@@ -1,0 +1,48 @@
+﻿<Page x:Class="Obra.Pages.RegisterPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="clr-namespace:Obra.Pages"
+      mc:Ignorable="d"
+      Title="RegisterPage" Height="450" Width="800"
+      MouseLeftButtonDown="Popup_disabled">
+    <Grid>
+        <StackPanel>
+            <TextBlock> Username</TextBlock>
+            <TextBox Name="usernameBox" HorizontalAlignment="Center" Width="100"></TextBox>
+            <Popup Placement="Bottom" Name="PopupUsername" IsOpen="False"
+                   PlacementTarget="{Binding ElementName=usernameBox}">
+                <TextBlock Height="60" Width="200" 
+                           Background="DarkRed"
+                           TextWrapping="Wrap" > Username already exist !</TextBlock>
+            </Popup>
+            <TextBlock Name="pass"> Password</TextBlock>
+            <PasswordBox Name="PasswordBox"  HorizontalAlignment="Center" Width="100"></PasswordBox>
+            <Popup Placement="Bottom" Name="PopupPassword" IsOpen="False"
+                   PlacementTarget="{Binding ElementName=PasswordBox}">
+                <TextBlock Height="60" Width="200" 
+                           Background="DarkRed"
+                           TextWrapping="Wrap" > The password is too long or too short !</TextBlock>
+            </Popup>
+            <TextBlock> Password confirm</TextBlock>
+            <PasswordBox Name="PasswordBoxAgain"  HorizontalAlignment="Center" Width="100"></PasswordBox>
+            <Popup Placement="Bottom" Name="PopupPasswordAgain" IsOpen="False"
+                   PlacementTarget="{Binding ElementName=PasswordBox}">
+                <TextBlock Height="60" Width="200" 
+                           Background="DarkRed"
+                           TextWrapping="Wrap" > The password is not the same !</TextBlock>
+            </Popup>
+            <TextBlock> E-Mail</TextBlock>
+            <TextBox Name="emailBox"  HorizontalAlignment="Center" Width="100"></TextBox>
+            <Popup Placement="Bottom" Name="PopupEmail" IsOpen="False" 
+                   PlacementTarget="{Binding ElementName=PasswordBox}">
+                <TextBlock Height="60" Width="200" 
+                           Background="DarkRed"
+                           TextWrapping="Wrap" > Wrong email or email is already used !</TextBlock>
+            </Popup>
+
+            <Button Content="Register" Name="register" Click="Register_OnClick"  HorizontalAlignment="Center"></Button>
+        </StackPanel>
+    </Grid>
+</Page>
