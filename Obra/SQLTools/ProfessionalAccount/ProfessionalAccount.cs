@@ -16,12 +16,12 @@ namespace Obra.SQLTools.ProfessionalAccount
         private int _telephone;
         private int _rate;
 
-        public string Username { get { return _username; }}
-        public string Password { get { return _password; }}
-        public string Email { get { return _email; }}
-        public string FirstName { get { return _firstName;} }
-        public int Telephone { get { return _telephone;} }
-        public int Rate { get { return _rate;} set { _rate = value;}}
+        public string Username { get { return _username; } }
+        public string Password { get { return _password; } }
+        public string Email { get { return _email; } }
+        public string FirstName { get { return _firstName; } }
+        public int Telephone { get { return _telephone; } }
+        public int Rate { get { return _rate; } set { _rate = value; } }
 
         private MySQLConnectUtility _mySQLConnect;
 
@@ -43,12 +43,12 @@ namespace Obra.SQLTools.ProfessionalAccount
             _rate = -1;
             AddProfessional();
             _password = mySQLConnectio.SQLConnectUtility.Sha1(password);
-       
+
         }
 
         private bool AddProfessional()
         {
-            if(_mySQLConnect.AddUser(_username, _password, Email, true) && SQLConnectUtility.checkIfDataExist(conn, RowType.USERNAME, Username,"", "", true))
+            if (_mySQLConnect.AddUser(_username, _password, Email, true) && SQLConnectUtility.checkIfDataExist(conn, RowType.USERNAME, Username, "", "", true))
             {
                 conn.Open();
                 string sql =
@@ -61,7 +61,7 @@ namespace Obra.SQLTools.ProfessionalAccount
             return false;
         }
 
-        public Dictionary<string,int> getRate()
+        public Dictionary<string, int> getRate()
         {
             Dictionary<string, int> res = new();
             conn.Open();
@@ -69,12 +69,12 @@ namespace Obra.SQLTools.ProfessionalAccount
             cmd.Connection = conn;
             cmd.CommandType = System.Data.CommandType.TableDirect;
             MySqlDataReader reader = cmd.ExecuteReader();
-            while(reader.Read())
+            while (reader.Read())
             {
-                    res.Add(reader.GetString(0), reader.GetInt32(5)); 
+                res.Add(reader.GetString(0), reader.GetInt32(5));
             }
-           conn.Close();
-           return res;
+            conn.Close();
+            return res;
         }
         public bool updateDataType(DataUpdateType type, string username, string new_data = "", int new_data_int = 0)
         {
@@ -86,7 +86,7 @@ namespace Obra.SQLTools.ProfessionalAccount
                     break;
                 case DataUpdateType.PASSWORD:
                     sql = "UPDATE professional SET " + DataUpdateType.PASSWORD.GetString() + " = '" + SQLConnectUtility.Sha1(new_data) + "' WHERE " + DataUpdateType.USERNAME + " = '" + username + "';";
-                    break ;
+                    break;
                 case DataUpdateType.LOCATION:
                     sql = "UPDATE professional SET " + DataUpdateType.LOCATION.GetString() + " = '" + new_data + "' WHERE " + DataUpdateType.USERNAME + " = '" + username + "';";
                     break;
@@ -107,6 +107,6 @@ namespace Obra.SQLTools.ProfessionalAccount
             cmd.ExecuteNonQuery();
             conn.Close();
             return true;
+        }
     }
-
 }
