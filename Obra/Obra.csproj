@@ -8,6 +8,16 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <Page Remove="Pages\MainPagePro.xaml" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Include="Pages\MainPagePro.xaml">
+        <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      </EmbeddedResource>
+    </ItemGroup>
+
+    <ItemGroup>
       <PackageReference Include="MySql.Data" Version="8.0.28" />
       <PackageReference Include="MySqlConnector" Version="2.1.6" />
     </ItemGroup>

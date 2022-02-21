@@ -19,14 +19,19 @@ namespace Obra.Pages
          {
             log.Content = "login";
             Console.Write("okkk");
+            MainPageProEvent(sender,e);
             }
         else
          {
             log.Content = "not login";
          }
         }
-
-        private void registerEvent(object sender, RoutedEventArgs e)
+        private void MainPageProEvent(object sender, RoutedEventArgs e)
+        {
+            NavigationService ns = NavigationService.GetNavigationService(this);
+            ns.Navigate(new Uri("Pages/MainPagePro.xaml", UriKind.Relative));
+        }
+        private void register_Click(object sender, RoutedEventArgs e)
         {
             NavigationService ns = NavigationService.GetNavigationService(this);
             ns.Navigate(new Uri("Pages/RegisterPage.xaml", UriKind.Relative));

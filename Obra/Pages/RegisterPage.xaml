@@ -9,7 +9,7 @@
       MouseLeftButtonDown="Popup_disabled">
     <Grid>
         <StackPanel>
-            <TextBlock> Username</TextBlock>
+            <TextBlock HorizontalAlignment="Center"> Username</TextBlock>
             <TextBox Name="usernameBox" HorizontalAlignment="Center" Width="100"></TextBox>
             <Popup Placement="Bottom" Name="PopupUsername" IsOpen="False"
                    PlacementTarget="{Binding ElementName=usernameBox}">
@@ -17,7 +17,7 @@
                            Background="DarkRed"
                            TextWrapping="Wrap" > Username already exist !</TextBlock>
             </Popup>
-            <TextBlock Name="pass"> Password</TextBlock>
+            <TextBlock Name="pass" HorizontalAlignment="Center"> Password</TextBlock>
             <PasswordBox Name="PasswordBox"  HorizontalAlignment="Center" Width="100"></PasswordBox>
             <Popup Placement="Bottom" Name="PopupPassword" IsOpen="False"
                    PlacementTarget="{Binding ElementName=PasswordBox}">
@@ -25,7 +25,7 @@
                            Background="DarkRed"
                            TextWrapping="Wrap" > The password is too long or too short !</TextBlock>
             </Popup>
-            <TextBlock> Password confirm</TextBlock>
+            <TextBlock HorizontalAlignment="Center"> Password confirm</TextBlock>
             <PasswordBox Name="PasswordBoxAgain"  HorizontalAlignment="Center" Width="100"></PasswordBox>
             <Popup Placement="Bottom" Name="PopupPasswordAgain" IsOpen="False"
                    PlacementTarget="{Binding ElementName=PasswordBox}">
@@ -33,8 +33,11 @@
                            Background="DarkRed"
                            TextWrapping="Wrap" > The password is not the same !</TextBlock>
             </Popup>
-            <TextBlock> E-Mail</TextBlock>
+            <TextBlock HorizontalAlignment="Center"> E-Mail</TextBlock>
             <TextBox Name="emailBox"  HorizontalAlignment="Center" Width="100"></TextBox>
+            <TextBlock HorizontalAlignment="Center"> Role</TextBlock>
+            <Button Content="Professionnel" Name="Pro" Background="LightSteelBlue" Click="Pro_Click" HorizontalAlignment="Center"></Button>
+            <Button Content="Particulier" Name="Part" Background="LightSteelBlue" Click="Part_Click" HorizontalAlignment="Center"></Button>
             <Popup Placement="Bottom" Name="PopupEmail" IsOpen="False" 
                    PlacementTarget="{Binding ElementName=PasswordBox}">
                 <TextBlock Height="60" Width="200" 
@@ -42,6 +45,7 @@
                            TextWrapping="Wrap" > Wrong email or email is already used !</TextBlock>
             </Popup>
 
+            <TextBlock HorizontalAlignment="Center"></TextBlock>
             <Button Content="Register" Name="register" Click="Register_OnClick"  HorizontalAlignment="Center"></Button>
         </StackPanel>
     </Grid>

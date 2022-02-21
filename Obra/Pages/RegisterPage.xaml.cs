@@ -20,7 +20,7 @@ namespace Obra.Pages
             {
                 PopupPasswordAgain.IsOpen = true;
             }
-            if (PasswordBox.Password.Length < 7)
+            if (PasswordBox.Password.Length <= 7)
             {
                 PopupPassword.IsOpen = true;
             }
