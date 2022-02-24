@@ -36,8 +36,8 @@
             <TextBlock HorizontalAlignment="Center"> E-Mail</TextBlock>
             <TextBox Name="emailBox"  HorizontalAlignment="Center" Width="100"></TextBox>
             <TextBlock HorizontalAlignment="Center"> Role</TextBlock>
-            <Button Content="Professionnel" Name="Pro" Background="LightSteelBlue" Click="Pro_Click" HorizontalAlignment="Center"></Button>
-            <Button Content="Particulier" Name="Part" Background="LightSteelBlue" Click="Part_Click" HorizontalAlignment="Center"></Button>
+            <Button Content="Professionnel" Name="Pro" Background="LightSteelBlue"  HorizontalAlignment="Center"></Button>
+            <Button Content="Particulier" Name="Part" Background="LightSteelBlue"  HorizontalAlignment="Center"></Button>
             <Popup Placement="Bottom" Name="PopupEmail" IsOpen="False" 
                    PlacementTarget="{Binding ElementName=PasswordBox}">
                 <TextBlock Height="60" Width="200" 
