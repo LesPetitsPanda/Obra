@@ -9,17 +9,24 @@ namespace Obra.Pages
     {
         public LoginPage()
         {
-         
-            InitializeComponent();
+
         }
 
-        private void login_Click(object sender, RoutedEventArgs e)
+
+        private void Login_Click(object sender, RoutedEventArgs e)
         {
         if(Obra.App.ConnectUtility.VerifyPassword(PasswordBox.Password, usernameBox.Text))
          {
             log.Content = "login";
             Console.Write("okkk");
-            MainPageProEvent(sender,e);
+            if (Obra.App.ConnectUtility.)
+                {
+                    MainPageProEvent(sender, e);
+                }
+            else
+                {
+                    MainPagePartEvent(sender, e);
+                }
             }
         else
          {
@@ -31,10 +38,18 @@ namespace Obra.Pages
             NavigationService ns = NavigationService.GetNavigationService(this);
             ns.Navigate(new Uri("Pages/MainPagePro.xaml", UriKind.Relative));
         }
-        private void register_Click(object sender, RoutedEventArgs e)
+
+        private void MainPagePartEvent(object sender, RoutedEventArgs e)
+        {
+            NavigationService ns = NavigationService.GetNavigationService(this);
+            ns.Navigate(new Uri("Pages/MainPagePart.xaml", UriKind.Relative));
+        }
+        private void Register_Click(object sender, RoutedEventArgs e)
         {
             NavigationService ns = NavigationService.GetNavigationService(this);
             ns.Navigate(new Uri("Pages/RegisterPage.xaml", UriKind.Relative));
         }
+
+     
     }
 }

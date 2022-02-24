@@ -8,13 +8,21 @@
       Title="LoginPage" Height="450" Width="800">
     <Grid>
         <StackPanel>
+            <Image Source="Logo1.png" />
+            <TextBlock HorizontalAlignment="Center"></TextBlock>
+            <TextBlock HorizontalAlignment="Center"></TextBlock>
+            <TextBlock HorizontalAlignment="Center"></TextBlock>
+            <TextBlock HorizontalAlignment="Center"></TextBlock>
+            <TextBlock HorizontalAlignment="Center"></TextBlock>
+            <TextBlock HorizontalAlignment="Center"></TextBlock>
+            <TextBlock HorizontalAlignment="Center"></TextBlock>
             <TextBlock HorizontalAlignment="Center"> Username</TextBlock>
             <TextBox Name="usernameBox"  HorizontalAlignment="Center" Width="100"></TextBox>
             <TextBlock HorizontalAlignment="Center"> Password</TextBlock>
             <PasswordBox Name="PasswordBox"  HorizontalAlignment="Center" Width="100" ></PasswordBox>
             <TextBlock HorizontalAlignment="Center"></TextBlock>
-            <Button Content="Se connecter" Background="LightSteelBlue" Name="log" Click="login_Click"  VerticalAlignment="Center" HorizontalAlignment="Center"></Button>
-            <Button Content="S'inscrire" Background="LightSteelBlue" Name="inscription" Click="register_Click" VerticalAlignment="Center" HorizontalAlignment="Center"></Button>
+            <Button Content="Se connecter" Background="LightSteelBlue" Name="log" Click="Login_Click"  VerticalAlignment="Center" HorizontalAlignment="Center"></Button>
+            <Button Content="S'inscrire" Background="LightSteelBlue" Name="inscription" Click="Register_Click" VerticalAlignment="Center" HorizontalAlignment="Center"></Button>
         </StackPanel>
     </Grid>
 </Page>

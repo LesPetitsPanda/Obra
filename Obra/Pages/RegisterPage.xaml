@@ -46,7 +46,7 @@
             </Popup>
 
             <TextBlock HorizontalAlignment="Center"></TextBlock>
-            <Button Content="Register" Name="register" Click="Register_OnClick"  HorizontalAlignment="Center"></Button>
+            <Button Content="Register" Name="register" Background="LightSteelBlue" Click="Register_OnClick"  HorizontalAlignment="Center"></Button>
         </StackPanel>
     </Grid>
 </Page>

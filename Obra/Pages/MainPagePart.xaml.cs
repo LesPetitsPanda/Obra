@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace Obra.Pages
 {
     /// <summary>
-    /// Logique d'interaction pour MainPagePro.xaml
+    /// Logique d'interaction pour MainPagePart.xaml
     /// </summary>
-    public partial class MainPagePro : Page
+    public partial class MainPagePart : Page
     {
-        public MainPagePro()
+        public MainPagePart()
         {
             InitializeComponent();
         }
