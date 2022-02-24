@@ -49,7 +49,7 @@ namespace Obra.Algorithm
         public Dictionary<string,int> getProfessionalByRate()
         {
               int i = 0;
-            Dictionary<string,string> allProfession = ();
+            Dictionary<string,string> allProfession = App.ConnectUtility.getDataOfColumnMatchUsername(mySQLConnectio.RowType.RATE, true);
             Dictionary<string,string> result = new Dictionary<string,string>();
 
             while(i < getAllProfessionalLocation().Count)
@@ -59,7 +59,7 @@ namespace Obra.Algorithm
                 allProfession.Remove(keyValuePair.Key);
                 i++;
             }
-            return result;
+            return DictionaryUtils.ChangeStringValueInInt(result);
         }
     }
 }

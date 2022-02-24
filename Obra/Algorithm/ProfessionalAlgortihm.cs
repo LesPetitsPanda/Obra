@@ -29,8 +29,7 @@ namespace Obra.Algorithm
             _rate = -1;
         }
 
-        public bool 
-        
+
 
     }
 }

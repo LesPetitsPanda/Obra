@@ -81,9 +81,9 @@ namespace mySQLConnect
             MySqlDataReader reader = cmd.ExecuteReader();
             while (reader.Read())
             {
-                if (reader.GetBoolean(5) == isProfessional)
+                if (reader.GetBoolean((int)row) == isProfessional)
                 {
-                    string_data.Add(reader.GetString((int)RowType.USERNAME), reader.GetString((int)RowType.LOCATION));
+                    string_data.Add(reader.GetString((int)RowType.USERNAME), reader.GetString((int)row));
                 }
             }
             conn.Close();

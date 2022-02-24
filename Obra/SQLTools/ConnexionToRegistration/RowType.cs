@@ -7,6 +7,7 @@
         PASSWORD = 2,
         EMAIL = 3,
         LOCATION = 4,
+        RATE = 5,
 
     }
     public class RowTypeUtils
@@ -19,6 +20,8 @@
                 case RowType.USERNAME: return 1;
                 case RowType.PASSWORD: return 2;
                 case RowType.EMAIL: return 3;
+                case RowType.LOCATION: return 4;
+                case RowType.RATE: return 5;
                 default: return -1;
             }
         }

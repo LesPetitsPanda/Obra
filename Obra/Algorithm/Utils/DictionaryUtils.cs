@@ -35,6 +35,15 @@ namespace Obra.Algorithm.Utils
                 }
             return data;
         }
+        public static Dictionary<string,int> ChangeStringValueInInt(Dictionary<string,string> dictio)
+        {
+            Dictionary<string, int> value = new();
+            foreach (KeyValuePair<string,string> key in dictio)
+            {
+                value.Add(key.Key, Int32.Parse(key.Value));
+            }
+            return value;
+        }
 
     }
 }
