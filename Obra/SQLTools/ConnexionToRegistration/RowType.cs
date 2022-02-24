@@ -7,6 +7,7 @@
         PASSWORD = 2,
         EMAIL = 3,
         LOCATION = 4,
+        PROFESSIONAL = 5
 
     }
     public class RowTypeUtils

@@ -9,9 +9,8 @@ namespace Obra.Pages
     {
         public LoginPage()
         {
-
+            InitializeComponent();
         }
-
 
         private void Login_Click(object sender, RoutedEventArgs e)
         {
@@ -19,7 +18,7 @@ namespace Obra.Pages
          {
             log.Content = "login";
             Console.Write("okkk");
-            if (Obra.App.ConnectUtility.)
+            if (App.ConnectUtility.isProfessional(usernameBox.Text))
                 {
                     MainPageProEvent(sender, e);
                 }

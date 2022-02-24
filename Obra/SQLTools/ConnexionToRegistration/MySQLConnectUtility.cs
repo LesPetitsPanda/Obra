@@ -26,8 +26,27 @@ namespace mySQLConnect
         {
             conn = connexion;
         }
-        
-  
+
+        public bool isProfessional(string username)
+        {
+            conn.Open();
+            MySqlCommand cmd = new MySqlCommand();
+            cmd.CommandText = "registration";
+            cmd.Connection = conn;
+            cmd.CommandType = CommandType.TableDirect;
+            MySqlDataReader reader = cmd.ExecuteReader();
+            while (reader.Read())
+            {
+                if (reader.GetBoolean((int)RowType.PROFESSIONAL) && reader.GetString((int)RowType.USERNAME) == username)
+                {
+                    conn.Close();
+                    return true;
+                }
+            }
+            conn.Close();
+            return false;
+        }
+
         public bool AddUser(String user, String password, String email, bool isProfessional = false)
         {
             if (SQLConnectUtility.checkIfDataExist(conn, RowType.USERNAME, user) && SQLConnectUtility.checkIfDataExist(conn, RowType.EMAIL, email))
