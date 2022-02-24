@@ -37,7 +37,22 @@ namespace mySQLConnect
          conn.Close();
          return true;
         }
-
+        public bool isProfessional()
+        {
+            MySqlCommand cmd = new MySqlCommand();
+            cmd.CommandText = "registration";
+            cmd.Connection = conn;
+            cmd.CommandType = CommandType.TableDirect;
+            MySqlDataReader reader = cmd.ExecuteReader();
+            while (reader.Read())
+            {
+                if(reader.GetBoolean((int)RowType.PROFESSIONAL) == true)
+                {
+                    return true;
+                }
+            }
+                return false;
+        }
         public bool VerifyPassword(String password, String user)
         {
             conn.Open();
