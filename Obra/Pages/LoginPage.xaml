@@ -8,15 +8,21 @@
       Title="LoginPage" Height="450" Width="800">
     <Grid>
         <StackPanel>
-            <TextBox Name="usernameBox"  HorizontalAlignment="Center" Width="70"></TextBox>
-            <PasswordBox Name="PasswordBox"  HorizontalAlignment="Center" Width="70" ></PasswordBox>
-            <Button Content="Se connecter" Name="log" Click="login_Click"  HorizontalAlignment="Center"></Button>
+            <Image Source="Logo1.png" />
+            <TextBlock HorizontalAlignment="Center"></TextBlock>
+            <TextBlock HorizontalAlignment="Center"></TextBlock>
+            <TextBlock HorizontalAlignment="Center"></TextBlock>
+            <TextBlock HorizontalAlignment="Center"></TextBlock>
+            <TextBlock HorizontalAlignment="Center"></TextBlock>
+            <TextBlock HorizontalAlignment="Center"></TextBlock>
+            <TextBlock HorizontalAlignment="Center"></TextBlock>
+            <TextBlock HorizontalAlignment="Center"> Username</TextBlock>
+            <TextBox Name="usernameBox"  HorizontalAlignment="Center" Width="100"></TextBox>
+            <TextBlock HorizontalAlignment="Center"> Password</TextBlock>
+            <PasswordBox Name="PasswordBox"  HorizontalAlignment="Center" Width="100" ></PasswordBox>
+            <TextBlock HorizontalAlignment="Center"></TextBlock>
+            <Button Content="Se connecter" Background="LightSteelBlue" Name="log" Click="Login_Click"  VerticalAlignment="Center" HorizontalAlignment="Center"></Button>
+            <Button Content="S'inscrire" Background="LightSteelBlue" Name="inscription" Click="Register_Click" VerticalAlignment="Center" HorizontalAlignment="Center"></Button>
         </StackPanel>
-        <TextBlock Height="20" HorizontalAlignment="Left" Margin="16,10,0,0" Name="textBlockHyperlink" VerticalAlignment="Top" Width="97" >
-            <Hyperlink Click="registerEvent">
-                <Run Text="Register"/>
-            </Hyperlink>
-        </TextBlock>
     </Grid>
-    
 </Page>
