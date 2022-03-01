@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\alexa\OneDrive\Documents\GitHub\Obra\Obra\App.xaml
-51021132924
+6-1667895205
 
-121086637579
+13576033639
 203258411523
-MainWindow.xaml;Pages\LoginPage.xaml;Pages\MainPagePart.xaml;Pages\MainPagePro.xaml;Pages\RegisterPage.xaml;
+MainWindow.xaml;Pages\LoginPage.xaml;Pages\MainPagePart.xaml;Pages\MainPagePro.xaml;Pages\RegisterPartPage.xaml;Pages\RegisterProPage.xaml;
 
 False
 

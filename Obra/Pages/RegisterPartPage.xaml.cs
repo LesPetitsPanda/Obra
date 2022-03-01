@@ -6,12 +6,12 @@ using mySQLConnectio;
 
 namespace Obra.Pages
 {
-    public partial class RegisterPage : Page
+    public partial class RegisterPartPage : Page
     {
-        public RegisterPage()
+        public RegisterPartPage()
         {
             InitializeComponent();
-     
+
         }
         private void Register_OnClick(object sender, RoutedEventArgs e)
         {
@@ -51,6 +51,6 @@ namespace Obra.Pages
             PopupUsername.IsOpen = false;
             PopupEmail.IsOpen = false;
         }
-   
+
     }
 }

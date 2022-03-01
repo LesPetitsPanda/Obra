@@ -43,12 +43,16 @@ namespace Obra.Pages
             NavigationService ns = NavigationService.GetNavigationService(this);
             ns.Navigate(new Uri("Pages/MainPagePart.xaml", UriKind.Relative));
         }
-        private void Register_Click(object sender, RoutedEventArgs e)
+        private void RegisterPart_Click(object sender, RoutedEventArgs e)
         {
             NavigationService ns = NavigationService.GetNavigationService(this);
-            ns.Navigate(new Uri("Pages/RegisterPage.xaml", UriKind.Relative));
+            ns.Navigate(new Uri("Pages/RegisterPartPage.xaml", UriKind.Relative));
+        }
+        private void RegisterPro_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService ns = NavigationService.GetNavigationService(this);
+            ns.Navigate(new Uri("Pages/RegisterProPage.xaml", UriKind.Relative));
         }
 
-     
     }
 }

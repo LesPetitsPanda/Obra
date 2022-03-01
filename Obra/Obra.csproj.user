@@ -8,12 +8,24 @@
     <Compile Update="Pages\MainPagePro.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Pages\RegisterPartPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\RegisterProPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="Pages\MainPagePart.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Pages\MainPagePro.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\RegisterPartPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\RegisterProPage.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

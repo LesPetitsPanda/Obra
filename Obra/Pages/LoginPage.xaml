@@ -16,13 +16,15 @@
             <TextBlock HorizontalAlignment="Center"></TextBlock>
             <TextBlock HorizontalAlignment="Center"></TextBlock>
             <TextBlock HorizontalAlignment="Center"></TextBlock>
-            <TextBlock HorizontalAlignment="Center"> Username</TextBlock>
+            <TextBlock HorizontalAlignment="Center"> Identifiant</TextBlock>
             <TextBox Name="usernameBox"  HorizontalAlignment="Center" Width="100"></TextBox>
-            <TextBlock HorizontalAlignment="Center"> Password</TextBlock>
+            <TextBlock HorizontalAlignment="Center"> Mot de Passe</TextBlock>
             <PasswordBox Name="PasswordBox"  HorizontalAlignment="Center" Width="100" ></PasswordBox>
             <TextBlock HorizontalAlignment="Center"></TextBlock>
-            <Button Content="Se connecter" Background="LightSteelBlue" Name="log" Click="Login_Click"  VerticalAlignment="Center" HorizontalAlignment="Center"></Button>
-            <Button Content="S'inscrire" Background="LightSteelBlue" Name="inscription" Click="Register_Click" VerticalAlignment="Center" HorizontalAlignment="Center"></Button>
+            <Button Content="Se connecter" Background="LightSteelBlue" Name="log" Click="Login_Click" HorizontalAlignment="Center"></Button>
+            <TextBlock HorizontalAlignment="Center"></TextBlock>
+            <Button Content="Créer un compte particulier" Background="LightSteelBlue" Click="RegisterPart_Click" HorizontalAlignment="Center" ></Button>
+            <Button Content="Créer un compte professionnel" Background="LightSteelBlue" Name="inscription" Click="RegisterPro_Click" VerticalAlignment="Center" HorizontalAlignment="Center"></Button>
         </StackPanel>
     </Grid>
 </Page>

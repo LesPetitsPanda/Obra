@@ -38,7 +38,6 @@ C:\Users\alexa\OneDrive\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\Main
 C:\Users\alexa\OneDrive\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\Pages\LoginPage.g.cs
 C:\Users\alexa\OneDrive\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\Pages\MainPagePart.g.cs
 C:\Users\alexa\OneDrive\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\Pages\MainPagePro.g.cs
-C:\Users\alexa\OneDrive\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\Pages\RegisterPage.g.cs
 C:\Users\alexa\OneDrive\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\App.g.cs
 C:\Users\alexa\OneDrive\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\Obra_MarkupCompile.cache
 C:\Users\alexa\OneDrive\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\Obra_MarkupCompile.lref
@@ -68,7 +67,6 @@ C:\Users\alexa\OneDrive\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\Main
 C:\Users\alexa\OneDrive\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\Pages\LoginPage.baml
 C:\Users\alexa\OneDrive\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\Pages\MainPagePart.baml
 C:\Users\alexa\OneDrive\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\Pages\MainPagePro.baml
-C:\Users\alexa\OneDrive\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\Pages\RegisterPage.baml
 C:\Users\alexa\OneDrive\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\Obra.g.resources
 C:\Users\alexa\OneDrive\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\Obra.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\alexa\OneDrive\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\Obra.AssemblyInfoInputs.cache
@@ -76,3 +74,7 @@ C:\Users\alexa\OneDrive\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\Obra
 C:\Users\alexa\OneDrive\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\Obra.csproj.CoreCompileInputs.cache
 C:\Users\alexa\OneDrive\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\Obra.csproj.CopyComplete
 C:\Users\alexa\OneDrive\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\Obra.genruntimeconfig.cache
+C:\Users\alexa\OneDrive\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\Pages\RegisterPartPage.g.cs
+C:\Users\alexa\OneDrive\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\Pages\RegisterProPage.g.cs
+C:\Users\alexa\OneDrive\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\Pages\RegisterPartPage.baml
+C:\Users\alexa\OneDrive\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\Pages\RegisterProPage.baml
