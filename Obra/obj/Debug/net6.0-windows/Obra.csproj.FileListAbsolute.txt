@@ -31,8 +31,6 @@ C:\Users\valgi\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\Obra.pdb
 C:\Users\valgi\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\Obra.genruntimeconfig.cache
 C:\Users\valgi\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\Pages\LoginPage.g.cs
 C:\Users\valgi\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\Pages\LoginPage.baml
-C:\Users\valgi\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\Pages\RegisterPage.g.cs
-C:\Users\valgi\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\Pages\RegisterPage.baml
 C:\Users\alexa\OneDrive\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\Obra.csproj.AssemblyReference.cache
 C:\Users\alexa\OneDrive\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\MainWindow.g.cs
 C:\Users\alexa\OneDrive\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\Pages\LoginPage.g.cs
@@ -78,3 +76,7 @@ C:\Users\alexa\OneDrive\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\Page
 C:\Users\alexa\OneDrive\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\Pages\RegisterProPage.g.cs
 C:\Users\alexa\OneDrive\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\Pages\RegisterPartPage.baml
 C:\Users\alexa\OneDrive\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\Pages\RegisterProPage.baml
+C:\Users\valgi\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\Pages\RegisterPartPage.g.cs
+C:\Users\valgi\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\Pages\RegisterProPage.g.cs
+C:\Users\valgi\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\Pages\RegisterPartPage.baml
+C:\Users\valgi\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\Pages\RegisterProPage.baml

@@ -25,6 +25,16 @@
             <TextBlock HorizontalAlignment="Center"></TextBlock>
             <Button Content="Créer un compte particulier" Background="LightSteelBlue" Click="RegisterPart_Click" HorizontalAlignment="Center" ></Button>
             <Button Content="Créer un compte professionnel" Background="LightSteelBlue" Name="inscription" Click="RegisterPro_Click" VerticalAlignment="Center" HorizontalAlignment="Center"></Button>
+            <Image x:Name="epita" Source="/Resources/Epita.png" Height="101" Width="88" RenderTransformOrigin="-3.504,-3.027">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-30.532"/>
+                        <TranslateTransform X="-121.684" Y="242.481"/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
         </StackPanel>
     </Grid>
 </Page>
