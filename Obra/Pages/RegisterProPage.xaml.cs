@@ -3,6 +3,12 @@ using System.Windows.Controls;
 using System.Windows.Input;
 using mySQLConnect;
 using mySQLConnectio;
+using System.Windows.Navigation;
+using Obra.Utils;
+using System;
+using System.IO;
+using System.Text.Json;
+
 
 namespace Obra.Pages
 {
@@ -51,6 +57,11 @@ namespace Obra.Pages
             PopupPassword.IsOpen = false;
             PopupUsername.IsOpen = false;
             PopupEmail.IsOpen = false;
+        }
+        private void Return_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService ns = NavigationService.GetNavigationService(this);
+            ns.Navigate(new Uri("Pages/LoginPage.xaml", UriKind.Relative));
         }
 
     }

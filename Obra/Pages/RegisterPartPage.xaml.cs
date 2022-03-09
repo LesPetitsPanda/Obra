@@ -3,6 +3,11 @@ using System.Windows.Controls;
 using System.Windows.Input;
 using mySQLConnect;
 using mySQLConnectio;
+using System.Windows.Navigation;
+using Obra.Utils;
+using System;
+using System.IO;
+using System.Text.Json;
 
 namespace Obra.Pages
 {

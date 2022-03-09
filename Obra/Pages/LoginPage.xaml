@@ -31,7 +31,17 @@
                         <ScaleTransform/>
                         <SkewTransform/>
                         <RotateTransform Angle=".00"/>
-                        <TranslateTransform X="-250" Y="-100"/>
+                        <TranslateTransform X="-250" Y="-150"/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image x:Name="obra" Source="/Resources/Obra2.png" Height="50" Width="250">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle=".00"/>
+                        <TranslateTransform X="-232" Y="-277"/>
                     </TransformGroup>
                 </Image.RenderTransform>
             </Image>

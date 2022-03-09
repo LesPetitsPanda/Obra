@@ -6,33 +6,33 @@
       xmlns:local="clr-namespace:Obra.Pages"
       mc:Ignorable="d" 
       ShowsNavigationUI="False"
-      d:DesignHeight="450" d:DesignWidth="800"
-      Title="RegisterPartPage">
+
+      Title="RegisterPartPage" Background="#DDEAF7" Height="450" Width="800">
 
     <Grid>
         <StackPanel>
-            <TextBlock HorizontalAlignment="Center"> Username</TextBlock>
+            <TextBlock HorizontalAlignment="Center"> Nom du compte</TextBlock>
             <TextBox Name="usernameBox" HorizontalAlignment="Center" Width="100"></TextBox>
             <Popup Placement="Bottom" Name="PopupUsername" IsOpen="False"
                    PlacementTarget="{Binding ElementName=usernameBox}">
                 <TextBlock Height="60" Width="200" 
-                           Background="DarkRed"
+                           Background="#E33F3F"
                            TextWrapping="Wrap" > Username already exist !</TextBlock>
             </Popup>
-            <TextBlock Name="pass" HorizontalAlignment="Center"> Password</TextBlock>
+            <TextBlock Name="pass" HorizontalAlignment="Center"> Mot de passe</TextBlock>
             <PasswordBox Name="PasswordBox"  HorizontalAlignment="Center" Width="100"></PasswordBox>
             <Popup Placement="Bottom" Name="PopupPassword" IsOpen="False"
                    PlacementTarget="{Binding ElementName=PasswordBox}">
                 <TextBlock Height="60" Width="200" 
-                           Background="DarkRed"
+                           Background="#E33F3F"
                            TextWrapping="Wrap" > The password is too long or too short !</TextBlock>
             </Popup>
-            <TextBlock HorizontalAlignment="Center"> Password confirm</TextBlock>
+            <TextBlock HorizontalAlignment="Center"> Confirmation du mot de passe</TextBlock>
             <PasswordBox Name="PasswordBoxAgain"  HorizontalAlignment="Center" Width="100"></PasswordBox>
             <Popup Placement="Bottom" Name="PopupPasswordAgain" IsOpen="False"
                    PlacementTarget="{Binding ElementName=PasswordBox}">
                 <TextBlock Height="60" Width="200" 
-                           Background="DarkRed"
+                           Background="#E33F3F"
                            TextWrapping="Wrap" > The password is not the same !</TextBlock>
             </Popup>
             <TextBlock HorizontalAlignment="Center"> E-Mail</TextBlock>
@@ -40,12 +40,12 @@
             <Popup Placement="Bottom" Name="PopupEmail" IsOpen="False" 
                    PlacementTarget="{Binding ElementName=PasswordBox}">
                 <TextBlock Height="60" Width="200" 
-                           Background="DarkRed"
+                           Background="#E33F3F"
                            TextWrapping="Wrap" > Wrong email or email is already used !</TextBlock>
             </Popup>
 
             <TextBlock HorizontalAlignment="Center"></TextBlock>
-            <Button Content="Register" Background="LightSteelBlue" Click="Register_OnClick"  HorizontalAlignment="Center"></Button>
+            <Button Content="S'enregistrer" Background="LightSteelBlue" Click="Register_OnClick"  HorizontalAlignment="Center"></Button>
         </StackPanel>
     </Grid>
 </Page>
