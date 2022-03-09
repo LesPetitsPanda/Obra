@@ -10,7 +10,7 @@ namespace Obra.Utils
 {
     public class SerializerUtils
     {
-        public static string writeToJSON(string type, string name, object data)
+        public static string writeToJSON(string type, string name, string data)
         {
             var loginMemory = new LoginMemory { 
             Type = type,

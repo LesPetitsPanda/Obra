@@ -10,6 +10,6 @@ namespace Obra.Utils
     {
         public string Type { get; set; }//type of data (string, bool)
         public string Name { get; set; }
-        public object DataToRegister { get; set; } //the value of the data
+        public string DataToRegister { get; set; } //the value of the data
     }
 }

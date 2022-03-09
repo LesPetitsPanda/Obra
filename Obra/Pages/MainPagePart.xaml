@@ -10,6 +10,6 @@
       Title="MainPagePart">
 
     <Grid>
-        
+        <Button Click="disconnectEvent">Se déconnecter</Button>
     </Grid>
 </Page>

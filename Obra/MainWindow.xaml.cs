@@ -32,9 +32,9 @@ namespace Obra
                 this.Source = new Uri("Pages/LoginPage.xaml", UriKind.Relative);
             }
             else
-           if(SerializerUtils.DeserializeObject(App.userDataSer, "bool", "islogin") == "true")
+           if((string)SerializerUtils.DeserializeObject(App.userDataSer, "bool", "islogin") == "true")
             {
-                if ((bool) SerializerUtils.DeserializeObject(App.userDataSer, "bool", "ispro") == true)
+                if ( SerializerUtils.DeserializeObject(App.userDataSer, "bool", "ispro") == "true")
                 {
                     this.Source = new Uri("Pages/MainPagePro.xaml", UriKind.Relative);
                 }
