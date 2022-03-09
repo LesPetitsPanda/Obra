@@ -40,6 +40,7 @@ namespace Obra.Pages
                  && emailBox.Text != null)
             {
                 App.ConnectUtility.AddUser(usernameBox.Text, PasswordBox.Password, emailBox.Text);
+
             }
 
         }

@@ -5,6 +5,7 @@ using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Media.Imaging;
 using mySQLConnect;
 
 namespace Obra
@@ -15,8 +16,12 @@ namespace Obra
     /// </summary>
     public partial class App : Application
     {
+
+        public readonly static string userDataSer = "logindata"; 
         private static MySQLConnectUtility __connect;
 
+
+      
         public static MySQLConnectUtility ConnectUtility
         {
             get => __connect;
@@ -25,6 +30,9 @@ namespace Obra
         public App()
         {
             __connect = new MySQLConnectUtility("server=localhost;user=root;database=world;port=3306;password=EUw3qS^XaPfz4U");
+            Uri iconUri = new Uri("pack://application:,,,/Resources/logo.ico", UriKind.RelativeOrAbsolute);
+            
         }
+        
     }
 }

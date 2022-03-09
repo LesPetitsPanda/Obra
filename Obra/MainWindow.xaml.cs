@@ -13,23 +13,40 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Obra.Pages;
+using Obra.Utils;
 
 namespace Obra
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Page
+    public partial class MainWindow : NavigationWindow
     {
         public MainWindow()
         {
             InitializeComponent();
-        }
-
-        private void login_Click(object sender, RoutedEventArgs e)
-        {
-            NavigationService ns = NavigationService.GetNavigationService(this);
-            ns.Navigate(new Uri("Pages/LoginPage.xaml", UriKind.Relative));
+            Uri iconUri = new Uri("pack://application:,,,/Resources/mainlogo.ico", UriKind.RelativeOrAbsolute);
+           this.Icon = BitmapFrame.Create(iconUri);
+            if(SerializerUtils.DeserializeObject(App.userDataSer, "bool", "islogin") == null)
+            {
+                this.Source = new Uri("Pages/LoginPage.xaml", UriKind.Relative);
+            }
+            else
+           if(SerializerUtils.DeserializeObject(App.userDataSer, "bool", "islogin") == "true")
+            {
+                if ((bool) SerializerUtils.DeserializeObject(App.userDataSer, "bool", "ispro") == true)
+                {
+                    this.Source = new Uri("Pages/MainPagePro.xaml", UriKind.Relative);
+                }
+                else
+                {
+                    this.Source = new Uri("Pages/MainPagePart.xaml", UriKind.Relative);
+                }
+            }
+            else
+            {
+                this.Source = new Uri("Pages/LoginPage.xaml", UriKind.Relative);
+            }
         }
     }
 }

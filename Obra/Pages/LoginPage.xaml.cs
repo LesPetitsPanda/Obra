@@ -1,4 +1,7 @@
-﻿using System;
+﻿using Obra.Utils;
+using System;
+using System.IO;
+using System.Text.Json;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Navigation;
@@ -10,6 +13,7 @@ namespace Obra.Pages
         public LoginPage()
         {
             InitializeComponent();
+            
         }
 
         private void Login_Click(object sender, RoutedEventArgs e)
@@ -21,11 +25,16 @@ namespace Obra.Pages
             if (App.ConnectUtility.isProfessional(usernameBox.Text))
                 {
                     MainPageProEvent(sender, e);
+                    SerializerUtils.SerializeObject(SerializerUtils.writeToJSON("bool", "ispro", "true"), App.userDataSer);
                 }
             else
                 {
                     MainPagePartEvent(sender, e);
+                    SerializerUtils.SerializeObject(SerializerUtils.writeToJSON("bool", "ispro", "false"), App.userDataSer);
+
                 }
+                SerializerUtils.SerializeObject(SerializerUtils.writeToJSON("bool", "islogin", "true"), App.userDataSer);
+                
             }
         else
          {
