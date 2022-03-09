@@ -6,10 +6,9 @@
       xmlns:local="clr-namespace:Obra.Pages"
       mc:Ignorable="d"
       ShowsNavigationUI="False"
-      Title="LoginPage" Height="450" Width="800">
+      Title="LoginPage" Background="#DDEAF7" Height="450" Width="800">
     <Grid>
         <StackPanel>
-            <Image Source="Logo1.png" />
             <TextBlock HorizontalAlignment="Center"></TextBlock>
             <TextBlock HorizontalAlignment="Center"></TextBlock>
             <TextBlock HorizontalAlignment="Center"></TextBlock>
@@ -18,7 +17,7 @@
             <TextBlock HorizontalAlignment="Center"></TextBlock>
             <TextBlock HorizontalAlignment="Center"></TextBlock>
             <TextBlock HorizontalAlignment="Center"> Identifiant</TextBlock>
-            <TextBox Name="usernameBox"  HorizontalAlignment="Center" Width="100"></TextBox>
+            <TextBox Name="usernameBox"  HorizontalAlignment="Center" Width="100" ></TextBox>
             <TextBlock HorizontalAlignment="Center"> Mot de Passe</TextBlock>
             <PasswordBox Name="PasswordBox"  HorizontalAlignment="Center" Width="100" ></PasswordBox>
             <TextBlock HorizontalAlignment="Center"></TextBlock>
@@ -26,13 +25,13 @@
             <TextBlock HorizontalAlignment="Center"></TextBlock>
             <Button Content="Créer un compte particulier" Background="LightSteelBlue" Click="RegisterPart_Click" HorizontalAlignment="Center" ></Button>
             <Button Content="Créer un compte professionnel" Background="LightSteelBlue" Name="inscription" Click="RegisterPro_Click" VerticalAlignment="Center" HorizontalAlignment="Center"></Button>
-            <Image x:Name="epita" Source="/Resources/Epita.png" Height="101" Width="88" RenderTransformOrigin="-3.504,-3.027">
+            <Image x:Name="fond" Source="/Resources/Logo 2.png" Height="275" Width="275">
                 <Image.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform/>
                         <SkewTransform/>
-                        <RotateTransform Angle="-30.532"/>
-                        <TranslateTransform X="-121.684" Y="242.481"/>
+                        <RotateTransform Angle=".00"/>
+                        <TranslateTransform X="-250" Y="-100"/>
                     </TransformGroup>
                 </Image.RenderTransform>
             </Image>

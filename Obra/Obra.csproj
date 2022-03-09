@@ -9,6 +9,7 @@
 
     <ItemGroup>
       <None Remove="Pages\Epita.png" />
+      <None Remove="Resources\Logo 2.png" />
       <None Remove="Resources\mainlogo.ico" />
     </ItemGroup>
 
@@ -19,6 +20,7 @@
 
     <ItemGroup>
       <Resource Include="Resources\Epita.png" />
+      <Resource Include="Resources\Logo 2.png" />
       <Resource Include="Resources\mainlogo.ico" />
     </ItemGroup>
 
