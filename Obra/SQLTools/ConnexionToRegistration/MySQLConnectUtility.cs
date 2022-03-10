@@ -54,8 +54,9 @@ namespace mySQLConnect
                 return false;
                 
             }
+            int pro = isProfessional ? 1 : 0;
             conn.Open();
-            String sql = "INSERT INTO registration (username, password, email, isProfessional) VALUES ('" + user + "','" + SQLConnectUtility.Sha1(password)+ "','" + email + "','"+ isProfessional+"')";
+            String sql = "INSERT INTO registration (username, password, email, isProfessional) VALUES ('" + user + "','" + SQLConnectUtility.Sha1(password)+ "','" + email + "','"+ pro+"')";
          MySqlCommand cmd = new MySqlCommand(sql, conn);
          cmd.ExecuteNonQuery();
          conn.Close();

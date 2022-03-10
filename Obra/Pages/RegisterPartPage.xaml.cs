@@ -13,6 +13,7 @@ namespace Obra.Pages
 {
     public partial class RegisterPartPage : Page
     {
+       
         public RegisterPartPage()
         {
             InitializeComponent();
@@ -45,6 +46,8 @@ namespace Obra.Pages
                  && emailBox.Text != null)
             {
                 App.ConnectUtility.AddUser(usernameBox.Text, PasswordBox.Password, emailBox.Text);
+                MessageBoxResult islogin = MessageBox.Show("You are logged in, click the back button to log in.", "Connected !");
+
             }
 
         }
@@ -57,5 +60,10 @@ namespace Obra.Pages
             PopupEmail.IsOpen = false;
         }
 
+        private void Back_OnClick(object sender, RoutedEventArgs args)
+        {
+            NavigationService ns = NavigationService.GetNavigationService(this);
+            ns.Navigate(new Uri("Pages/LoginPage.xaml", UriKind.Relative));
+        }
     }
 }

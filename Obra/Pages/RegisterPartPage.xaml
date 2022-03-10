@@ -11,7 +11,7 @@
 
     <Grid>
         <StackPanel>
-            <TextBlock HorizontalAlignment="Center"> Nom du compte</TextBlock>
+            <TextBlock HorizontalAlignment="Center"> Name of account</TextBlock>
             <TextBox Name="usernameBox" HorizontalAlignment="Center" Width="100"></TextBox>
             <Popup Placement="Bottom" Name="PopupUsername" IsOpen="False"
                    PlacementTarget="{Binding ElementName=usernameBox}">
@@ -19,7 +19,7 @@
                            Background="#E33F3F"
                            TextWrapping="Wrap" > Username already exist !</TextBlock>
             </Popup>
-            <TextBlock Name="pass" HorizontalAlignment="Center"> Mot de passe</TextBlock>
+            <TextBlock Name="pass" HorizontalAlignment="Center"> Password</TextBlock>
             <PasswordBox Name="PasswordBox"  HorizontalAlignment="Center" Width="100"></PasswordBox>
             <Popup Placement="Bottom" Name="PopupPassword" IsOpen="False"
                    PlacementTarget="{Binding ElementName=PasswordBox}">
@@ -27,7 +27,7 @@
                            Background="#E33F3F"
                            TextWrapping="Wrap" > The password is too long or too short !</TextBlock>
             </Popup>
-            <TextBlock HorizontalAlignment="Center"> Confirmation du mot de passe</TextBlock>
+            <TextBlock HorizontalAlignment="Center"> Password confirmation</TextBlock>
             <PasswordBox Name="PasswordBoxAgain"  HorizontalAlignment="Center" Width="100"></PasswordBox>
             <Popup Placement="Bottom" Name="PopupPasswordAgain" IsOpen="False"
                    PlacementTarget="{Binding ElementName=PasswordBox}">
@@ -45,7 +45,9 @@
             </Popup>
 
             <TextBlock HorizontalAlignment="Center"></TextBlock>
-            <Button Content="S'enregistrer" Background="LightSteelBlue" Click="Register_OnClick"  HorizontalAlignment="Center"></Button>
+            <Button Content="Register" Background="LightSteelBlue" Click="Register_OnClick"  HorizontalAlignment="Center"></Button>
+            <TextBlock HorizontalAlignment="Center"></TextBlock>
+            <Button Content="Return" Background="LightSteelBlue" Click="Back_OnClick"  HorizontalAlignment="Center"></Button>
         </StackPanel>
     </Grid>
 </Page>

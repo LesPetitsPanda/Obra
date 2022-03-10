@@ -6,45 +6,49 @@
       xmlns:local="clr-namespace:Obra.Pages"
       mc:Ignorable="d"
       ShowsNavigationUI="False"
-      Title="LoginPage" Background="#DDEAF7" Height="450" Width="800">
-    <Grid>
-        <StackPanel>
-            <TextBlock HorizontalAlignment="Center"></TextBlock>
-            <TextBlock HorizontalAlignment="Center"></TextBlock>
-            <TextBlock HorizontalAlignment="Center"></TextBlock>
-            <TextBlock HorizontalAlignment="Center"></TextBlock>
-            <TextBlock HorizontalAlignment="Center"></TextBlock>
-            <TextBlock HorizontalAlignment="Center"></TextBlock>
-            <TextBlock HorizontalAlignment="Center"></TextBlock>
-            <TextBlock HorizontalAlignment="Center"> Identifiant</TextBlock>
-            <TextBox Name="usernameBox"  HorizontalAlignment="Center" Width="100" ></TextBox>
-            <TextBlock HorizontalAlignment="Center"> Mot de Passe</TextBlock>
-            <PasswordBox Name="PasswordBox"  HorizontalAlignment="Center" Width="100" ></PasswordBox>
-            <TextBlock HorizontalAlignment="Center"></TextBlock>
-            <Button Content="Se connecter" Background="LightSteelBlue" Name="log" Click="Login_Click" HorizontalAlignment="Center"></Button>
-            <TextBlock HorizontalAlignment="Center"></TextBlock>
-            <Button Content="Créer un compte particulier" Background="LightSteelBlue" Click="RegisterPart_Click" HorizontalAlignment="Center" ></Button>
-            <Button Content="Créer un compte professionnel" Background="LightSteelBlue" Name="inscription" Click="RegisterPro_Click" VerticalAlignment="Center" HorizontalAlignment="Center"></Button>
-            <Image x:Name="fond" Source="/Resources/Logo 2.png" Height="275" Width="275">
-                <Image.RenderTransform>
-                    <TransformGroup>
-                        <ScaleTransform/>
-                        <SkewTransform/>
-                        <RotateTransform Angle=".00"/>
-                        <TranslateTransform X="-250" Y="-150"/>
-                    </TransformGroup>
-                </Image.RenderTransform>
-            </Image>
-            <Image x:Name="obra" Source="/Resources/Obra2.png" Height="50" Width="250">
-                <Image.RenderTransform>
-                    <TransformGroup>
-                        <ScaleTransform/>
-                        <SkewTransform/>
-                        <RotateTransform Angle=".00"/>
-                        <TranslateTransform X="-232" Y="-277"/>
-                    </TransformGroup>
-                </Image.RenderTransform>
-            </Image>
-        </StackPanel>
+      Title="LoginPage" Background="#DDEAF7">
+    <Grid Height="265" Width="250">
+        <Border CornerRadius="10" Background="#A3CEF3" Margin="10,22,10,-22">
+            <StackPanel Margin="0,0,0,-152">
+                <TextBlock HorizontalAlignment="Center"></TextBlock>
+                <TextBlock Height="18" Width="146"><Run Text="&#x9;"/><Run Language="fr-fr" Text="  "/><Run Text="Login"/></TextBlock>
+                <TextBox x:Name="usernameBox" Width="100" />
+                <TextBlock HorizontalAlignment="Center"></TextBlock>
+                <TextBlock Height="18" Width="146"><Run Text="&#x9;"/><Run Language="fr-fr" Text=" "/><Run Text="Password"/></TextBlock>
+                <PasswordBox x:Name="PasswordBox" Width="100" />
+                <TextBlock HorizontalAlignment="Center"></TextBlock>
+                <Button Content="Login" Background="#A3CEF3"  x:Name="log" Click="Login_Click" BorderBrush="#A3CEF3" Width="103"/>
+                <TextBlock HorizontalAlignment="Center"></TextBlock>
+                <Label Content="No account yet ? Register as:" Width="164" RenderTransformOrigin="0.48,-0.747" Height="30"/>
+                <Button Content="Register individual account" Background="#A3CEF3" BorderBrush="#A3CEF3" Click="RegisterPart_Click" Width="162" />
+                <Button Content="Register professionnal account" Background="#A3CEF3" BorderBrush="#A3CEF3" x:Name="inscription" Click="RegisterPro_Click" Width="162" Height="21"/>
+                <TextBlock HorizontalAlignment="Center"></TextBlock>
+                <TextBlock HorizontalAlignment="Center"></TextBlock>
+                <TextBlock HorizontalAlignment="Center"></TextBlock>
+                <TextBlock HorizontalAlignment="Center"></TextBlock>
+                <TextBlock HorizontalAlignment="Center"></TextBlock>
+
+            </StackPanel>
+        </Border>
+        <Image x:Name="fond" Source="/Resources/Logo 2.png" Height="275" Width="275" Margin="-5,260,5,-260">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle=".00"/>
+                    <TranslateTransform X="-250" Y="-150"/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="obra" Source="/Resources/Obra2.png" Height="50" Width="250" Margin="8,539,17,-314">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle=".00"/>
+                    <TranslateTransform X="-232" Y="-277"/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
     </Grid>
 </Page>
