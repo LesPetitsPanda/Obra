@@ -21,7 +21,7 @@ namespace Obra.Pages
         }
         private void Register_OnClick(object sender, RoutedEventArgs e)
         {
-            pass.Text = usernameBox.Text;
+          
             if (PasswordBox.Password != PasswordBoxAgain.Password)
             {
                 PopupPasswordAgain.IsOpen = true;

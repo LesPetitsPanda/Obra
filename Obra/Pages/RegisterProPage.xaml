@@ -3,55 +3,68 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-      xmlns:local="clr-namespace:Obra.Pages"
-      
+      xmlns:local="clr-namespace:Obra.Pages" 
       mc:Ignorable="d" 
       ShowsNavigationUI="False"
-      Title="RegisterProPage" Background="#DDEAF7" Height="450" Width="800">
+      Title="RegisterProPage" Background="#DDEAF7">
 
-    <Grid>
-        <StackPanel>
-            
-            <Button  Name="retour" HorizontalAlignment="Left" Content="Retour" Click="Return_Click"></Button>
-            <TextBlock HorizontalAlignment="Center"> NOM et Prénom</TextBlock>
-            <TextBox Name="firstnameBox" HorizontalAlignment="Center" Width="100"></TextBox>
-            <TextBlock HorizontalAlignment="Center"> Nom du compte</TextBlock>
-            <TextBox Name="usernameBox" HorizontalAlignment="Center" Width="100"></TextBox>
-            <Popup Placement="Bottom" Name="PopupUsername" IsOpen="False"
+    <Grid  Height="265" Width="250">
+        <Border CornerRadius="10" Background="#A3CEF3" Margin="109,0,-109,-67">
+            <StackPanel  Margin="0,10,0,-112">
+                <TextBlock></TextBlock>
+                <Border Width="170" Height="267" CornerRadius="10" Background="CornflowerBlue" >
+                    <StackPanel Margin="10,0,10,10">
+                        <TextBlock></TextBlock>
+                        <TextBlock HorizontalAlignment="Center"><Run Text="First Name Second Name"/></TextBlock>
+                        <TextBox x:Name="firstnameBox" HorizontalAlignment="Center" Width="100"/>
+                        <TextBlock HorizontalAlignment="Center"><Run Text="Name account"/></TextBlock>
+                        <TextBox x:Name="usernameBox" HorizontalAlignment="Center" Width="100"/>
+                        <Popup Placement="Bottom" x:Name="PopupUsername" IsOpen="False"
                    PlacementTarget="{Binding ElementName=usernameBox}">
-                <TextBlock Height="60" Width="200" 
+                            <TextBlock Height="60" Width="200" 
                            Background="#E33F3F"
-                           TextWrapping="Wrap" > Username already exist !</TextBlock>
-            </Popup>
-            <TextBlock Name="pass" HorizontalAlignment="Center"> Mot de passe</TextBlock>
-            <PasswordBox Name="PasswordBox"  HorizontalAlignment="Center" Width="100"></PasswordBox>
-            <Popup Placement="Bottom" Name="PopupPassword" IsOpen="False"
+                           TextWrapping="Wrap" ><Run Text="Username already exist !"/></TextBlock>
+                        </Popup>
+                        <TextBlock x:Name="pass" HorizontalAlignment="Center"><Run Text="Password"/></TextBlock>
+                        <PasswordBox x:Name="PasswordBox"  HorizontalAlignment="Center" Width="100"/>
+                        <Popup Placement="Bottom" x:Name="PopupPassword" IsOpen="False"
                    PlacementTarget="{Binding ElementName=PasswordBox}">
-                <TextBlock Height="60" Width="200" 
+                            <TextBlock Height="60" Width="200" 
                            Background="#E33F3F"
-                           TextWrapping="Wrap" > The password is too long or too short !</TextBlock>
-            </Popup>
-            <TextBlock HorizontalAlignment="Center"> Confirmation du mot de passe</TextBlock>
-            <PasswordBox Name="PasswordBoxAgain"  HorizontalAlignment="Center" Width="100"></PasswordBox>
-            <Popup Placement="Bottom" Name="PopupPasswordAgain" IsOpen="False"
+                           TextWrapping="Wrap" ><Run Text="The password is too long or too short !"/></TextBlock>
+                        </Popup>
+                        <TextBlock HorizontalAlignment="Center"><Run Text="Password confirmation"/></TextBlock>
+                        <PasswordBox x:Name="PasswordBoxAgain"  HorizontalAlignment="Center" Width="100"/>
+                        <Popup Placement="Bottom" x:Name="PopupPasswordAgain" IsOpen="False"
                    PlacementTarget="{Binding ElementName=PasswordBox}">
-                <TextBlock Height="60" Width="200" 
+                            <TextBlock Height="60" Width="200" 
                            Background="#E33F3F"
-                           TextWrapping="Wrap" > The password is not the same !</TextBlock>
-            </Popup>
-            <TextBlock HorizontalAlignment="Center"> E-Mail</TextBlock>
-            <TextBox Name="emailBox"  HorizontalAlignment="Center" Width="100"></TextBox>
-            <Popup Placement="Bottom" Name="PopupEmail" IsOpen="False" 
+                           TextWrapping="Wrap" ><Run Text="The password is not the same !"/></TextBlock>
+                        </Popup>
+                        <TextBlock HorizontalAlignment="Center"><Run Text="E-Mail"/></TextBlock>
+                        <TextBox x:Name="emailBox"  HorizontalAlignment="Center" Width="100"/>
+                        <Popup Placement="Bottom" x:Name="PopupEmail" IsOpen="False" 
                    PlacementTarget="{Binding ElementName=PasswordBox}">
-                <TextBlock Height="60" Width="200" 
+                            <TextBlock Height="60" Width="200" 
                            Background="#E33F3F"
-                           TextWrapping="Wrap" > Wrong email or email is already used !</TextBlock>
-            </Popup>
-            <TextBlock HorizontalAlignment="Center"> Téléphone</TextBlock>
-            <TextBox Name="phoneBox" HorizontalAlignment="Center" Width="100"></TextBox>
-            <TextBlock HorizontalAlignment="Center"></TextBlock>
-            <Button Content="S'enregistrer" Background="LightSteelBlue" Click="Register_OnClick"  HorizontalAlignment="Center"></Button>
-            
+                           TextWrapping="Wrap" ><Run Text="Wrong email or email is already used !"/></TextBlock>
+                        </Popup>
+                        <TextBlock HorizontalAlignment="Center"><Run Text="Phone number"/></TextBlock>
+                        <TextBox x:Name="phoneBox" HorizontalAlignment="Center" Width="100"/>
+                        <TextBlock HorizontalAlignment="Center"/>
+                        <Button Content="Register" Click="Register_OnClick"  Background="#A3CEF3" BorderBrush="#A3CEF3" HorizontalAlignment="Center"/>
+                        <TextBlock HorizontalAlignment="Center"/>
+                    </StackPanel>
+                </Border>
+                <Button  x:Name="retour" Content="Return"  Background="#A3CEF3" BorderBrush="#A3CEF3" Click="Return_Click" RenderTransformOrigin="2.091,13.485" Height="17" Width="70"/>
+            </StackPanel>
+        </Border>
+        <StackPanel Margin="-241,0,179,0">
+            <Image x:Name="obraa" Source="/Resources/Logo 2.png" Height="228" Width="345"/>
+        </StackPanel>
+        <StackPanel Margin="-190,132,199,75">
+            <Image x:Name="obra" Source="/Resources/Obra2.png" Height="50" Width="250">
+            </Image>
         </StackPanel>
     </Grid>
 </Page>
