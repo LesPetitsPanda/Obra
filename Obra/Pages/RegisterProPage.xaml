@@ -52,7 +52,7 @@
                         <TextBlock HorizontalAlignment="Center"><Run Text="Phone number"/></TextBlock>
                         <TextBox x:Name="phoneBox" HorizontalAlignment="Center" Width="100"/>
                         <TextBlock HorizontalAlignment="Center"/>
-                        <Button Content="Register" Click="Register_OnClick"  Background="#A3CEF3" BorderBrush="#A3CEF3" HorizontalAlignment="Center"/>
+                        <Button Content="Register" Click="Register_OnClick"  Background="CornflowerBlue" BorderBrush="CornflowerBlue" HorizontalAlignment="Center"/>
                         <TextBlock HorizontalAlignment="Center"/>
                     </StackPanel>
                 </Border>
