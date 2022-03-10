@@ -5,11 +5,33 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:Obra.Pages"
       mc:Ignorable="d" 
-      ShowsNavigationUI="False"
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="MainPagePart">
+      ShowsNavigationUI="False"
+      Title="MainPagePart" Background="#DDEAF7">
 
     <Grid>
-        <Button Click="disconnectEvent">Se déconnecter</Button>
+        <Button Content="Messagerie" Height="25" Width="103" Margin="687,10,10,415"></Button>
+        <Button Content="Réglages" Height="25" Width="103" Margin="21,10,676,415" ></Button>
+        <Button Content="Recherche" Height="25" Width="300" Margin="250,70,250,355"></Button>
+        <Image x:Name="fond" Source="/Resources/Logo 2.png" Height="175" Width="175" Margin="285,443,340,-168">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle=".00"/>
+                    <TranslateTransform X="-300" Y="-150"/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="obra" Source="/Resources/Obra2.png" Height="40" Width="250" Margin="227,662,323,-262">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle=".00"/>
+                    <TranslateTransform X="-270" Y="-282"/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
     </Grid>
 </Page>
