@@ -2,10 +2,22 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup />
   <ItemGroup>
+    <Compile Update="Pages\CalendarPro.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Pages\MainPagePart.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Pages\MainPagePro.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\MessagePart.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\MessagePro.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\Profils.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Pages\RegisterPartPage.xaml.cs">
@@ -14,18 +26,42 @@
     <Compile Update="Pages\RegisterProPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Pages\SettingsPart.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\SettingsPro.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="Pages\CalendarPro.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Pages\MainPagePart.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Pages\MainPagePro.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Pages\MessagePart.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\MessagePro.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\Profils.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Pages\RegisterPartPage.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Pages\RegisterProPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\SettingsPart.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\SettingsPro.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

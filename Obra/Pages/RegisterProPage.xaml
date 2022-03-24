@@ -6,6 +6,7 @@
       xmlns:local="clr-namespace:Obra.Pages" 
       mc:Ignorable="d" 
       ShowsNavigationUI="False"
+       MouseDown="Popup_disabled"
       Title="RegisterProPage" Background="#DDEAF7">
 
     <Grid  Height="265" Width="250">
