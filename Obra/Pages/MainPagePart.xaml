@@ -8,25 +8,29 @@
       d:DesignHeight="450" d:DesignWidth="800"
       ShowsNavigationUI="False"
       Title="MainPagePart" Background="#DDEAF7">
-    <Grid Margin="51,46,55,32">
-        <StackPanel Margin="462,66,0,116">
-            <Button Content="Settings" Width="178" Height="31"/>
-            <TextBlock HorizontalAlignment="Center"/>
-            <Button Content="Messages" Width="179" Height="31"/>
+    <Grid Margin="0,0,0,0">
+        <StackPanel Margin="715,5,0,400">
+            <Button Content="Settings" Width="75" Height="31"/>
         </StackPanel>
-        <StackPanel Margin="183,0,183,311">
-
-            <TextBox TextWrapping="Wrap" Text="Research" Width="289" Height="19"/>
+        <StackPanel Margin=" 600,5,50,400">
+            <Button Content="Messages" Width="75" Height="31"/>
         </StackPanel>
-        <StackPanel Margin="0,187,493,0">
-            <Image Height="186" Width="184" Source="/Resources/Logo 2.png"/>
+        <Border Margin="183,20,183,400" Padding="2" CornerRadius="15" Background="White" Width="275" Height="25">
+            <TextBox TextWrapping="Wrap" Width="260" Height="20" BorderBrush="White"/>
+        </Border>       
+        <StackPanel Margin="-50,277,600,10">
+            <Image Height="200" Width="184" Source="/Resources/Logo 2.png"/>
         </StackPanel>
-        <StackPanel Margin="24,227,493,-35">
-            <Image Height="150" Width="131" Source="/Resources/Obra2.png" RenderTransformOrigin="0.476,0.38"/>
+        <StackPanel Margin="10,340,635,-35">
+            <Image Height="120" Width="110" Source="/Resources/Obra2.png" RenderTransformOrigin="0.476,0.38"/>
         </StackPanel>
-        <StackPanel Margin="0,256,0,0">
-            <Button Content="Disconnect" Width="178" Height="31" Click="disconnectEvent"/>
-        </StackPanel>
+        <Button Height="100" Width="100" Click="Marteau">
+            <Button.Template>
+                <ControlTemplate>
+                    <Image Source="/Resources/Logo 1.png"/>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
 
     </Grid>
 </Page>

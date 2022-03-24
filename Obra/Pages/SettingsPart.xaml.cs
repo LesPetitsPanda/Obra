@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Obra.Utils;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,7 +23,14 @@ namespace Obra.Pages
     {
         public SettingsPart()
         {
-            InitializeComponent();
+
         }
+        private void disconnectEvent(object sender, RoutedEventArgs args)
+        {
+            SerializerUtils.SerializeObject(SerializerUtils.writeToJSON("bool", "islogin", "false"), App.userDataSer);
+            NavigationService ns = NavigationService.GetNavigationService(this);
+            ns.Navigate(new Uri("Pages/LoginPage.xaml", UriKind.Relative));
+        }
+        
     }
 }
