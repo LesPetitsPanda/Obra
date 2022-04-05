@@ -30,11 +30,5 @@ namespace Obra.Pages
             NavigationService ns = NavigationService.GetNavigationService(this);
             ns.Navigate(new Uri("Pages/SettingsPart.xaml", UriKind.Relative));
         }
-
-        private void Marteau(object sender, RoutedEventArgs e)
-        {
-            NavigationService ns = NavigationService.GetNavigationService(this);
-            ns.Navigate(new Uri("Pages/SettingsPart.xaml", UriKind.Relative));
-        }
     }
 }

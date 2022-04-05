@@ -9,6 +9,6 @@
       Title="RegisterPartPage" Background="#DDEAF7" >
 
     <Grid>
-        
+        <Button Background="Blue" Margin="-2,-2,0,0"></Button>
     </Grid>
 </Page>
