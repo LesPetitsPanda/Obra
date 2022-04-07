@@ -10,28 +10,32 @@
       Title="MainPagePro" Background="#DDEAF7">
 
     <Grid>
-        <Button Content="Messagerie" Height="25" Width="103" Margin="687,10,10,415"></Button>
-        <Button Content="Réglages" Height="25" Width="103" Margin="21,10,676,415" ></Button>
-        <Button Content="Calendrier" Height="25" Width="103" ></Button>
-        <Image x:Name="fond" Source="/Resources/Logo 2.png" Height="175" Width="175" Margin="285,443,340,-168">
-            <Image.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle=".00"/>
-                    <TranslateTransform X="-300" Y="-150"/>
-                </TransformGroup>
-            </Image.RenderTransform>
-        </Image>
-        <Image x:Name="obra" Source="/Resources/Obra2.png" Height="40" Width="250" Margin="227,662,323,-262">
-            <Image.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle=".00"/>
-                    <TranslateTransform X="-270" Y="-282"/>
-                </TransformGroup>
-            </Image.RenderTransform>
-        </Image>
+        <Border>
+            <StackPanel Margin="0,0,755,410" HorizontalAlignment="Right" Width="55" Height="55" VerticalAlignment="Bottom">
+                <Image Height="70" Width="60" Source="/Resources/Logo 1.png"/>
+            </StackPanel>
+        </Border>
+        <Border>
+            <StackPanel Margin="-50,0,0,0" HorizontalAlignment="Left" Width="263" Height="173" VerticalAlignment="Bottom">
+                <Image Height="200" Width="160" Source="/Resources/Logo C.png"/>
+            </StackPanel>
+        </Border>
+        <Border>
+            <StackPanel Margin="0,0,504,407" HorizontalAlignment="Right" Width="326" Height="48" VerticalAlignment="Bottom">
+                <Image Height="50" Width="229" Source="/Resources/PA.png"/>
+            </StackPanel>
+        </Border>
+
+        <Border >
+            <StackPanel Margin="0,0,1,0" HorizontalAlignment="Right" Width="45" Height="48" VerticalAlignment="Top">
+                <Button Click="SettingsPro_Click">
+                    <Button.Template>
+                        <ControlTemplate>
+                            <Image Source="/Resources/Paramètre.png" Height="50" Width="45" />
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+            </StackPanel>
+        </Border>
     </Grid>
 </Page>

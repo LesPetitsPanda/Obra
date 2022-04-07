@@ -24,5 +24,10 @@ namespace Obra.Pages
         {
             InitializeComponent();
         }
+        private void SettingsPro_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService ns = NavigationService.GetNavigationService(this);
+            ns.Navigate(new Uri("Pages/SettingsPro.xaml", UriKind.Relative));
+        }
     }
 }

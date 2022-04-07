@@ -11,13 +11,17 @@
       <None Remove="Pages\Epita.png" />
       <None Remove="Resources\Logo 1.png" />
       <None Remove="Resources\Logo 2.png" />
+      <None Remove="Resources\Logo C.png" />
       <None Remove="Resources\mainlogo.ico" />
       <None Remove="Resources\Obra.png" />
       <None Remove="Resources\Obra2.png" />
+      <None Remove="Resources\PA.png" />
+      <None Remove="Resources\Paramètre.png" />
     </ItemGroup>
 
     <ItemGroup>
       <Resource Include="Resources\Logo 1.png" />
+      <Resource Include="Resources\Logo C.png" />
       <Resource Include="Resources\Obra.png" />
     </ItemGroup>
 
@@ -31,6 +35,8 @@
       <Resource Include="Resources\Logo 2.png" />
       <Resource Include="Resources\mainlogo.ico" />
       <Resource Include="Resources\Obra2.png" />
+      <Resource Include="Resources\PA.png" />
+      <Resource Include="Resources\Paramètre.png" />
     </ItemGroup>
 
 </Project>
