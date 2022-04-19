@@ -9,6 +9,9 @@
       Title="RegisterPartPage" Background="#DDEAF7" >
 
     <Grid>
-        
+        <Calendar IsTodayHighlighted = "true" Background="lightblue">
+            
+        </Calendar>
+
     </Grid>
 </Page>
