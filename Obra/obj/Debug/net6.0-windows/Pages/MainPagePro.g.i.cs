@@ -53,7 +53,7 @@ namespace Obra.Pages {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Obra;V1.0.0.0;component/pages/mainpagepro.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Obra;component/pages/mainpagepro.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Pages\MainPagePro.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

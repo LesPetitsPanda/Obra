@@ -16,7 +16,7 @@
       <None Remove="Resources\Obra.png" />
       <None Remove="Resources\Obra2.png" />
       <None Remove="Resources\PA.png" />
-      <None Remove="Resources\Paramètre.png" />
+      <None Remove="Resources\Parametres.png" />
     </ItemGroup>
 
     <ItemGroup>
@@ -36,7 +36,7 @@
       <Resource Include="Resources\mainlogo.ico" />
       <Resource Include="Resources\Obra2.png" />
       <Resource Include="Resources\PA.png" />
-      <Resource Include="Resources\Paramètre.png" />
+      <Resource Include="Resources\Parametres.png" />
     </ItemGroup>
 
 </Project>

@@ -23,7 +23,7 @@ namespace Obra.Pages
     {
         public SettingsPart()
         {
-
+            InitializeComponent();
         }
         private void disconnectEvent(object sender, RoutedEventArgs args)
         {
