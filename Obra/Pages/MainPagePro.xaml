@@ -7,15 +7,25 @@
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       ShowsNavigationUI="False"
+      xml:lang="en-US"
       Title="MainPagePro" Background="#DDEAF7">
 
-    <Grid>
-        <Grid>
-            <Calendar SelectedDate="4/21/2022">
-                
-            </Calendar>
+    <Grid Margin="172,0,32,10">
+        <Grid Margin="0,-43,32,166">
+            <Viewbox>
+                <Calendar Margin="45,30,0,0" Height="166" Width="300"/>
+            </Viewbox>
 
         </Grid>
 
+
+        <Grid Margin="50,274,50,10">
+            <Label Margin="0,-34,0,0">Selected date:</Label>
+            <TextBox Text="{Binding ElementName=cldSample, Path=SelectedDate, StringFormat=d, UpdateSourceTrigger=PropertyChanged}" Margin="0,0,-64,0" Height="156" VerticalAlignment="Top"/>
+
+        </Grid>
     </Grid>
+
+
+
 </Page>

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "csB5PwQMVwJ7GJOz7j81T48Y0mbkzg7lxpkcN2Yg44bqx85g+vJ0wTh29cYwsa3Egwb/ZS0bPobKISgw5Lp5Fw==",
+  "dgSpecHash": "Fk/9WnzP8WFJERxA0ZlsLAY4Z1TqI6hi29RR0DYjMq1OlHtdlXqev1G0VMD8xnn7I3SfZ21E0FBYlUkiQvLLyQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\alexa\\OneDrive\\Documents\\GitHub\\Obra\\Obra\\Obra.csproj",
   "expectedPackageFiles": [
@@ -12,7 +12,7 @@
     "C:\\Users\\alexa\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\alexa\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
     "C:\\Users\\alexa\\.nuget\\packages\\mysql.data\\8.0.28\\mysql.data.8.0.28.nupkg.sha512",
-    "C:\\Users\\alexa\\.nuget\\packages\\mysqlconnector\\2.1.6\\mysqlconnector.2.1.6.nupkg.sha512",
+    "C:\\Users\\alexa\\.nuget\\packages\\mysqlconnector\\2.1.8\\mysqlconnector.2.1.8.nupkg.sha512",
     "C:\\Users\\alexa\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\alexa\\.nuget\\packages\\system.configuration.configurationmanager\\4.4.1\\system.configuration.configurationmanager.4.4.1.nupkg.sha512",
     "C:\\Users\\alexa\\.nuget\\packages\\system.drawing.common\\4.7.0\\system.drawing.common.4.7.0.nupkg.sha512",

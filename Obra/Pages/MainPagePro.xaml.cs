@@ -29,5 +29,6 @@ namespace Obra.Pages
             NavigationService ns = NavigationService.GetNavigationService(this);
             ns.Navigate(new Uri("Pages/SettingsPro.xaml", UriKind.Relative));
         }
+        
     }
 }

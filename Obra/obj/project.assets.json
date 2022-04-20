@@ -111,7 +111,7 @@
           "lib/net6.0/ZstdNet.dll": {}
         }
       },
-      "MySqlConnector/2.1.6": {
+      "MySqlConnector/2.1.8": {
         "type": "package",
         "compile": {
           "lib/net6.0/MySqlConnector.dll": {}
@@ -472,10 +472,10 @@
         "mysql.data.nuspec"
       ]
     },
-    "MySqlConnector/2.1.6": {
-      "sha512": "btDnflhsn3g3G+9oQKIVh1dmVfGkUphMWFmtAR2lfAm4ir2QnjMfaVDqNLqNNwNNIN5jsUuT25ffivK56DvsOQ==",
+    "MySqlConnector/2.1.8": {
+      "sha512": "CVJ0w9PbUnBS3lfOII1J15DshAnJgKqkrvKfkTSiUerPjJpSAfv7LJR5aJNnzj+LdFw2grekguVe1kedp6LMyA==",
       "type": "package",
-      "path": "mysqlconnector/2.1.6",
+      "path": "mysqlconnector/2.1.8",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -497,7 +497,7 @@
         "lib/netstandard2.1/MySqlConnector.dll",
         "lib/netstandard2.1/MySqlConnector.xml",
         "logo.png",
-        "mysqlconnector.2.1.6.nupkg.sha512",
+        "mysqlconnector.2.1.8.nupkg.sha512",
         "mysqlconnector.nuspec"
       ]
     },
@@ -888,28 +888,23 @@
   "projectFileDependencyGroups": {
     "net6.0-windows7.0": [
       "MySql.Data >= 8.0.28",
-      "MySqlConnector >= 2.1.6"
+      "MySqlConnector >= 2.1.8"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\valgi\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\alexa\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\valgi\\Documents\\GitHub\\Obra\\Obra\\Obra.csproj",
+      "projectUniqueName": "C:\\Users\\alexa\\OneDrive\\Documents\\GitHub\\Obra\\Obra\\Obra.csproj",
       "projectName": "Obra",
-      "projectPath": "C:\\Users\\valgi\\Documents\\GitHub\\Obra\\Obra\\Obra.csproj",
-      "packagesPath": "C:\\Users\\valgi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\valgi\\Documents\\GitHub\\Obra\\Obra\\obj\\",
+      "projectPath": "C:\\Users\\alexa\\OneDrive\\Documents\\GitHub\\Obra\\Obra\\Obra.csproj",
+      "packagesPath": "C:\\Users\\alexa\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\alexa\\OneDrive\\Documents\\GitHub\\Obra\\Obra\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\valgi\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\alexa\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -941,7 +936,7 @@
           },
           "MySqlConnector": {
             "target": "Package",
-            "version": "[2.1.6, )"
+            "version": "[2.1.8, )"
           }
         },
         "imports": [
