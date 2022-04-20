@@ -20,15 +20,43 @@ namespace Obra.Pages
     /// </summary>
     public partial class MainPagePro : Page
     {
+        
+        private IDictionary<string,List<DateTime>> RDV_d = new Dictionary<string,List<DateTime>>();
+        public IDictionary<string, List<DateTime>> dates
+        {
+            get { return RDV_d; }
+        }
         public MainPagePro()
         {
             InitializeComponent();
         }
-        private void SettingsPro_Click(object sender, RoutedEventArgs e)
+        public void Button_RDV (object sender, RoutedEventArgs e)
         {
-            NavigationService ns = NavigationService.GetNavigationService(this);
-            ns.Navigate(new Uri("Pages/SettingsPro.xaml", UriKind.Relative));
+            RDV();
         }
+        public IDictionary<string, List<DateTime>> RDV()
+        {
+            IDictionary<string, List<DateTime>> r = new Dictionary<string, List<DateTime>>();
+            Calendar c = this.FindName("date") as Calendar;
+            if (c.SelectedDates != null)
+            {
+                string s = "";
+                List<DateTime> temp = new List<DateTime>();
+                foreach (DateTime date in c.SelectedDates)
+                {
+                  
+                    temp.Add(date);
+                }
+                r.Add(s,temp);
+            }
+            else
+            {
+                MessageBoxResult selected = MessageBox.Show("Select date !");
+            }
+            RDV_d = r;
+            return r;
+        }
+       
         
     }
 }

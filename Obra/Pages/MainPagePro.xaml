@@ -10,19 +10,28 @@
       xml:lang="en-US"
       Title="MainPagePro" Background="#DDEAF7">
 
-    <Grid Margin="172,0,32,10">
-        <Grid Margin="0,-43,32,166">
-            <Viewbox>
-                <Calendar Margin="45,30,0,0" Height="166" Width="300"/>
+    <Grid Margin="172,0,32,10" RenderTransformOrigin="0.504,0.527">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="239*"/>
+
+            <RowDefinition Height="201*"/>
+        </Grid.RowDefinitions>
+        <Grid>
+            <Viewbox Margin="0,0,-7,-26">
+                <Calendar Name="date" SelectionMode="MultipleRange" Width="259" Height="177"/>
             </Viewbox>
-
         </Grid>
-
-
-        <Grid Margin="50,274,50,10">
-            <Label Margin="0,-34,0,0">Selected date:</Label>
-            <TextBox Text="{Binding ElementName=cldSample, Path=SelectedDate, StringFormat=d, UpdateSourceTrigger=PropertyChanged}" Margin="0,0,-64,0" Height="156" VerticalAlignment="Top"/>
-
+        
+        <Grid Margin="0,220,0,104" Grid.RowSpan="2">
+            <Label FontSize="20" Margin="82,0,29,0" Height="72" VerticalAlignment="Center">Meetings :</Label>
+        </Grid>
+        <Grid Margin="0,37,85,34" Grid.Row="1">
+            <TextBox Text="{Binding ElementName=date, Path=SelectedDates, StringFormat=d, UpdateSourceTrigger=PropertyChanged}" Margin="84,0,-91,-7"/>
         </Grid>
     </Grid>
 
