@@ -12,12 +12,9 @@ public class Socket
         Socket s = null;
         IPHostEntry hostEntry = null;
 
-        // Get host related information.
+        //host information.
         hostEntry = Dns.GetHostEntry(server);
-
-        // Loop through the AddressList to obtain the supported AddressFamily. This is to avoid
-        // an exception that occurs when the host IP Address is not compatible with the address family
-        // (typical in the IPv6 case).
+        
         foreach(IPAddress address in hostEntry.AddressList)
         {
             IPEndPoint ipe = new IPEndPoint(address, port);
@@ -38,8 +35,7 @@ public class Socket
         }
         return s;
     }
-
-    // This method requests the home page content for the specified server.
+    
     private static string SocketSendReceive(string server, int port)
     {
         string request = "GET / HTTP/1.1\r\nHost: " + server +
@@ -48,7 +44,7 @@ public class Socket
         Byte[] bytesReceived = new Byte[256];
         string page = "";
 
-        // Create a socket connection with the specified server and port.
+        // Create a socket connection with the specified server and port
         using(Socket s = ConnectSocket(server, port)) {
 
             if (s == null)
