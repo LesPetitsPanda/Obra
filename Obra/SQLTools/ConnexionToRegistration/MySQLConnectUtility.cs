@@ -109,6 +109,29 @@ namespace mySQLConnect
             conn.Close();
             return string_data;
         }
+
+        public string getLocation(string name)
+        {
+            conn.Open();
+            MySqlCommand cmd = new MySqlCommand();
+            cmd.CommandText = "registration";
+            cmd.Connection = conn;
+            cmd.CommandType = CommandType.TableDirect;
+            MySqlDataReader reader = cmd.ExecuteReader();
+            while (reader.Read())
+            {
+                if (reader.GetString(1) == name)
+                {
+                  string res = reader.GetString((int)RowType.LOCATION);
+                  conn.Close();
+                  return res;
+                }
+            }
+            conn.Close();
+            return null;
+        }
+  
+
         public bool VerifyPassword(String password, String user)
         {
             conn.Open();

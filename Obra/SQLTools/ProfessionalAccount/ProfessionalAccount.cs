@@ -61,6 +61,7 @@ namespace Obra.SQLTools.ProfessionalAccount
             return false;
         }
 
+
         public Dictionary<string, int> getRate()
         {
             Dictionary<string, int> res = new();

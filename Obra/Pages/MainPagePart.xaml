@@ -51,6 +51,11 @@
             </Button>
         </Grid>
         <TextBlock Grid.Column="1"> YOOOO</TextBlock>
-        <TextBox Grid.Column="2" TextWrapping="Wrap" BorderBrush="Gray" Height="20" VerticalAlignment="Top"/>
+        <StackPanel Grid.Column="2">
+        <TextBox Name="search" TextWrapping="Wrap" BorderBrush="Gray" Height="20" VerticalAlignment="Top" MouseLeftButtonDown="OnSearchClick" KeyDown="OnKeyDown"/>
+            <TextBlock Name="first_result"></TextBlock>
+            <TextBlock Name="second_result"></TextBlock>
+            <TextBlock Name="third_result"></TextBlock>
+        </StackPanel>
     </Grid>
 </Page>

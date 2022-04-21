@@ -1,8 +1,10 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Data;
 using System.Security.Cryptography;
 using System.Text;
 using MySql.Data.MySqlClient;
+using Obra;
 
 namespace mySQLConnectio
 {
@@ -17,8 +19,48 @@ namespace mySQLConnectio
             byte[] outbuffer = cryptoTransformSHA1.ComputeHash(buffer);
             return Convert.ToBase64String(outbuffer);
         }
+        public static string getJob(string name, MySqlConnection conn)
+        {
+            conn.Open();
+            MySqlCommand cmd = new MySqlCommand();
+            cmd.Connection = conn;
+            cmd.CommandText = "professional";
+            cmd.CommandType = CommandType.TableDirect;
+            MySqlDataReader read = cmd.ExecuteReader();
+            while (read.Read())
+            {
+                if (read.GetString(1) == name)
+                {
+                    string res = read.GetString(8);
+                    conn.Close();
+                    return res;
+                }
+            }
+            conn.Close();
+            return null;
+        }
+        public static List<string> getName(string job, MySqlConnection conn)
+        {
+            List<string> res = new List<string>();
+            conn.Open();
+            MySqlCommand cmd = new MySqlCommand();
+            cmd.Connection = conn;
+            cmd.CommandText = "professional";
+            cmd.CommandType = CommandType.TableDirect;
+            MySqlDataReader read = cmd.ExecuteReader();
+            while (read.Read())
+            {
+                if (read.GetString(8) == job)
+                {
+                  res.Add(read.GetString(1));
+                }
+            }
+            conn.Close();
+            return res;
+        }
+
         //A simple function for check data
-        public static bool checkIfDataExist(MySqlConnection conn, RowType rowType, String username = "", String email = "", string location = "", bool isProfessional = false)
+        public static bool checkIfDataExist(MySqlConnection conn, RowType rowType, string username = "", string email = "", string location = "", bool isProfessional = false)
         {
             
             conn.Open();
