@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Drawing;
+
 
 namespace Obra.Pages
 {
@@ -26,10 +28,16 @@ namespace Obra.Pages
         {
             get { return RDV_d; }
         }
+        private List<string> Names = new List<string>();
+        public List<string> names
+        {
+            get { return Names; }
+        }
         public MainPagePro()
         {
             InitializeComponent();
         }
+
         public void Button_RDV (object sender, RoutedEventArgs e)
         {
             RDV();
@@ -38,20 +46,37 @@ namespace Obra.Pages
         {
             IDictionary<string, List<DateTime>> r = new Dictionary<string, List<DateTime>>();
             Calendar c = this.FindName("date") as Calendar;
-            if (c.SelectedDates != null)
+            String[] format = { "d" };
+            if (c.SelectedDates.Count != 0)
             {
                 string s = "";
+                string name = "";
+                string rep = "";
                 List<DateTime> temp = new List<DateTime>();
+               
+                name = Microsoft.VisualBasic.Interaction.InputBox("Enter Name", "Name", s, -1, -1);
+                names.Add(name);
                 foreach (DateTime date in c.SelectedDates)
                 {
-                  
                     temp.Add(date);
                 }
-                r.Add(s,temp);
+                r.Add(name,temp);
+                for(int i = 0; i < r.Count;i++)
+                {
+                    int j = 0;
+                    while (j < r[names[i]].Count)
+                    {
+                        rep += r[names[i]][j].ToString(format[0]);
+                        j += 1;
+                    }
+                    rep += " : " + names[i];
+                    rep += "\n";
+                }
+                RD.Text = rep;
             }
             else
             {
-                MessageBoxResult selected = MessageBox.Show("Select date !");
+                MessageBoxResult selected = MessageBox.Show("Select a date !");
             }
             RDV_d = r;
             return r;

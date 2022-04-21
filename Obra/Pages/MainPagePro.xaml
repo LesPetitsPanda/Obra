@@ -25,14 +25,17 @@
             <Viewbox Margin="0,0,-7,-26">
                 <Calendar Name="date" SelectionMode="MultipleRange" Width="259" Height="177"/>
             </Viewbox>
+            <Button Content="Create a meeting" Background="#A3CEF3" BorderBrush="#A3CEF3" Click="Button_RDV" Width="108" Margin="0,99,34,0" HorizontalAlignment="Right" RenderTransformOrigin="0.698,-1.26" Height="35" VerticalAlignment="Top"/>
+
         </Grid>
-        
+
         <Grid Margin="0,220,0,104" Grid.RowSpan="2">
             <Label FontSize="20" Margin="82,0,29,0" Height="72" VerticalAlignment="Center">Meetings :</Label>
         </Grid>
         <Grid Margin="0,37,85,34" Grid.Row="1">
-            <TextBox Text="{Binding ElementName=date, Path=SelectedDates, StringFormat=d, UpdateSourceTrigger=PropertyChanged}" Margin="84,0,-91,-7"/>
+            <TextBox Name="RD" Text= "RDV_d" Margin="84,0,-91,-7"/>
         </Grid>
+        
     </Grid>
 
 

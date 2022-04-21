@@ -25,7 +25,7 @@ namespace Obra
         public MainWindow()
         {
             InitializeComponent();
-            Uri iconUri = new Uri("pack://application:,,,/Resources/mainlogo.ico", UriKind.RelativeOrAbsolute);
+            /*Uri iconUri = new Uri("pack://application:,,,/Resources/mainlogo.ico", UriKind.RelativeOrAbsolute);
            this.Icon = BitmapFrame.Create(iconUri);
                  if(SerializerUtils.DeserializeObject(App.userDataSer, "bool", "islogin") == null)
                  {
@@ -46,8 +46,8 @@ namespace Obra
                  else
                  {
                      this.Source = new Uri("Pages/MainPagePart.xaml", UriKind.Relative);
-                 }
-            //this.Source = new Uri("Pages/MainPagePro.xaml", UriKind.Relative);
+                 }*/
+            this.Source = new Uri("Pages/MainPagePro.xaml", UriKind.Relative);
 
         }
     }
