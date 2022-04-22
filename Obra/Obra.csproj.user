@@ -14,7 +14,10 @@
     <Compile Update="Pages\MessagePro.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Pages\Profils.xaml.cs">
+    <Compile Update="Pages\ProfilsPART.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\ProfilsPRO.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Pages\RegisterPartPage.xaml.cs">
@@ -43,7 +46,10 @@
     <Page Update="Pages\MessagePro.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Pages\Profils.xaml">
+    <Page Update="Pages\ProfilsPART.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\ProfilsPRO.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Pages\RegisterPartPage.xaml">

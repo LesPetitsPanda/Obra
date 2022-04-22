@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace Obra.Pages
 {
     /// <summary>
-    /// Logique d'interaction pour Profils.xaml
+    /// Logique d'interaction pour ProfilsPRO.xaml
     /// </summary>
-    public partial class Profils : Page
+    public partial class ProfilsPRO : Page
     {
-        public Profils()
+        public ProfilsPRO()
         {
             InitializeComponent();
         }
