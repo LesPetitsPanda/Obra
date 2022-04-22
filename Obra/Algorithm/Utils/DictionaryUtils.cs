@@ -12,12 +12,14 @@ namespace Obra.Algorithm.Utils
         //return the first professional user/iplocation of the Dictionnary
         public static KeyValuePair<string,string> FirstKeyLocation(Dictionary<string,string> keyValuePairs, string ip_of_user)
         {
-            KeyValuePair<string,string> data = new KeyValuePair<string,string>();
-            foreach(KeyValuePair<string,string> pair in keyValuePairs)
-                if(Localize.GetDistanceBetween(Localize.GetLocationByIp(pair.Value), Localize.GetLocationByIp(ip_of_user)) < Localize.GetDistanceBetween(Localize.GetLocationByIp(data.Value), Localize.GetLocationByIp(ip_of_user)))
+            KeyValuePair<string,string> data = keyValuePairs.First();
+            foreach (KeyValuePair<string, string> pair in keyValuePairs)
+            {
+                if (Localize.GetDistanceBetween(Localize.GetLocationByIp(pair.Value), Localize.GetLocationByIp(ip_of_user)) < Localize.GetDistanceBetween(Localize.GetLocationByIp(data.Value), Localize.GetLocationByIp(ip_of_user)))
                 {
                     data = pair;
                 }
+            }
             return data;
         }
         public static KeyValuePair<string,int> FirstKeyRate(Dictionary<string,int> keyValuePairs) {

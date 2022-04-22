@@ -18,11 +18,31 @@ namespace Obra.Pages
     /// <summary>
     /// Logique d'interaction pour Page1.xaml
     /// </summary>
-    public partial class Page1 : Page
+    public partial class ProfilsPART : Page
     {
-        public Page1()
+        public ProfilsPART()
         {
             InitializeComponent();
+        }
+        private void SettingsPart_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService ns = NavigationService.GetNavigationService(this);
+            ns.Navigate(new Uri("Pages/SettingsPart.xaml", UriKind.Relative));
+        }
+        private void Home_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService ns = NavigationService.GetNavigationService(this);
+            ns.Navigate(new Uri("Pages/MainPagePart.xaml", UriKind.Relative));
+        }
+        private void Message_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService ns = NavigationService.GetNavigationService(this);
+            ns.Navigate(new Uri("Pages/MessagePart.xaml", UriKind.Relative));
+        }
+        private void Profile_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService ns = NavigationService.GetNavigationService(this);
+            ns.Navigate(new Uri("Pages/Profils.xaml", UriKind.Relative));
         }
     }
 }

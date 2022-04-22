@@ -49,12 +49,12 @@ C:\Users\alexa\OneDrive\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\Obra
 C:\Users\alexa\OneDrive\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\ref\Obra.dll
 C:\Users\alexa\OneDrive\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\Obra.pdb
 C:\Users\alexa\OneDrive\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\Obra.genruntimeconfig.cache
+C:\Users\valgi\Documents\GitHub\Obra\Obra\bin\Debug\net6.0-windows\Obra.dll
+C:\Users\alexa\OneDrive\Documents\GitHub\Obra\Obra\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+C:\Users\alexa\OneDrive\Documents\GitHub\Obra\Obra\bin\Debug\net6.0-windows\System.Device.Portable.dll
 C:\Users\valgi\Documents\GitHub\Obra\Obra\bin\Debug\net6.0-windows\Obra.exe
 C:\Users\valgi\Documents\GitHub\Obra\Obra\bin\Debug\net6.0-windows\Obra.deps.json
 C:\Users\valgi\Documents\GitHub\Obra\Obra\bin\Debug\net6.0-windows\Obra.runtimeconfig.json
-C:\Users\valgi\Documents\GitHub\Obra\Obra\bin\Debug\net6.0-windows\Obra.dll
-C:\Users\valgi\Documents\GitHub\Obra\Obra\bin\Debug\net6.0-windows\ref\Obra.dll
-C:\Users\valgi\Documents\GitHub\Obra\Obra\bin\Debug\net6.0-windows\Obra.pdb
 C:\Users\valgi\Documents\GitHub\Obra\Obra\bin\Debug\net6.0-windows\BouncyCastle.Crypto.dll
 C:\Users\valgi\Documents\GitHub\Obra\Obra\bin\Debug\net6.0-windows\Google.Protobuf.dll
 C:\Users\valgi\Documents\GitHub\Obra\Obra\bin\Debug\net6.0-windows\K4os.Compression.LZ4.dll
@@ -67,7 +67,6 @@ C:\Users\valgi\Documents\GitHub\Obra\Obra\bin\Debug\net6.0-windows\MySqlConnecto
 C:\Users\valgi\Documents\GitHub\Obra\Obra\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
 C:\Users\valgi\Documents\GitHub\Obra\Obra\bin\Debug\net6.0-windows\System.Device.Portable.dll
 C:\Users\valgi\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\MainWindow.g.cs
-C:\Users\valgi\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\Pages\CalendarPro.g.cs
 C:\Users\valgi\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\Pages\LoginPage.g.cs
 C:\Users\valgi\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\Pages\MainPagePart.g.cs
 C:\Users\valgi\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\Pages\MainPagePro.g.cs
@@ -82,7 +81,6 @@ C:\Users\valgi\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\App.g.cs
 C:\Users\valgi\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\Obra_MarkupCompile.cache
 C:\Users\valgi\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\Obra_MarkupCompile.lref
 C:\Users\valgi\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\MainWindow.baml
-C:\Users\valgi\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\Pages\CalendarPro.baml
 C:\Users\valgi\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\Pages\LoginPage.baml
 C:\Users\valgi\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\Pages\MainPagePart.baml
 C:\Users\valgi\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\Pages\MainPagePro.baml
@@ -103,5 +101,10 @@ C:\Users\valgi\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\Obra.dll
 C:\Users\valgi\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\ref\Obra.dll
 C:\Users\valgi\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\Obra.pdb
 C:\Users\valgi\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\Obra.genruntimeconfig.cache
-C:\Users\alexa\OneDrive\Documents\GitHub\Obra\Obra\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
-C:\Users\alexa\OneDrive\Documents\GitHub\Obra\Obra\bin\Debug\net6.0-windows\System.Device.Portable.dll
+C:\Users\valgi\Documents\GitHub\Obra\Obra\bin\Debug\net6.0-windows\ref\Obra.dll
+C:\Users\valgi\Documents\GitHub\Obra\Obra\bin\Debug\net6.0-windows\Obra.pdb
+C:\Users\valgi\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\Obra.csproj.AssemblyReference.cache
+C:\Users\valgi\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\Pages\ProfilsPART.g.cs
+C:\Users\valgi\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\Pages\ProfilsPRO.g.cs
+C:\Users\valgi\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\Pages\ProfilsPART.baml
+C:\Users\valgi\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\Pages\ProfilsPRO.baml

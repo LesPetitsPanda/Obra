@@ -31,15 +31,15 @@ namespace Obra.Algorithm
         //get allProfessionalLocation with sort by Location
         public Dictionary<string,string> getProfessionalByLocation(Dictionary<string,string> allProfession)
         {
-            int i = 0;
+            
             Dictionary<string,string> result = new Dictionary<string,string>();
 
-            while(i < getAllProfessionalLocation().Count)
+            while(allProfession.Count > 0)
             {
                 KeyValuePair<string, string> keyValuePair = DictionaryUtils.FirstKeyLocation(allProfession, _ipLocation);
-                result.Append(keyValuePair);
+                result.Add(keyValuePair.Key, keyValuePair.Value);
                 allProfession.Remove(keyValuePair.Key);
-                i++;
+                
             }
             return result;
         }

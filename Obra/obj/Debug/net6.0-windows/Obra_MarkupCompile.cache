@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\alexa\OneDrive\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\
+C:\Users\valgi\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\
 Obra
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-C:\Users\alexa\OneDrive\Documents\GitHub\Obra\Obra\App.xaml
-11550896486
+C:\Users\valgi\Documents\GitHub\Obra\Obra\App.xaml
+131990102847
 
-29-2013374906
-205-28601032
-MainWindow.xaml;Pages\LoginPage.xaml;Pages\MainPagePart.xaml;Pages\MainPagePro.xaml;Pages\MessagePart.xaml;Pages\MessagePro.xaml;Pages\Profils.xaml;Pages\RegisterPartPage.xaml;Pages\RegisterProPage.xaml;Pages\SettingsPart.xaml;Pages\SettingsPro.xaml;
+31-1497092887
+2052079470391
+MainWindow.xaml;Pages\LoginPage.xaml;Pages\MainPagePart.xaml;Pages\MainPagePro.xaml;Pages\MessagePart.xaml;Pages\MessagePro.xaml;Pages\Profils.xaml;Pages\ProfilsPART.xaml;Pages\ProfilsPRO.xaml;Pages\RegisterPartPage.xaml;Pages\RegisterProPage.xaml;Pages\SettingsPart.xaml;Pages\SettingsPro.xaml;
 
 False
 

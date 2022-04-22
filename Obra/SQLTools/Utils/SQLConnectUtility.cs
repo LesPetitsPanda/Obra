@@ -50,7 +50,7 @@ namespace mySQLConnectio
             MySqlDataReader read = cmd.ExecuteReader();
             while (read.Read())
             {
-                if (read.GetString(8) == job)
+                if (read.GetString(8) is not null && read.GetString(8) == job)
                 {
                   res.Add(read.GetString(1));
                 }

@@ -31,8 +31,9 @@ namespace Obra
         {
             __connect = new MySQLConnectUtility("server=localhost;user=root;database=world;port=3306;password=EUw3qS^XaPfz4U");
             Uri iconUri = new Uri("pack://application:,,,/Resources/logo.ico", UriKind.RelativeOrAbsolute);
-            
+                
         }
+
         
     }
 }

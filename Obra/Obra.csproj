@@ -9,19 +9,25 @@
 
     <ItemGroup>
       <None Remove="Pages\Epita.png" />
+      <None Remove="Resources\home.png" />
       <None Remove="Resources\Logo 1.png" />
       <None Remove="Resources\Logo 2.png" />
       <None Remove="Resources\Logo C.png" />
       <None Remove="Resources\mainlogo.ico" />
+      <None Remove="Resources\messagerie.png" />
       <None Remove="Resources\Obra.png" />
       <None Remove="Resources\Obra2.png" />
       <None Remove="Resources\PA.png" />
       <None Remove="Resources\Parametres.png" />
+      <None Remove="Resources\profile.png" />
+      <None Remove="Resources\settings.png" />
     </ItemGroup>
 
     <ItemGroup>
+      <Resource Include="Resources\home.png" />
       <Resource Include="Resources\Logo 1.png" />
       <Resource Include="Resources\Logo C.png" />
+      <Resource Include="Resources\messagerie.png" />
       <Resource Include="Resources\Obra.png" />
     </ItemGroup>
 
@@ -40,6 +46,8 @@
       <Resource Include="Resources\Obra2.png" />
       <Resource Include="Resources\PA.png" />
       <Resource Include="Resources\Parametres.png" />
+      <Resource Include="Resources\profile.png" />
+      <Resource Include="Resources\settings.png" />
     </ItemGroup>
 
 </Project>

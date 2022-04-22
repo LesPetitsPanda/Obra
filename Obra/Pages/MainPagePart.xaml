@@ -24,38 +24,42 @@
             <Button Click="Home_Click" Grid.Row="0" Grid.Column="0">
                 <Button.Template>
                     <ControlTemplate>
-                        <Image Source="/Resources/Parametres.png"/>
+                        <Image Source="/Resources/home.png"/>
                     </ControlTemplate>
                 </Button.Template>
             </Button>
             <Button Click="Message_Click" Grid.Row="1" Grid.Column="0">
                 <Button.Template>
                     <ControlTemplate>
-                        <Image Source="/Resources/Parametres.png"/>
+                        <Image Source="/Resources/messagerie.png"/>
                     </ControlTemplate>
                 </Button.Template>
             </Button>
             <Button Click="Profile_Click" Grid.Row="2">
                 <Button.Template>
                     <ControlTemplate>
-                        <Image Source="/Resources/Parametres.png"/>
+                        <Image Source="/Resources/profile.png"/>
                     </ControlTemplate>
                 </Button.Template>
             </Button>
             <Button Click="SettingsPart_Click" Grid.Row="3">
                 <Button.Template>
                     <ControlTemplate>
-                        <Image Source="/Resources/Parametres.png"/>
+                        <Image Source="/Resources/settings.png"/>
                     </ControlTemplate>
                 </Button.Template>
             </Button>
         </Grid>
-        <TextBlock Grid.Column="1"> YOOOO</TextBlock>
+        <ScrollViewer Grid.Column="1" Name="Scrollable" CanContentScroll="True">
+            <StackPanel Name="contentscroll">
+                
+            </StackPanel>
+        </ScrollViewer>
         <StackPanel Grid.Column="2">
         <TextBox Name="search" TextWrapping="Wrap" BorderBrush="Gray" Height="20" VerticalAlignment="Top" MouseLeftButtonDown="OnSearchClick" KeyDown="OnKeyDown"/>
-            <TextBlock Name="first_result"></TextBlock>
-            <TextBlock Name="second_result"></TextBlock>
-            <TextBlock Name="third_result"></TextBlock>
+            <TextBlock MouseLeftButtonDown="ContentClickable" Name="first_result"></TextBlock>
+            <TextBlock  MouseLeftButtonDown="ContentClickable" Name="second_result"></TextBlock>
+            <TextBlock Name="third_result"  MouseLeftButtonDown="ContentClickable"></TextBlock>
         </StackPanel>
     </Grid>
 </Page>
