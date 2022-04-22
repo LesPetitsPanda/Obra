@@ -25,6 +25,26 @@ namespace Obra.Pages
         {
             InitializeComponent();
         }
+        private void SettingsPart_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService ns = NavigationService.GetNavigationService(this);
+            ns.Navigate(new Uri("Pages/SettingsPart.xaml", UriKind.Relative));
+        }
+        private void Home_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService ns = NavigationService.GetNavigationService(this);
+            ns.Navigate(new Uri("Pages/MainPagePart.xaml", UriKind.Relative));
+        }
+        private void Message_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService ns = NavigationService.GetNavigationService(this);
+            ns.Navigate(new Uri("Pages/MessagePart.xaml", UriKind.Relative));
+        }
+        private void Profile_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService ns = NavigationService.GetNavigationService(this);
+            ns.Navigate(new Uri("Pages/ProfilsPART.xaml", UriKind.Relative));
+        }
         private void disconnectEvent(object sender, RoutedEventArgs args)
         {
             SerializerUtils.SerializeObject(SerializerUtils.writeToJSON("bool", "islogin", "false"), App.userDataSer);

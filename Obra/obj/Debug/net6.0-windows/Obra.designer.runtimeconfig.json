@@ -12,8 +12,8 @@
       }
     ],
     "additionalProbingPaths": [
-      "C:\\Users\\valgi\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\valgi\\.nuget\\packages"
+      "C:\\Users\\alexa\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\alexa\\.nuget\\packages"
     ],
     "configProperties": {
       "Microsoft.NETCore.DotNetHostPolicy.SetAppPaths": true
