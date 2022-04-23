@@ -6,8 +6,8 @@
       xmlns:local="clr-namespace:Obra.Pages"
       mc:Ignorable="d" 
       ShowsNavigationUI="False"
-      d:DesignHeight="450" d:DesignWidth="800"
-      Title="RegisterPartPage" Background="#DDEAF7" >
+      Title="RegisterPartPage" Background="#DDEAF7" 
+      Unloaded="Page_Unloaded">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>

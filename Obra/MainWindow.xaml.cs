@@ -48,7 +48,7 @@ namespace Obra
                  {
                      this.Source = new Uri("Pages/MainPagePart.xaml", UriKind.Relative);
                  }*/
-            this.Source = new Uri("Pages/MessagePart.xaml", UriKind.Relative);
+            this.Source = new Uri("Pages/RegisterPartPage.xaml", UriKind.Relative);
 
         }
 
@@ -59,6 +59,7 @@ namespace Obra
                 File.Delete("userip");
             }
           base.OnClosed(args);
+          Application.Current.Dispatcher.InvokeShutdown();
         }
     }
 }

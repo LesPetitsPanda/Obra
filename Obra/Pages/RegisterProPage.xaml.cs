@@ -8,7 +8,7 @@ using Obra.Utils;
 using System;
 using System.IO;
 using System.Text.Json;
-
+using Obra.SQLTools.ProfessionalAccount;
 
 namespace Obra.Pages
 {
@@ -45,8 +45,9 @@ namespace Obra.Pages
                  && PasswordBox.Password != null
                  && emailBox.Text != null)
             {
-                App.ConnectUtility.AddUser(usernameBox.Text, PasswordBox.Password, emailBox.Text);
-
+             
+                ProfessionalAccount professional = new ProfessionalAccount(App.connection, usernameBox.Text, PasswordBox.Password, firstnameBox.Text, emailBox.Text, Int32.Parse(phoneBox.Text));
+                
             }
 
         }

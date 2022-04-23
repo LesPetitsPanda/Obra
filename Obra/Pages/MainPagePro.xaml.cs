@@ -37,26 +37,7 @@ namespace Obra.Pages
         {
             InitializeComponent();
         }
-        private void SettingsPart_Click(object sender, RoutedEventArgs e)
-        {
-            NavigationService ns = NavigationService.GetNavigationService(this);
-            ns.Navigate(new Uri("Pages/SettingsPro.xaml", UriKind.Relative));
-        }
-        private void Home_Click(object sender, RoutedEventArgs e)
-        {
-            NavigationService ns = NavigationService.GetNavigationService(this);
-            ns.Navigate(new Uri("Pages/MainPagePro.xaml", UriKind.Relative));
-        }
-        private void Message_Click(object sender, RoutedEventArgs e)
-        {
-            NavigationService ns = NavigationService.GetNavigationService(this);
-            ns.Navigate(new Uri("Pages/MessagePro.xaml", UriKind.Relative));
-        }
-        private void Profile_Click(object sender, RoutedEventArgs e)
-        {
-            NavigationService ns = NavigationService.GetNavigationService(this);
-            ns.Navigate(new Uri("Pages/ProfilsPRO.xaml", UriKind.Relative));
-        }
+
         public void Button_RDV (object sender, RoutedEventArgs e)
         {
             RDV();

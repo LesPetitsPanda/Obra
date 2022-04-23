@@ -45,11 +45,49 @@ namespace Obra.Pages
                  && PasswordBox.Password != null
                  && emailBox.Text != null)
             {
-                App.ConnectUtility.AddUser(usernameBox.Text, PasswordBox.Password, emailBox.Text);
-                MessageBoxResult islogin = MessageBox.Show("You are logged in, click the back button to log in.", "Connected !");
+                Confirm.IsOpen = true;
+                String code = RandomUtils.GenerateFourNum();
+                App.ConnectUtility.AddUser(usernameBox.Text, PasswordBox.Password, emailBox.Text, Int32.Parse(code));
+                EmailManager.SendEmailGmail(emailBox.Text,"Verification for Obra", "Hello, " + usernameBox.Text + "\n \n Your code is: " + code);
+                text_confirm.Text = "Check your mail box, you should receive a confirm email in this address:" + emailBox.Text;
+                confirm_register.KeyDown += Confirm_register_KeyDown;
 
             }
 
+        }
+        private void Confirm_OnClick(object sender, RoutedEventArgs e)
+        {
+            if(confirm_register.Text != "")
+            {
+                if (App.ConnectUtility.CheckCode(usernameBox.Text, Int32.Parse(confirm_register.Text)))
+                {
+                    MessageBox.Show("The register is a success come back for login", "Connected");
+                    Confirm.IsOpen=false;
+                }
+                else
+                {
+                    MessageBox.Show("Wrong code, try again", "Error");
+                }
+            }
+        }
+        private void Cancelled_OnClick(object sender, RoutedEventArgs e)
+        {
+            App.ConnectUtility.DeleteRow(usernameBox.Text);
+            Confirm.IsOpen=false;
+        }
+
+        private void Confirm_register_KeyDown(object sender, KeyEventArgs e)
+        {
+            TextBox textBox = sender as TextBox;
+            if(e.Key == Key.Enter && textBox.Text != "")
+            {
+                if(App.ConnectUtility.CheckCode(usernameBox.Text, Int32.Parse(textBox.Text)))
+                {
+                    MessageBox.Show("The register is a success come back for login", "Connected");
+                    Confirm.IsOpen = false;
+
+                }
+            }
         }
 
         private void Popup_disabled(object sender, MouseButtonEventArgs e)

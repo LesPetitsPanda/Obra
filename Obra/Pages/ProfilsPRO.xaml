@@ -13,7 +13,8 @@
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="6*"/>
+            <ColumnDefinition Width="4*"/>
+            <ColumnDefinition Width="2*"/>
         </Grid.ColumnDefinitions>
         <Grid>
             <Grid.RowDefinitions>
@@ -25,28 +26,28 @@
             <Button Click="Home_Click" Grid.Row="0" Grid.Column="0">
                 <Button.Template>
                     <ControlTemplate>
-                        <Image Source="/Resources/home.png"/>
+                        <Image Source="/Resources/Parametres.png"/>
                     </ControlTemplate>
                 </Button.Template>
             </Button>
             <Button Click="Message_Click" Grid.Row="1" Grid.Column="0">
                 <Button.Template>
                     <ControlTemplate>
-                        <Image Source="/Resources/messagerie.png"/>
+                        <Image Source="/Resources/Parametres.png"/>
                     </ControlTemplate>
                 </Button.Template>
             </Button>
             <Button Click="Profile_Click" Grid.Row="2">
                 <Button.Template>
                     <ControlTemplate>
-                        <Image Source="/Resources/profile.png"/>
+                        <Image Source="/Resources/Parametres.png"/>
                     </ControlTemplate>
                 </Button.Template>
             </Button>
             <Button Click="SettingsPart_Click" Grid.Row="3">
                 <Button.Template>
                     <ControlTemplate>
-                        <Image Source="/Resources/settings.png"/>
+                        <Image Source="/Resources/Parametres.png"/>
                     </ControlTemplate>
                 </Button.Template>
             </Button>

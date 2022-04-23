@@ -19,9 +19,10 @@ namespace Obra
 
         public readonly static string userDataSer = "logindata"; 
         private static MySQLConnectUtility __connect;
+        public static string connection = "server=localhost;user=root;database=world;port=3306;password=EUw3qS^XaPfz4U";
 
 
-      
+
         public static MySQLConnectUtility ConnectUtility
         {
             get => __connect;
@@ -29,7 +30,7 @@ namespace Obra
         
         public App()
         {
-            __connect = new MySQLConnectUtility("server=localhost;user=root;database=world;port=3306;password=EUw3qS^XaPfz4U");
+            __connect = new MySQLConnectUtility(connection);
             Uri iconUri = new Uri("pack://application:,,,/Resources/logo.ico", UriKind.RelativeOrAbsolute);
                 
         }

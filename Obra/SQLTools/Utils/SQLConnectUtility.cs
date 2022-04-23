@@ -60,7 +60,7 @@ namespace mySQLConnectio
         }
 
         //A simple function for check data
-        public static bool checkIfDataExist(MySqlConnection conn, RowType rowType, string username = "", string email = "", string location = "", bool isProfessional = false)
+        public static bool checkIfDataExist(MySqlConnection conn, RowType rowType, string username = "", string email = "", string location = "",bool isProfessional = false)
         {
             
             conn.Open();
@@ -88,10 +88,10 @@ namespace mySQLConnectio
             if (to_check == "") {
                 conn.Close();
                 return false; }
+            
             while (reader.Read())
             {
-                Console.WriteLine(to_check);
-                if (reader.GetString(RowTypeUtils.RowTypeInt(rowType)) == to_check)
+                if (reader.GetString(RowTypeUtils.RowTypeInt(rowType)) == to_check && ((reader.GetString(RowTypeUtils.RowTypeInt(RowType.CODE)) == "-1") ||isProfessional))
                 {
                     conn.Close();
                     return true;

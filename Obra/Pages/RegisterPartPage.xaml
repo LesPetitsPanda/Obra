@@ -62,5 +62,14 @@
             <Image x:Name="obra" Source="/Resources/Obra2.png" Height="50" Width="250">
             </Image>
         </StackPanel>
+        <Popup Name="Confirm" IsOpen="False" Width="250">
+            <StackPanel>
+                <TextBlock Name="text_confirm"></TextBlock>
+                <TextBox Name="confirm_register"></TextBox>
+                <Button Click="Confirm_OnClick">Confirm</Button>
+                <Button Click="Cancelled_OnClick">Return</Button>
+            </StackPanel>
+        </Popup>
     </Grid>
+   
 </Page>

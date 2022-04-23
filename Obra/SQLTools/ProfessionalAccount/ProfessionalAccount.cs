@@ -1,6 +1,7 @@
 ﻿using MySql.Data.MySqlClient;
 using mySQLConnect;
 using mySQLConnectio;
+using Obra.Utils;
 using System;
 using System.Collections.Generic;
 
@@ -31,7 +32,8 @@ namespace Obra.SQLTools.ProfessionalAccount
             get => conn;
         }
 
-        public ProfessionalAccount(string connection, string username, string password, string firstname, string email, int telephone)
+        public ProfessionalAccount(string connection, string username, string password, string firstname, string email,
+               int telephone)
         {
             conn = new MySqlConnection(connection);
             _mySQLConnect = new MySQLConnectUtility(conn);
@@ -48,17 +50,33 @@ namespace Obra.SQLTools.ProfessionalAccount
 
         private bool AddProfessional()
         {
-            if (_mySQLConnect.AddUser(_username, _password, Email, true) && SQLConnectUtility.checkIfDataExist(conn, RowType.USERNAME, Username, "", "", true))
+            if (_mySQLConnect.AddUser(_username, _password, Email, Int32.Parse(RandomUtils.GenerateFourNum())))
             {
                 conn.Open();
                 string sql =
-               "INSERT INTO professional (username, password, email, namefirstname, telephone, rate) VALUES ('" + Username + "','" + SQLConnectUtility.Sha1(Password) + "','" + Email + "','" + FirstName + "','" + Telephone + "','" + "','" + Rate + "')";
+                    "INSERT INTO professional (username, password, email, namefirstname, telephone, rate) VALUES ('" + Username + "','" +
+                    SQLConnectUtility.Sha1(Password) + "','" + Email + "','" + FirstName + "','" + Telephone + "','" + Rate + "')";
+
+                //, password, email, namefirstname, telephone, rate) VALUES ('" +
+                //      Username + "','" + SQLConnectUtility.Sha1(Password) + "','" + Email + "','" + FirstName + "','" +
+                //    Telephone + "','" + "','" + Rate + "')";
                 MySqlCommand cmd = new MySqlCommand(sql, conn);
                 cmd.ExecuteNonQuery();
                 conn.Close();
                 return true;
             }
+
             return false;
+        }
+
+        public void AddJob(string str)
+        {
+                conn.Open();
+                string sql =
+                    "INSERT INTO professional (job) VALUES ('" + str + "')";
+                MySqlCommand cmd = new MySqlCommand(sql, conn);
+                cmd.ExecuteNonQuery();
+                conn.Close();
         }
 
 
