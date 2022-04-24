@@ -20,7 +20,6 @@ C:\Users\alexa\OneDrive\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\Page
 C:\Users\alexa\OneDrive\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\Pages\MainPagePro.g.cs
 C:\Users\alexa\OneDrive\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\Pages\MessagePart.g.cs
 C:\Users\alexa\OneDrive\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\Pages\MessagePro.g.cs
-C:\Users\alexa\OneDrive\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\Pages\Profils.g.cs
 C:\Users\alexa\OneDrive\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\Pages\RegisterPartPage.g.cs
 C:\Users\alexa\OneDrive\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\Pages\RegisterProPage.g.cs
 C:\Users\alexa\OneDrive\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\Pages\SettingsPart.g.cs
@@ -34,7 +33,6 @@ C:\Users\alexa\OneDrive\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\Page
 C:\Users\alexa\OneDrive\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\Pages\MainPagePro.baml
 C:\Users\alexa\OneDrive\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\Pages\MessagePart.baml
 C:\Users\alexa\OneDrive\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\Pages\MessagePro.baml
-C:\Users\alexa\OneDrive\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\Pages\Profils.baml
 C:\Users\alexa\OneDrive\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\Pages\RegisterPartPage.baml
 C:\Users\alexa\OneDrive\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\Pages\RegisterProPage.baml
 C:\Users\alexa\OneDrive\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\Pages\SettingsPart.baml
@@ -108,3 +106,7 @@ C:\Users\valgi\Documents\GitHub\Obra\Obra\bin\Debug\net6.0-windows\ref\Obra.dll
 C:\Users\valgi\Documents\GitHub\Obra\Obra\bin\Debug\net6.0-windows\Obra.pdb
 C:\Users\valgi\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\Obra.genruntimeconfig.cache
 C:\Users\valgi\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\Obra.csproj.AssemblyReference.cache
+C:\Users\alexa\OneDrive\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\Pages\ProfilsPART.g.cs
+C:\Users\alexa\OneDrive\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\Pages\ProfilsPRO.g.cs
+C:\Users\alexa\OneDrive\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\Pages\ProfilsPART.baml
+C:\Users\alexa\OneDrive\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\Pages\ProfilsPRO.baml

@@ -20,6 +20,8 @@
       <None Remove="Resources\PA.png" />
       <None Remove="Resources\Parametres.png" />
       <None Remove="Resources\profile.png" />
+      <None Remove="Resources\profils.png" />
+      <None Remove="Resources\Reglades.png" />
       <None Remove="Resources\settings.png" />
     </ItemGroup>
 
@@ -47,6 +49,8 @@
       <Resource Include="Resources\PA.png" />
       <Resource Include="Resources\Parametres.png" />
       <Resource Include="Resources\profile.png" />
+      <Resource Include="Resources\profils.png" />
+      <Resource Include="Resources\Reglades.png" />
       <Resource Include="Resources\settings.png" />
     </ItemGroup>
 

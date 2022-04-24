@@ -109,6 +109,7 @@ namespace Obra.Pages
         {
             NavigationService ns = NavigationService.GetNavigationService(this);
             ns.Navigate(new Uri("Pages/LoginPage.xaml", UriKind.Relative));
+            MessageBoxResult selected = MessageBox.Show("Obra needs your data location to be functional");
         }
     }
 }

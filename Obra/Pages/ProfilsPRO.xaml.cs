@@ -27,22 +27,22 @@ namespace Obra.Pages
         private void SettingsPart_Click(object sender, RoutedEventArgs e)
         {
             NavigationService ns = NavigationService.GetNavigationService(this);
-            ns.Navigate(new Uri("Pages/SettingsPart.xaml", UriKind.Relative));
+            ns.Navigate(new Uri("Pages/SettingsPro.xaml", UriKind.Relative));
         }
         private void Home_Click(object sender, RoutedEventArgs e)
         {
             NavigationService ns = NavigationService.GetNavigationService(this);
-            ns.Navigate(new Uri("Pages/MainPagePart.xaml", UriKind.Relative));
+            ns.Navigate(new Uri("Pages/MainPagePro.xaml", UriKind.Relative));
         }
         private void Message_Click(object sender, RoutedEventArgs e)
         {
             NavigationService ns = NavigationService.GetNavigationService(this);
-            ns.Navigate(new Uri("Pages/MessagePart.xaml", UriKind.Relative));
+            ns.Navigate(new Uri("Pages/MessagePro.xaml", UriKind.Relative));
         }
         private void Profile_Click(object sender, RoutedEventArgs e)
         {
             NavigationService ns = NavigationService.GetNavigationService(this);
-            ns.Navigate(new Uri("Pages/Profils.xaml", UriKind.Relative));
+            ns.Navigate(new Uri("Pages/ProfilsPRO.xaml", UriKind.Relative));
         }
     }
 }

@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:Obra.Pages"
       mc:Ignorable="d" 
       ShowsNavigationUI="False"
-      Title="RegisterPartPage" Background="#DDEAF7" 
+      Title="RegisterPartPage" Background="#FFF" 
       Unloaded="Page_Unloaded">
     <Grid>
         <Grid.ColumnDefinitions>
@@ -23,14 +23,14 @@
             <Button Click="Home_Click" Grid.Row="0" Grid.Column="0">
                 <Button.Template>
                     <ControlTemplate>
-                        <Image Source="/Resources/home.png"/>
+                        <Image Source="/Resources/maison.png"/>
                     </ControlTemplate>
                 </Button.Template>
             </Button>
             <Button Click="Message_Click" Grid.Row="1" Grid.Column="0">
                 <Button.Template>
                     <ControlTemplate>
-                        <Image Source="/Resources/messagerie.png"/>
+                        <Image Source="/Resources/Messages.png" Height="567"/>
                     </ControlTemplate>
                 </Button.Template>
             </Button>

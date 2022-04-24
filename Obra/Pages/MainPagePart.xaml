@@ -5,8 +5,9 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
       xmlns:local="clr-namespace:Obra.Pages" xmlns:local1="clr-namespace:Obra.Utils"
       mc:Ignorable="d"
+      d:DesignHeight="450" d:DesignWidth="800"
       ShowsNavigationUI="False"
-      Title="LoginPage" Background="White"
+      Title="LoginPage" Background="#FFF"
       >
     <Grid>
         <Grid.ColumnDefinitions>
@@ -21,15 +22,15 @@
                 <RowDefinition Height="1*"/>
                 <RowDefinition Height="1*"/>
             </Grid.RowDefinitions>
-            <Button Click="Home_Click" Grid.Row="0" Grid.Column="0">
+            <Button Background="#C8D6E7" Click="Home_Click" Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Margin="0,-124,0,0" >
                 <Button.Template>
-                    <ControlTemplate>
-                        <Image Source="/Resources/home.png"/>
+                    <ControlTemplate >
+                        <Image Source="/Resources/Maison bleue.png" />
                     </ControlTemplate>
                 </Button.Template>
             </Button>
-            <Button Click="Message_Click" Grid.Row="1" Grid.Column="0">
-                <Button.Template>
+            <Button Click="Message_Click" Grid.Row="1" Grid.Column="0" >
+                <Button.Template >
                     <ControlTemplate>
                         <Image Source="/Resources/messagerie.png"/>
                     </ControlTemplate>
@@ -49,8 +50,8 @@
                     </ControlTemplate>
                 </Button.Template>
             </Button>
-        </Grid>
-        <ScrollViewer Grid.Column="1" Name="Scrollable" CanContentScroll="True">
+        </Grid >
+        <ScrollViewer Background ="#233A8B" Grid.Column="1" Name="Scrollable" CanContentScroll="True">
             <StackPanel Name="contentscroll">
                 
             </StackPanel>
