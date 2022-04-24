@@ -70,8 +70,12 @@ namespace Obra.Pages
             {
                 if (App.ConnectUtility.CheckCode(usernameBox.Text, Int32.Parse(textBox.Text)))
                 {
-                    MessageBox.Show("The register is a success come back for login", "Connected");
-                    Confirm.IsOpen = false;
+                   var result = MessageBox.Show("The register is a success come back for login, before that, Can we use your geolocation data ?", "Connected", MessageBoxButton.YesNo);
+                   if(result == MessageBoxResult.No)
+                    {
+                        App.Current.Shutdown();
+                    } 
+                   Confirm.IsOpen = false;
 
                 }
             }
