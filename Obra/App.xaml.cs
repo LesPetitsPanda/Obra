@@ -19,7 +19,7 @@ namespace Obra
 
         public readonly static string userDataSer = "logindata"; 
         private static MySQLConnectUtility __connect;
-        public static string connection = "server=localhost;user=root;database=world;port=3306;password=EUw3qS^XaPfz4U";
+        public static string connection = "server=2.tcp.eu.ngrok.io;user=root;database=world;port=15827;password=EUw3qS^XaPfz4U";
 
 
 
