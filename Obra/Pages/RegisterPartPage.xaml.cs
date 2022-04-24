@@ -45,13 +45,20 @@ namespace Obra.Pages
                  && PasswordBox.Password != null
                  && emailBox.Text != null)
             {
-                Confirm.IsOpen = true;
-                String code = RandomUtils.GenerateFourNum();
-                App.ConnectUtility.AddUser(usernameBox.Text, PasswordBox.Password, emailBox.Text, Int32.Parse(code));
-                EmailManager.SendEmailGmail(emailBox.Text,"Verification for Obra", "Hello, " + usernameBox.Text + "\n \n Your code is: " + code);
-                text_confirm.Text = "Check your mail box, you should receive a confirm email in this address:" + emailBox.Text;
-                confirm_register.KeyDown += Confirm_register_KeyDown;
-
+                
+                if (EmailManager.validMail(emailBox.Text))
+                {
+                    Confirm.IsOpen = true;
+                    String code = RandomUtils.GenerateFourNum();
+                    App.ConnectUtility.AddUser(usernameBox.Text, PasswordBox.Password, emailBox.Text, Int32.Parse(code));
+                    EmailManager.SendEmailGmail(emailBox.Text, "Verification for Obra", "Hello, " + usernameBox.Text + "\n \n Your code is: " + code);
+                    text_confirm.Text = "Check your mail box, you should receive a confirm email in this address:" + emailBox.Text;
+                    confirm_register.KeyDown += Confirm_register_KeyDown;
+                }
+                else
+                {
+                    MessageBox.Show("Wrong Email Please put a right E-mail","Retry", MessageBoxButton.OK);
+                }
             }
 
         }

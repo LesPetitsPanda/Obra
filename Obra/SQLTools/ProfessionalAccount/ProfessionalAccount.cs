@@ -33,7 +33,7 @@ namespace Obra.SQLTools.ProfessionalAccount
         }
 
         public ProfessionalAccount(string connection, string username, string password, string firstname, string email,
-               int telephone)
+               int telephone, int code)
         {
             conn = new MySqlConnection(connection);
             _mySQLConnect = new MySQLConnectUtility(conn);
@@ -43,14 +43,14 @@ namespace Obra.SQLTools.ProfessionalAccount
             _firstName = firstname;
             _telephone = telephone;
             _rate = -1;
-            AddProfessional();
+            AddProfessional(code);
             _password = mySQLConnectio.SQLConnectUtility.Sha1(password);
 
         }
 
-        private bool AddProfessional()
+        private bool AddProfessional(int code)
         {
-            if (_mySQLConnect.AddUser(_username, _password, Email, Int32.Parse(RandomUtils.GenerateFourNum())))
+            if (_mySQLConnect.AddUser(_username, _password, Email, code, true))
             {
                 conn.Open();
                 string sql =
@@ -66,6 +66,20 @@ namespace Obra.SQLTools.ProfessionalAccount
                 return true;
             }
 
+            return false;
+        }
+
+        public static bool RemoveProfessional(string user, MySqlConnection conn)
+        {
+            if(SQLConnectUtility.checkIfDataExist(conn, RowType.USERNAME, user, "","",true))
+            {
+                conn.Open();
+                String sql = "DELETE FROM professional WHERE " + DataUpdateType.USERNAME.GetString() + " = '" + user + "';";
+                MySqlCommand command = new MySqlCommand(sql, conn);
+                command.ExecuteNonQuery();
+                conn.Close();
+                return true;
+            }
             return false;
         }
 

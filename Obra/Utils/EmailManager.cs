@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Net;
 using System.Net.Mail;
@@ -31,6 +32,15 @@ namespace Obra.Utils
             {
                 smtp.Send(message);
             }
+        }
+
+        public static bool validMail(string address)
+        {
+            EmailAddressAttribute e = new EmailAddressAttribute();
+            if (e.IsValid(address))
+                return true;
+            else
+                return false;
         }
     }
 }
