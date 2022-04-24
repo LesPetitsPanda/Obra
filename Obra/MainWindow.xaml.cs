@@ -48,7 +48,7 @@ namespace Obra
                  {
                      this.Source = new Uri("Pages/MainPagePart.xaml", UriKind.Relative);
                  }*/
-            this.Source = new Uri("Pages/MainPagePart.xaml", UriKind.Relative);
+            this.Source = new Uri("Pages/MainPagePro.xaml", UriKind.Relative);
 
         }
 
