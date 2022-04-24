@@ -34,7 +34,7 @@ namespace Obra.Pages
 
                 }
                 SerializerUtils.SerializeObject(SerializerUtils.writeToJSON("bool", "islogin", "true"), App.userDataSer);
-                
+                Localisation.Localize.GetIpOfUser();
             }
         else
          {
