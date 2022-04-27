@@ -44,5 +44,10 @@ namespace Obra.Pages
             NavigationService ns = NavigationService.GetNavigationService(this);
             ns.Navigate(new Uri("Pages/ProfilsPART.xaml", UriKind.Relative));
         }
+        private void Message(object sender, RoutedEventArgs e)
+        {
+            NavigationService ns = NavigationService.GetNavigationService(this);
+            ns.Navigate(new Uri("Pages/MessagePart.xaml", UriKind.Relative));
+        }
     }
 }
