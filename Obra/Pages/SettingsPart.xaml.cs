@@ -53,18 +53,15 @@ namespace Obra.Pages
         }
         private void Username(object sender, RoutedEventArgs e)
         {
-            NavigationService ns = NavigationService.GetNavigationService(this);
-            ns.Navigate(new Uri("Pages/ProfilsPRO.xaml", UriKind.Relative));
+           
         }
-        private void Job(object sender, RoutedEventArgs e)
+        private void Password(object sender, RoutedEventArgs e)
         {
-            NavigationService ns = NavigationService.GetNavigationService(this);
-            ns.Navigate(new Uri("Pages/ProfilsPRO.xaml", UriKind.Relative));
+           
         }
         private void Email(object sender, RoutedEventArgs e)
         {
-            NavigationService ns = NavigationService.GetNavigationService(this);
-            ns.Navigate(new Uri("Pages/ProfilsPRO.xaml", UriKind.Relative));
+            
         }
 
     }

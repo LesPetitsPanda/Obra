@@ -75,21 +75,25 @@
                         <RowDefinition Height="1*"/>
                         <RowDefinition Height="1*"/>
                         <RowDefinition Height="1*"/>
+                        <RowDefinition Height="1*"/>
                     </Grid.RowDefinitions>
                     <TextBlock Text="Username" FontSize="20" Margin="10,19,1,0"/>
                     <TextBlock Text="Job" Grid.Row="2" FontSize="20" Margin="10,19,21,0"/>
-                    <TextBlock Text="City" Grid.Row="3" FontSize="20" Margin="10,19,5,10"/>
+                    <TextBlock Text="Password" Grid.Row="3" FontSize="20" Margin="10,19,5,10"/>
                     <TextBlock Text="Rate"  Grid.Row="4" FontSize="20" Margin="10,19,35,0"/>
                     <TextBlock Text="E-mail"  Grid.Row="1" FontSize="20" Margin="10,19,17,10"/>
-                    <TextBox Grid.Row="0" Grid.Column="1" Height="30" Width="250" Margin="10,21,89,21"/>
-                    <TextBox Grid.Row="1" Grid.Column="1" Height="30" Width="250" Margin="10,21,89,21"/>
-                    <TextBox Grid.Row="2" Grid.Column="1" Height="30" Width="250" Margin="10,21,89,21"/>
-                    <TextBox Grid.Row="3" Grid.Column="1" Height="30" Width="250" Margin="10,21,89,21"/>
-                    <TextBox Grid.Row="4" Grid.Column="1" Height="30" Width="250" Margin="10,21,89,21"/>
+                    <TextBlock Text="City"  Grid.Row="5" FontSize="20" Margin="10,19,4,5"/>
+                    <TextBox Grid.Row="0" Grid.Column="1" Width="250" Margin="10,21,39,5"/>
+                    <TextBox Grid.Row="1" Grid.Column="1" Width="250" Margin="10,21,39,6"/>
+                    <TextBox Grid.Row="2" Grid.Column="1" Width="250" Margin="10,21,39,6"/>
+                    <TextBox Grid.Row="3" Grid.Column="1" Width="250" Margin="10,21,39,6"/>
+                    <TextBox Grid.Row="4" Grid.Column="1" Width="250" Margin="10,21,39,6"/>
+                    <TextBox Grid.Row="5" Grid.Column="1" Width="250" Margin="10,21,39,6"/>
                     <Button Grid.Row="0" Grid.Column="2" Height="40" Width="120" Content="Change Username" Click="Username" Background="AliceBlue"/>
                     <Button Grid.Row="1" Grid.Column="2" Height="40" Width="120" Content="Change E-mail" Click="Email" Background="AliceBlue" />
                     <Button Grid.Row="2" Grid.Column="2" Height="40" Width="120" Content="Change Job" Click="Job" Background="AliceBlue"/>
-                    <Button Grid.Column="1" Grid.Row="5" Height="50" Width="200" Content="Disconnect" Click="disconnectEvent" FontSize="20" Background="AliceBlue"/>
+                    <Button Grid.Row="3" Grid.Column="2" Height="40" Width="120" Content="Change Password" Click="Job" Background="AliceBlue"/>
+                    <Button Grid.Column="1" Grid.Row="6" Height="45" Width="200" Content="Disconnect" Click="disconnectEvent" FontSize="20" Background="AliceBlue"/>
                 </Grid>
             </Border>
         </Grid>
