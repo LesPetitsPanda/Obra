@@ -53,7 +53,6 @@
         </Grid >
         <ScrollViewer Background ="#233A8B" Grid.Column="1" Name="Scrollable" CanContentScroll="True">
             <StackPanel Name="contentscroll">
-                
             </StackPanel>
         </ScrollViewer>
         <StackPanel Grid.Column="2">

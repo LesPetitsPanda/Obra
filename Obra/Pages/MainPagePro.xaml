@@ -51,7 +51,7 @@
                 </Button.Template>
             </Button>
         </Grid >
-        <Grid Margin="114,0,0,0" RenderTransformOrigin="0.504,0.527" Background="#233A8B" Grid.ColumnSpan="2">
+        <Grid Grid.Column="1" RenderTransformOrigin="0.504,0.527" Background="#233A8B" Grid.ColumnSpan="2">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
                 <ColumnDefinition Width="0*"/>
@@ -70,12 +70,9 @@
                 <Button Content="Create a meeting" Background="#A3CEF3" BorderBrush="#A3CEF3" Click="Button_RDV" Width="130" Margin="0,192,44,0" HorizontalAlignment="Right" RenderTransformOrigin="0.698,-1.26" Height="42" VerticalAlignment="Top"/>
 
             </Grid>
-
-            <Grid Margin="0,220,0,104" Grid.RowSpan="2">
-                <Label FontSize="20" Margin="82,24,-404,0" Height="78" VerticalAlignment="Top">Meetings :</Label>
-            </Grid>
+            <Label Grid.Row="1" FontSize="20" Margin="82,24,10,0" Height="39" VerticalAlignment="Top">Meetings :</Label>
             <Grid Margin="0,37,85,34" Grid.Row="1">
-                <TextBox Name="RD" Text= "Meetings" Margin="84,0,-62,-25"/>
+                <TextBlock Name="RD" Background="White" Margin="84,25,-62,-25"/>
             </Grid >
         </Grid>
     </Grid>

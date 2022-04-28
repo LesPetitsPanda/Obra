@@ -80,19 +80,13 @@ namespace Obra.Pages
                 {
                     temp.Add(date);
                 }
-                r.Add(name,temp);
-                for(int i = 0; i < r.Count;i++)
-                {
-                    int j = 0;
-                    while (j < r[names[i]].Count)
-                    {
-                        rep += r[names[i]][j].ToString(format[0]);
-                        j += 1;
-                    }
-                    rep += " : " + names[i];
-                    rep += "\n";
+                if (temp.Count == 1) {
+                    RD.Inlines.Add(temp[0].ToString("MM/dd") + ": " + name + "\n");
                 }
-                RD.Text = rep;
+                else
+                {
+                    RD.Inlines.Add(temp[0].ToString("MM/dd") + "-" + temp[temp.Count-1].ToString("MM/dd") + ": " + name + "\n");
+                }
             }
             else
             {

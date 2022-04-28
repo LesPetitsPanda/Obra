@@ -42,7 +42,7 @@
                         <TextBlock HorizontalAlignment="Center"> E-Mail</TextBlock>
                         <TextBox Name="emailBox"  HorizontalAlignment="Center" Width="100"></TextBox>
                         <Popup Placement="Bottom" Name="PopupEmail" IsOpen="False" 
-                   PlacementTarget="{Binding ElementName=PasswordBox}">
+                   PlacementTarget="{Binding ElementName=emailBox}">
                             <TextBlock Height="60" Width="200" 
                            Background="#E33F3F"
                            TextWrapping="Wrap" > Wrong email or email is already used !</TextBlock>
@@ -62,9 +62,9 @@
             <Image x:Name="obra" Source="/Resources/Obra2.png" Height="50" Width="250">
             </Image>
         </StackPanel>
-        <Popup Name="Confirm" IsOpen="False" Width="250">
+        <Popup Name="Confirm" IsOpen="True" VerticalAlignment="Center" Width="150">
             <StackPanel>
-                <TextBlock Name="text_confirm"></TextBlock>
+                <TextBlock Background="White" Name="text_confirm">Enter your code here:</TextBlock>
                 <TextBox Name="confirm_register"></TextBox>
                 <Button Click="Confirm_OnClick">Confirm</Button>
                 <Button Click="Cancelled_OnClick">Return</Button>

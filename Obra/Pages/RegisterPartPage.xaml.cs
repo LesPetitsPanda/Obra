@@ -68,7 +68,17 @@ namespace Obra.Pages
             {
                 if (App.ConnectUtility.CheckCode(usernameBox.Text, Int32.Parse(confirm_register.Text)))
                 {
-                    MessageBox.Show("The register is a success come back for login", "Connected");
+                   
+                    MessageBoxResult selected = MessageBox.Show("Obra needs your data location to be functional, do you agree with this ?", "Warning !", MessageBoxButton.YesNo);
+                    if(selected == MessageBoxResult.Yes)
+                    {
+                        MessageBox.Show("The register is a success come back for login", "Connected");
+                    }
+                    else
+                    {
+                        MessageBox.Show("You need location for use application", "Error");
+                        App.Current.Shutdown();
+                    }
                     Confirm.IsOpen=false;
                 }
                 else
@@ -90,9 +100,17 @@ namespace Obra.Pages
             {
                 if(App.ConnectUtility.CheckCode(usernameBox.Text, Int32.Parse(textBox.Text)))
                 {
-                    MessageBox.Show("The register is a success come back for login", "Connected");
+                    MessageBoxResult selected = MessageBox.Show("Obra needs your data location to be functional, do you agree with this ?", "Warning !", MessageBoxButton.YesNo);
+                    if (selected == MessageBoxResult.Yes)
+                    {
+                        MessageBox.Show("The register is a success come back for login", "Connected");
+                    }
+                    else
+                    {
+                        MessageBox.Show("You need location for use application", "Error");
+                        App.Current.Shutdown();
+                    }
                     Confirm.IsOpen = false;
-
                 }
             }
         }
@@ -109,7 +127,7 @@ namespace Obra.Pages
         {
             NavigationService ns = NavigationService.GetNavigationService(this);
             ns.Navigate(new Uri("Pages/LoginPage.xaml", UriKind.Relative));
-            MessageBoxResult selected = MessageBox.Show("Obra needs your data location to be functional");
+           
         }
     }
 }

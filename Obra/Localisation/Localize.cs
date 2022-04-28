@@ -27,6 +27,23 @@ namespace Obra.Localisation
 
             return ipInfo.Loc;
         }
+
+        public static string GetCityByIp(string ip)
+        {
+
+            IpInfo ipInfo = new IpInfo();
+            try
+            {
+                string info = new WebClient().DownloadString("http://ipinfo.io/" + ip);
+                ipInfo = JsonConvert.DeserializeObject<IpInfo>(info);
+            }
+            catch (Exception)
+            {
+                ipInfo.Country = null;
+            }
+
+            return ipInfo.City;
+        }
         public static double GetDistanceBetween(string loc1, string loc2)
         {
             string[] loc1A = loc1.Split(",");

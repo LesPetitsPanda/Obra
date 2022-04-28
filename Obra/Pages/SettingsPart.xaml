@@ -20,10 +20,10 @@
                 <RowDefinition Height="1*"/>
                 <RowDefinition Height="1*"/>
             </Grid.RowDefinitions>
-            <Button Click="Home_Click" Grid.Row="0" Grid.Column="0">
+            <Button Click="Home_Click" Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Margin="0,-124,0,0" >
                 <Button.Template>
-                    <ControlTemplate>
-                        <Image Source="/Resources/maison.png"/>
+                    <ControlTemplate >
+                        <Image Source="/Resources/maison.png" />
                     </ControlTemplate>
                 </Button.Template>
             </Button>
@@ -87,7 +87,6 @@
                     <Button Grid.Row="2" Grid.Column="2" Height="40" Width="120" Content="Change Password" Click="Password" Background="AliceBlue"/>
                     <Button Grid.Column="1" Grid.Row="4" Height="50" Width="200" Content="Disconnect" Click="disconnectEvent" FontSize="20" Background="AliceBlue"/>
                 </Grid>
-
             </Border>
         </Grid>
     </Grid>

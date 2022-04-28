@@ -91,7 +91,7 @@ namespace mySQLConnectio
             
             while (reader.Read())
             {
-                if (reader.GetString(RowTypeUtils.RowTypeInt(rowType)) == to_check && ((reader.GetString(RowTypeUtils.RowTypeInt(RowType.CODE)) == "-1") ||isProfessional))
+                if (reader.GetString(RowTypeUtils.RowTypeInt(rowType)) == to_check && (isProfessional||(reader.GetString(RowTypeUtils.RowTypeInt(RowType.CODE)) == "-1")))
                 {
                     conn.Close();
                     return true;

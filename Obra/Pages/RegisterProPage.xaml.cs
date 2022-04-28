@@ -86,7 +86,16 @@ namespace Obra.Pages
             {
                 if (App.ConnectUtility.CheckCode(usernameBox.Text, Int32.Parse(confirm_register.Text)))
                 {
-                    MessageBox.Show("The register is a success come back for login", "Connected");
+                    MessageBoxResult selected = MessageBox.Show("Obra needs your data location to be functional, do you agree with this ?", "Warning !", MessageBoxButton.YesNo);
+                    if (selected == MessageBoxResult.Yes)
+                    {
+                        MessageBox.Show("The register is a success come back for login", "Connected");
+                    }
+                    else
+                    {
+                        MessageBox.Show("You need location for use application", "Error");
+                        App.Current.Shutdown();
+                    }
                     Confirm.IsOpen = false;
                 }
                 else
