@@ -59,6 +59,7 @@ namespace Obra.Localisation
 
         public static string GetIpOfUser()
         {
+            return "163.5.2.71";
             string address = "";
             if(Utils.SerializerUtils.DeserializeObject("userip", "string", "ip") != null)
             {

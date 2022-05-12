@@ -30,7 +30,7 @@ namespace Obra.Pages
             {
                 PopupPassword.IsOpen = true;
             }
-            if (SQLConnectUtility.checkIfDataExist(App.ConnectUtility.Connection, RowType.USERNAME, usernameBox.Text))
+            if (SQLConnectUtility.checkIfDataExist(App.ConnectUtility.Connection, RowType.USERNAME, usernameBox.Text) && usernameBox.Text.Contains(':'))
             {
                 PopupUsername.IsOpen = true;
             }

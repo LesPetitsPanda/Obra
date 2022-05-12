@@ -25,10 +25,9 @@ namespace Obra.Pages
     public partial class MessagePart : Page
     {
         private TcpClient tcp;
-        private StreamWriter SwSender;
-        private StreamReader SrReciever;
         private Thread thrMessaging;
         private delegate void NewMessageCallBack(string strMessage);
+        private string UsertoSend = "Joseph";
         public MessagePart()
         {
             InitializeComponent();
@@ -38,11 +37,15 @@ namespace Obra.Pages
 
         private void Page_Unloaded(object sender, RoutedEventArgs e)
         {
+            //Thread.Sleep(50);
             tcp.Close();
         }
         private void Window_Closing(object sender, RoutedEventArgs e)
         {
+            //Thread.Sleep(50);
             tcp.Close();
+            TCPUtils.LoadMessagesUser.SerializeConversation(content_messages, UsertoSend);
+            thrMessaging.Join();
             Thread.CurrentThread.Join();
         }
         private void SettingsPart_Click(object sender, RoutedEventArgs e)
@@ -63,12 +66,13 @@ namespace Obra.Pages
         private void Profile_Click(object sender, RoutedEventArgs e)
         {
             NavigationService ns = NavigationService.GetNavigationService(this);
-            ns.Navigate(new Uri("Pages/Profils.xaml", UriKind.Relative));
+            ns.Navigate(new Uri("Pages/ProfilsPart.xaml", UriKind.Relative));
         }
 
         private void MakeConnexion(object sender, EventArgs e)
         {
             Connect();
+            content_messages.Text = TCPUtils.LoadMessagesUser.DeSerializeConversation(UsertoSend);
         }
 
         private void OnKeyDown(object sender, KeyEventArgs e)
@@ -85,33 +89,43 @@ namespace Obra.Pages
         private void SendMessage(string str)
         {
             Stream stm = tcp.GetStream();
-
+            UpdateMessage(App.Username + ": " + str);
+            str = UsertoSend + ": " + str;
             ASCIIEncoding asen = new ASCIIEncoding();
             byte[] ba = asen.GetBytes(str);
-            Console.WriteLine("Transmitting.....");
 
             stm.Write(ba, 0, ba.Length);
-            UpdateMessage(str);
+
             //Receive();
         }
 
         private void Receive()
         {
-            SrReciever = new StreamReader(tcp.GetStream());
+            Stream str = tcp.GetStream();
             while (true)
             {
-                
-                string response = SrReciever.ReadLine();
-                content_messages.Dispatcher.Invoke(new NewMessageCallBack(this.UpdateMessage), new object[] { "testtt" });
+                string res = "";
+                byte[] bb = new byte[100];
+                int k = str.Read(bb, 0, 100);
+                for (int i = 0; i < k; i++)
+                    res += Convert.ToChar(bb[i]);
+                if (res != "")
+                {
+                    content_messages.Dispatcher.Invoke(new NewMessageCallBack(this.UpdateMessage), new object[] { res });
+                }
             }
-        }
 
-        private void Connect()
+        }
+        public void Connect()
         {
             tcp = new TcpClient();
-            UpdateMessage("connecting");
             tcp.Connect(IPAddress.Parse("127.0.0.1"), 8001);
-            UpdateMessage("Connected");
+            Stream stm = tcp.GetStream();
+            string str = App.Username + ":";
+            ASCIIEncoding asen = new ASCIIEncoding();
+            byte[] ba = asen.GetBytes(str);
+
+            stm.Write(ba, 0, ba.Length);
             thrMessaging = new Thread(new ThreadStart(Receive));
             thrMessaging.IsBackground = true;
             thrMessaging.Start();

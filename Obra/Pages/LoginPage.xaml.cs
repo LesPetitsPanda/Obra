@@ -21,7 +21,6 @@ namespace Obra.Pages
         if(Obra.App.ConnectUtility.VerifyPassword(PasswordBox.Password, usernameBox.Text))
          {
             log.Content = "login";
-            Console.Write("okkk");
             if (App.ConnectUtility.isProfessional(usernameBox.Text))
                 {
                     MainPageProEvent(sender, e);
@@ -33,6 +32,8 @@ namespace Obra.Pages
                     SerializerUtils.SerializeObject(SerializerUtils.writeToJSON("bool", "ispro", "false"), App.userDataSer);
 
                 }
+                App.Username = usernameBox.Text;
+                SerializerUtils.SerializeObject(SerializerUtils.writeToJSON("string", "username", usernameBox.Text), App.userDataSer);
                 SerializerUtils.SerializeObject(SerializerUtils.writeToJSON("bool", "islogin", "true"), App.userDataSer);
                 Localisation.Localize.GetIpOfUser();
             }
@@ -40,6 +41,8 @@ namespace Obra.Pages
          {
             log.Content = "not login";
          }
+            Utils.SerializerUtils.SerializeObject(Utils.SerializerUtils.writeToJSON("string", "userlogin", usernameBox.Text), "userlogin");
+
         }
         private void MainPageProEvent(object sender, RoutedEventArgs e)
         {

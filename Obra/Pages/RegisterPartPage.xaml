@@ -62,7 +62,7 @@
             <Image x:Name="obra" Source="/Resources/Obra2.png" Height="50" Width="250">
             </Image>
         </StackPanel>
-        <Popup Name="Confirm" IsOpen="True" VerticalAlignment="Center" Width="150">
+        <Popup Name="Confirm" IsOpen="False" VerticalAlignment="Center" Width="150">
             <StackPanel>
                 <TextBlock Background="White" Name="text_confirm">Enter your code here:</TextBlock>
                 <TextBox Name="confirm_register"></TextBox>

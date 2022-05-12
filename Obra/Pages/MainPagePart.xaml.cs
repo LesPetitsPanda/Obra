@@ -47,7 +47,7 @@ namespace Obra.Pages
         private void Profile_Click(object sender, RoutedEventArgs e)
         {
             NavigationService ns = NavigationService.GetNavigationService(this);
-            ns.Navigate(new Uri("Pages/Profils.xaml", UriKind.Relative));
+            ns.Navigate(new Uri("Pages/ProfilsPart.xaml", UriKind.Relative));
         }
 
         private void ContentClickable(object sender, RoutedEventArgs e)
@@ -227,6 +227,7 @@ namespace Obra.Pages
             border.HorizontalAlignment = HorizontalAlignment.Center;
             border.Background = Brushes.White;
             border.Width = Scrollable.Width - 20;
+            border.Width = 200;
             return border;
         }
        

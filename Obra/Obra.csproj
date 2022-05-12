@@ -17,6 +17,7 @@
       <None Remove="Resources\Maison bleue.png" />
       <None Remove="Resources\maison.png" />
       <None Remove="Resources\messagerie.png" />
+      <None Remove="Resources\Messages.png" />
       <None Remove="Resources\Obra.png" />
       <None Remove="Resources\Obra2.png" />
       <None Remove="Resources\PA.png" />
@@ -28,12 +29,17 @@
     </ItemGroup>
 
     <ItemGroup>
+      <None Include="..\.editorconfig" Link=".editorconfig" />
+    </ItemGroup>
+
+    <ItemGroup>
       <Resource Include="Resources\home.png" />
       <Resource Include="Resources\Logo 1.png" />
       <Resource Include="Resources\Logo C.png" />
       <Resource Include="Resources\Maison bleue.png" />
       <Resource Include="Resources\maison.png" />
       <Resource Include="Resources\messagerie.png" />
+      <Resource Include="Resources\Messages.png" />
       <Resource Include="Resources\Obra.png" />
     </ItemGroup>
 

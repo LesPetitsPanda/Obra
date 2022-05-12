@@ -74,7 +74,6 @@ C:\Users\valgi\Documents\GitHub\Obra\Obra\bin\Debug\net6.0-windows\Obra.exe
 C:\Users\valgi\Documents\GitHub\Obra\Obra\bin\Debug\net6.0-windows\Obra.deps.json
 C:\Users\valgi\Documents\GitHub\Obra\Obra\bin\Debug\net6.0-windows\Obra.runtimeconfig.json
 C:\Users\valgi\Documents\GitHub\Obra\Obra\bin\Debug\net6.0-windows\Obra.dll
-C:\Users\valgi\Documents\GitHub\Obra\Obra\bin\Debug\net6.0-windows\ref\Obra.dll
 C:\Users\valgi\Documents\GitHub\Obra\Obra\bin\Debug\net6.0-windows\Obra.pdb
 C:\Users\valgi\Documents\GitHub\Obra\Obra\bin\Debug\net6.0-windows\BouncyCastle.Crypto.dll
 C:\Users\valgi\Documents\GitHub\Obra\Obra\bin\Debug\net6.0-windows\Google.Protobuf.dll
@@ -109,3 +108,6 @@ C:\Users\valgi\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\Obra.dll
 C:\Users\valgi\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\ref\Obra.dll
 C:\Users\valgi\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\Obra.pdb
 C:\Users\valgi\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\Obra.genruntimeconfig.cache
+C:\Users\valgi\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\refint\Obra.dll
+C:\Users\valgi\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\Pages\MessageManager.g.cs
+C:\Users\valgi\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\Pages\MessageManager.baml
