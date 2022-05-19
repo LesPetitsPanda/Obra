@@ -33,7 +33,6 @@ namespace Obra.Pages
 
                 }
                 App.Username = usernameBox.Text;
-                SerializerUtils.SerializeObject(SerializerUtils.writeToJSON("string", "username", usernameBox.Text), App.userDataSer);
                 SerializerUtils.SerializeObject(SerializerUtils.writeToJSON("bool", "islogin", "true"), App.userDataSer);
                 Localisation.Localize.GetIpOfUser();
             }

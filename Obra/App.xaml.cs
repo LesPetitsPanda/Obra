@@ -18,7 +18,7 @@ namespace Obra
     public partial class App : Application
     {
 
-        public readonly static string userDataSer = "logindata"; 
+        public readonly static string userDataSer = "userlogin"; 
         private static MySQLConnectUtility __connect;
         public static string connection = "server=162.19.74.161;database=world;port=3306;password=123456789";
         private static string username;

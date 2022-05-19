@@ -24,7 +24,18 @@ namespace Obra.Pages
         public SettingsPart()
         {
             InitializeComponent();
+            Loaded += SettingsPart_Loaded;
         }
+
+        private void SettingsPart_Loaded(object sender, RoutedEventArgs e)
+        {
+            UsernameBox.Text = App.Username;
+            EmailBox.Text = App.ConnectUtility.getData(App.Username, mySQLConnectio.RowType.EMAIL);
+            PasswordBox.Text = "***************";
+            Loaded-=SettingsPart_Loaded;
+
+        }
+
         private void disconnectEvent(object sender, RoutedEventArgs args)
         {
             SerializerUtils.SerializeObject(SerializerUtils.writeToJSON("bool", "islogin", "false"), App.userDataSer);
@@ -51,17 +62,55 @@ namespace Obra.Pages
             NavigationService ns = NavigationService.GetNavigationService(this);
             ns.Navigate(new Uri("Pages/ProfilsPART.xaml", UriKind.Relative));
         }
-        private void Username(object sender, RoutedEventArgs e)
+        private void Username(object sender, KeyEventArgs e)
         {
-           
+           if (e.Key == Key.Enter)
+            {
+                MessageBoxResult messageBox = MessageBox.Show("You are about to change your username. Are you sure ?","Warning",MessageBoxButton.YesNo);
+                if (messageBox == MessageBoxResult.Yes)
+                {
+                    App.ConnectUtility.UpdateData(App.Username,"",mySQLConnectio.DataUpdateType.USERNAME, UsernameBox.Text);
+                    SerializerUtils.SerializeObject(SerializerUtils.writeToJSON("string", "username", UsernameBox.Text), App.userDataSer);
+                    App.Username = UsernameBox.Text;
+                }
+                else
+                {
+                    UsernameBox.Text = App.Username;
+                }
+             
+            }
         }
-        private void Password(object sender, RoutedEventArgs e)
+        private void Password(object sender, KeyEventArgs e)
         {
-           
+            if (e.Key == Key.Enter)
+            {
+                MessageBoxResult messageBox = MessageBox.Show("You are about to change your password. Are you sure ?", "Warning", MessageBoxButton.YesNo);
+                if (messageBox == MessageBoxResult.Yes)
+                {
+                    App.ConnectUtility.UpdateData(App.Username, "", mySQLConnectio.DataUpdateType.PASSWORD, PasswordBox.Text);
+                }
+                else
+                {
+                    PasswordBox.Text = "*******";
+                }
+
+            }
         }
-        private void Email(object sender, RoutedEventArgs e)
+        private void Email(object sender, KeyEventArgs e)
         {
-            
+            if (e.Key == Key.Enter)
+            {
+                MessageBoxResult messageBox = MessageBox.Show("You are about to change your email. Are you sure ?", "Warning", MessageBoxButton.YesNo);
+                if (messageBox == MessageBoxResult.Yes)
+                {
+                    App.ConnectUtility.UpdateData(App.Username, "", mySQLConnectio.DataUpdateType.EMAIL, EmailBox.Text);
+                }
+                else
+                {
+                    EmailBox.Text = App.ConnectUtility.getData(App.Username, mySQLConnectio.RowType.EMAIL);
+                }
+
+            }
         }
 
     }

@@ -199,20 +199,15 @@ namespace mySQLConnect
             return false;
         }
 
-        public bool UpdateData(String username, String email, DataUpdateType dataUpdateType,String new_data, String password)
+        public bool UpdateData(String username, String email, DataUpdateType dataUpdateType,String new_data, String password="")
         {
-            if (VerifyPassword(password, username))
+            if (SQLConnectUtility.checkIfDataExist(conn, RowType.USERNAME, username))
             {
                 conn.Open();
                 MySqlCommand cmd = new MySqlCommand();
                 cmd.CommandText = "registration";
                 cmd.Connection = conn;
                 cmd.CommandType = CommandType.TableDirect;
-                MySqlDataReader reader = cmd.ExecuteReader();
-                while (reader.Read())
-                {
-                    if (reader.GetString((int)RowType.EMAIL)== email || reader.GetString((int)RowType.USERNAME) == username)
-                    {
                         String sql= "";
                         switch (dataUpdateType)
                         {
@@ -221,7 +216,7 @@ namespace mySQLConnect
                                 
                                 break;
                             case DataUpdateType.USERNAME:
-                                sql = "UPDATE registration SET " + DataUpdateType.USERNAME.GetString() + " = '" + new_data + "' WHERE " + DataUpdateType.EMAIL + " = '" + password+ "';";
+                                sql = "UPDATE registration SET " + DataUpdateType.USERNAME.GetString() + " = '" + new_data + "' WHERE " + DataUpdateType.USERNAME + " = '" + username+ "';";
                                 break;
                             case DataUpdateType.PASSWORD:
                                 sql = "UPDATE registration SET " + DataUpdateType.PASSWORD.GetString() + " = '" + SQLConnectUtility.Sha1(new_data) + "' WHERE " + DataUpdateType.USERNAME + " = '" + username + "';";
@@ -234,8 +229,6 @@ namespace mySQLConnect
                         command.ExecuteNonQuery();
                         conn.Close();
                         return true;
-                    }
-                }
             }
             if (SQLConnectUtility.checkIfDataExist(conn, RowType.USERNAME, username) && password == "")
             {
@@ -272,6 +265,26 @@ namespace mySQLConnect
                 conn.Close();
                 return true;
            
+        }
+        public string getData(string username, RowType rowType)
+        {
+            conn.Open();
+            MySqlCommand cmd = new MySqlCommand();
+            cmd.CommandText = "registration";
+            cmd.Connection = conn;
+            cmd.CommandType = CommandType.TableDirect;
+            MySqlDataReader reader = cmd.ExecuteReader();
+            while (reader.Read())
+            {
+                if (reader.GetString(1) == username)
+                {
+                    string res = reader.GetString((int)rowType);
+                    conn.Close();
+                    return res;
+                }
+            }
+            conn.Close();
+            return null;
         }
         
     }
