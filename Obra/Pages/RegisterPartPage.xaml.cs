@@ -104,6 +104,7 @@ namespace Obra.Pages
                     if (selected == MessageBoxResult.Yes)
                     {
                         MessageBox.Show("The register is a success come back for login", "Connected");
+
                     }
                     else
                     {
