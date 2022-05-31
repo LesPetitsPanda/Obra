@@ -72,6 +72,7 @@
                         <RowDefinition Height="1*"/>
                         <RowDefinition Height="1*"/>
                         <RowDefinition Height="1*"/>
+                        <RowDefinition Height="1*"></RowDefinition>
                     </Grid.RowDefinitions>
                     <TextBlock Text="Username:" Grid.ColumnSpan="2" Grid.Column="1" Grid.Row="0" VerticalAlignment="Stretch"/>
                     <TextBox x:Name="UsernameBox" Grid.Row="0" Grid.Column="1" Height="30" KeyDown="Username"/>
@@ -79,6 +80,8 @@
                     <TextBox x:Name="EmailBox" Grid.Row="1" Grid.Column="1" Height="30"  KeyDown="Email"/>
                     <TextBlock Text="Password:" Grid.Row="2" Grid.ColumnSpan="2" Grid.Column="1" VerticalAlignment="Stretch"/>
                     <TextBox x:Name="PasswordBox" Grid.Row="2" Grid.Column="1" Height="30"  KeyDown="Password"/>
+                    <TextBlock Grid.Row="3" Grid.Column="1">Change your profile picture:</TextBlock>
+                    <Button Grid.Row="3" Margin="135,26,135,10" Grid.Column="1" Background="AliceBlue" Click="Change_Picture_Click">Change your profile picture</Button>
                     <Button Grid.Column="1" Grid.Row="4" Height="50" Width="200" Content="Disconnect" Click="disconnectEvent" FontSize="20" Background="AliceBlue"/>
                 </Grid>
             </Border>

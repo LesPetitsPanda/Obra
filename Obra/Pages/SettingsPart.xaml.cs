@@ -1,4 +1,5 @@
-﻿using Obra.Utils;
+﻿using Microsoft.Win32;
+using Obra.Utils;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -32,7 +33,7 @@ namespace Obra.Pages
             UsernameBox.Text = App.Username;
             EmailBox.Text = App.ConnectUtility.getData(App.Username, mySQLConnectio.RowType.EMAIL);
             PasswordBox.Text = "***************";
-            Loaded-=SettingsPart_Loaded;
+            Loaded -= SettingsPart_Loaded;
 
         }
 
@@ -64,12 +65,12 @@ namespace Obra.Pages
         }
         private void Username(object sender, KeyEventArgs e)
         {
-           if (e.Key == Key.Enter)
+            if (e.Key == Key.Enter)
             {
-                MessageBoxResult messageBox = MessageBox.Show("You are about to change your username. Are you sure ?","Warning",MessageBoxButton.YesNo);
+                MessageBoxResult messageBox = MessageBox.Show("You are about to change your username. Are you sure ?", "Warning", MessageBoxButton.YesNo);
                 if (messageBox == MessageBoxResult.Yes)
                 {
-                    App.ConnectUtility.UpdateData(App.Username,"",mySQLConnectio.DataUpdateType.USERNAME, UsernameBox.Text);
+                    App.ConnectUtility.UpdateData(App.Username, "", mySQLConnectio.DataUpdateType.USERNAME, UsernameBox.Text);
                     SerializerUtils.SerializeObject(SerializerUtils.writeToJSON("string", "username", UsernameBox.Text), App.userDataSer);
                     App.Username = UsernameBox.Text;
                 }
@@ -77,7 +78,7 @@ namespace Obra.Pages
                 {
                     UsernameBox.Text = App.Username;
                 }
-             
+
             }
         }
         private void Password(object sender, KeyEventArgs e)
@@ -113,5 +114,19 @@ namespace Obra.Pages
             }
         }
 
+        private void Change_Picture_Click(object sender, RoutedEventArgs e)
+        {
+            OpenFileDialog dlg = new OpenFileDialog();
+            dlg.InitialDirectory = "c:\\";
+            dlg.Filter = "Image files (*.jpg)|*.jpg|(*.png)|*.png|All Files (*.*)|*.*";
+            dlg.RestoreDirectory = true;
+
+            if (dlg.ShowDialog() == true)
+            {
+                string selectedFileName = dlg.FileName;
+                App.ProfilePicture.SavePicture(selectedFileName);
+            }
+
+        }
     }
 }

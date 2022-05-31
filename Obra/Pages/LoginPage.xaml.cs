@@ -40,7 +40,7 @@ namespace Obra.Pages
          {
             log.Content = "not login";
          }
-            Utils.SerializerUtils.SerializeObject(Utils.SerializerUtils.writeToJSON("string", "userlogin", usernameBox.Text), "userlogin");
+            Utils.SerializerUtils.SerializeObject(Utils.SerializerUtils.writeToJSON("string", "username", usernameBox.Text), "userlogin");
 
         }
         private void MainPageProEvent(object sender, RoutedEventArgs e)
