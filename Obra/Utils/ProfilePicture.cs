@@ -32,7 +32,7 @@ namespace Obra.Utils
             {
                 SetInitValue();
             }
-            BitmapImage img = LoadPicture();
+            BitmapImage img = new BitmapImage();
             this.img = img;
         }
 
