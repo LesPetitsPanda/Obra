@@ -41,18 +41,10 @@ namespace Obra.Pages
             Unloaded += Window_Closing;
         }
 
-        private void Page_Unloaded(object sender, RoutedEventArgs e)
-        {
-            //Thread.Sleep(50);
-            tcp.Close();
-        }
         private void Window_Closing(object sender, RoutedEventArgs e)
         {
-            tcp.Close();
-            Thread.Sleep(50);
-            TCPUtils.LoadMessagesUser.SerializeConversation(content_messages, UsertoSend);
-            thrMessaging.Join();
-            Thread.CurrentThread.Join();
+          
+            Unloaded -= Window_Closing;
         }
         private void SettingsPart_Click(object sender, RoutedEventArgs e)
         {
@@ -61,16 +53,19 @@ namespace Obra.Pages
         }
         private void Home_Click(object sender, RoutedEventArgs e)
         {
+          
             NavigationService ns = NavigationService.GetNavigationService(this);
             ns.Navigate(new Uri("Pages/MainPagePart.xaml", UriKind.Relative));
         }
         private void Message_Click(object sender, RoutedEventArgs e)
         {
+            
             NavigationService ns = NavigationService.GetNavigationService(this);
             ns.Navigate(new Uri("Pages/MessagePart.xaml", UriKind.Relative));
         }
         private void Profile_Click(object sender, RoutedEventArgs e)
         {
+           
             NavigationService ns = NavigationService.GetNavigationService(this);
             ns.Navigate(new Uri("Pages/ProfilsPart.xaml", UriKind.Relative));
         }
@@ -110,17 +105,28 @@ namespace Obra.Pages
             Stream str = tcp.GetStream();
             while (true)
             {
-                Thread.Sleep(100);
-                string res = "";
                 byte[] bb = new byte[100];
-                int k = str.Read(bb, 0, 100);
-                for (int i = 0; i < k; i++)
-                    res += Convert.ToChar(bb[i]);
-                if (res != "")
+                try
                 {
-                    content_messages.Dispatcher.Invoke(new NewMessageCallBack(this.UpdateMessage), new object[] { res });
+                    string res = "";
+                    int k = str.Read(bb, 0, 100);
+                    for (int i = 0; i < k; i++)
+                        res += Convert.ToChar(bb[i]);
+                    if (res != "")
+                    {
+                        content_messages.Dispatcher.Invoke(new NewMessageCallBack(this.UpdateMessage), new object[] { res });
+                        Thread.Sleep(300);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    if (!tcp.Connected)
+                    {
+                        break;
+                    }
                 }
             }
+            thrMessaging.Abort();
 
         }
         public void Connect()
