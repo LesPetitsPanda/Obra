@@ -107,6 +107,10 @@ namespace Obra.Pages
             second.Inlines.Clear();
             third.Inlines.Clear();
             List<Tuple<string, string>> lastresearch = LastResearch.getThreeLastResearch();
+            if(first.Text == lastresearch[0].Item1)
+            {
+                return;
+            }
             if (lastresearch.Count > 0 && lastresearch[0] is not null && first is not null)
             {
                 first.Inlines.Add(new Run(lastresearch[0].Item1) { FontWeight = FontWeights.Bold });

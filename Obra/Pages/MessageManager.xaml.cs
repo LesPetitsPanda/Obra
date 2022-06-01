@@ -45,5 +45,13 @@ namespace Obra.Pages
             NavigationService ns = NavigationService.GetNavigationService(this);
             ns.Navigate(new Uri("Pages/Profils.xaml", UriKind.Relative));
         }
+
+        private void Username1_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService ns = NavigationService.GetNavigationService(this);
+            MessagePart message = new MessagePart();
+            message.UserToSend = "Joseph";
+            ns.Navigate(message);
+        }
     }
 }

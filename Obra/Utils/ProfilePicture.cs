@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.IO;
 using System.Linq;
+using System.Net;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
@@ -28,30 +29,28 @@ namespace Obra.Utils
         public ProfilePicture()
         {
             //SavePicture();
-            if (SerializerUtils.DeserializeObject("isnew", "bool", "isnew") == null)
+            if (App.Username != null)
             {
-                SetInitValue();
+                BitmapImage img = LoadPicture(App.Username);
+                this.img = img;
             }
-            BitmapImage img = new BitmapImage();
-            this.img = img;
+            else this.img = null;
         }
 
         public void SetInitValue()
         {
-            Uri uri = new Uri("pack://application:,,,/Resources/profile.png", UriKind.RelativeOrAbsolute);
+            using(WebClient webClient = new WebClient())
+            {
+                webClient.DownloadFile("https://media.discordapp.net/attachments/915700925065203776/968893962637172736/Desktop_-_2-3-removebg-preview.png"
+                    , System.AppDomain.CurrentDomain.BaseDirectory + @"\profile.png");
+            }
             BitmapImage img = new BitmapImage();
             img.BeginInit();
-            img.UriSource = uri;
+            img.UriSource = new Uri(System.AppDomain.CurrentDomain.BaseDirectory + @"\profile.png");
             img.EndInit();
             this.img = img;
             byte[] ImageData;
-            FileStream? fs = App.GetResourceStream(uri).Stream as FileStream;
-
-            if (fs == null)
-            {
-                return;
-            }
-            MessageBox.Show(fs.Length.ToString());
+            FileStream fs = new FileStream(System.AppDomain.CurrentDomain.BaseDirectory + @"\profile.png", FileMode.Open, FileAccess.Read);
             BinaryReader br = new BinaryReader(fs);
             ImageData = br.ReadBytes((int)fs.Length);
             br.Close();
@@ -61,15 +60,13 @@ namespace Obra.Utils
                 conn.Open();
                 using (var cmd = conn.CreateCommand())
                 {
-                    //cmd.CommandText = "UPDATE registration SET pdp = ?Image WHERE username = '" + App.Username + "';";
-                    cmd.CommandText = "INSERT INTO registration (pdp) VALUES (?Image);";
+                    cmd.CommandText = "UPDATE registration SET pdp = ?Image WHERE username = '" + App.Username + "';";
+                    //cmd.CommandText = "INSERT INTO registration (pdp) VALUES (?Image);";
                     cmd.Parameters.Add("?Image", MySqlDbType.Blob);
                     cmd.Parameters["?Image"].Value = ImageData;
                     cmd.ExecuteNonQuery();
                 }
                 conn.Close();
-                SerializerUtils.SerializeObject(SerializerUtils.writeToJSON("bool", "isnew", "false"), "isnew");
-
             }
 
         }
@@ -86,12 +83,6 @@ namespace Obra.Utils
             FileStream fs = new FileStream(FileName, FileMode.Open, FileAccess.Read);
             BinaryReader br = new BinaryReader(fs);
             ImageData = br.ReadBytes((int)fs.Length);
-            string s = "";
-            for (int i = 0; i < ImageData.Length; i++)
-            {
-                s += ImageData[i];
-            }
-            SerializerUtils.SerializeObject(SerializerUtils.writeToJSON("string", "eeee", s), "eeeee");
             br.Close();
             fs.Close();
             using (var conn = App.ConnectUtility.Connection)
@@ -99,8 +90,7 @@ namespace Obra.Utils
                 conn.Open();
                 using (var cmd = conn.CreateCommand())
                 {
-                    //cmd.CommandText = "UPDATE registration SET pdp = ?Image WHERE username = '" + App.Username + "';";
-                    cmd.CommandText = "INSERT INTO registration (pdp) VALUES (?Image);";
+                    cmd.CommandText = "UPDATE registration SET pdp = ?Image WHERE username = '" + App.Username + "';";
                     cmd.Parameters.Add("?Image", MySqlDbType.Blob);
                     cmd.Parameters["?Image"].Value = ImageData;
                     cmd.ExecuteNonQuery();
@@ -109,14 +99,14 @@ namespace Obra.Utils
             }
         }
 
-        public BitmapImage LoadPicture()
+        public BitmapImage LoadPicture(string username)
         {
             using (MySqlConnection con = App.ConnectUtility.Connection)
             {
                 con.Open();
                 using (MySqlCommand cmd = con.CreateCommand())
                 {
-                    cmd.CommandText = "SELECT pdp FROM registration WHERE username = '" + App.Username + "';";
+                    cmd.CommandText = "SELECT pdp FROM registration WHERE username = '" + username + "';";
                     using (var reader = cmd.ExecuteReader())
                     {
                         if (!reader.Read())

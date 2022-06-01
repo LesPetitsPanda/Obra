@@ -47,6 +47,7 @@ namespace Obra
             username = (string)Utils.SerializerUtils.DeserializeObject("userlogin", "string", "username");
             __connect = new MySQLConnectUtility(connection);
             Uri iconUri = new Uri("pack://application:,,,/Resources/logo.ico", UriKind.RelativeOrAbsolute);
+            
             //   tcpClientUtils.Connect();     
             profilePicture = new ProfilePicture();
         }

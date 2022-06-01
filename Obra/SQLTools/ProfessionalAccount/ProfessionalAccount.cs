@@ -54,8 +54,8 @@ namespace Obra.SQLTools.ProfessionalAccount
             {
                 conn.Open();
                 string sql =
-                    "INSERT INTO professional (username, password, email, namefirstname, telephone, rate) VALUES ('" + Username + "','" +
-                    SQLConnectUtility.Sha1(Password) + "','" + Email + "','" + FirstName + "','" + Telephone + "','" + Rate + "')";
+                    "INSERT INTO professional (username, password, email,namefirstname, telephone, rate) VALUES ('" + Username + "','" +
+                    SQLConnectUtility.Sha1(Password) + "','" + Email + "','" + FirstName  + "','" + Telephone + "','" + Rate + "')";
 
                 //, password, email, namefirstname, telephone, rate) VALUES ('" +
                 //      Username + "','" + SQLConnectUtility.Sha1(Password) + "','" + Email + "','" + FirstName + "','" +

@@ -103,6 +103,7 @@ namespace Obra.Pages
                     MessageBoxResult selected = MessageBox.Show("Obra needs your data location to be functional, do you agree with this ?", "Warning !", MessageBoxButton.YesNo);
                     if (selected == MessageBoxResult.Yes)
                     {
+                        App.ProfilePicture.SetInitValue();
                         MessageBox.Show("The register is a success come back for login", "Connected");
 
                     }

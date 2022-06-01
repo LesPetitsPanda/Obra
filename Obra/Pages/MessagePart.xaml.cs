@@ -27,7 +27,13 @@ namespace Obra.Pages
         private TcpClient tcp;
         private Thread thrMessaging;
         private delegate void NewMessageCallBack(string strMessage);
-        private string UsertoSend = "Joseph";
+        public string UsertoSend;
+
+        public string UserToSend
+        {
+            get { return UsertoSend; }
+            set { UsertoSend = value; }
+        }
         public MessagePart()
         {
             InitializeComponent();
@@ -42,8 +48,8 @@ namespace Obra.Pages
         }
         private void Window_Closing(object sender, RoutedEventArgs e)
         {
-            //Thread.Sleep(50);
             tcp.Close();
+            Thread.Sleep(50);
             TCPUtils.LoadMessagesUser.SerializeConversation(content_messages, UsertoSend);
             thrMessaging.Join();
             Thread.CurrentThread.Join();
@@ -104,6 +110,7 @@ namespace Obra.Pages
             Stream str = tcp.GetStream();
             while (true)
             {
+                Thread.Sleep(100);
                 string res = "";
                 byte[] bb = new byte[100];
                 int k = str.Read(bb, 0, 100);

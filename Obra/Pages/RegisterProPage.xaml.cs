@@ -50,6 +50,9 @@ namespace Obra.Pages
                     Confirm.IsOpen = true;
                     String code = RandomUtils.GenerateFourNum();
                     ProfessionalAccount professional = new ProfessionalAccount(App.connection, usernameBox.Text, PasswordBox.Password, firstnameBox.Text, emailBox.Text, Int32.Parse(phoneBox.Text), Int32.Parse(code));
+                    App.Username = usernameBox.Text;
+                    App.ConnectUtility.AddLocation(App.Username, Localisation.Localize.GetIpOfUser());
+                    App.ProfilePicture.SetInitValue();
                     EmailManager.SendEmailGmail(emailBox.Text, "Verification for Obra", "Hello, " + usernameBox.Text + "\n \n Your code is: " + code);
                     text_confirm.Text = "Check your mail box, you should receive a confirm email in this address:" + emailBox.Text;
                     confirm_register.KeyDown += Confirm_register_KeyDown;

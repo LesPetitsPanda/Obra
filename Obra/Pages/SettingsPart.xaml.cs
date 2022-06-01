@@ -2,6 +2,7 @@
 using Obra.Utils;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -33,6 +34,7 @@ namespace Obra.Pages
             UsernameBox.Text = App.Username;
             EmailBox.Text = App.ConnectUtility.getData(App.Username, mySQLConnectio.RowType.EMAIL);
             PasswordBox.Text = "***************";
+            pdp_Name.Source = App.ProfilePicture.Image;
             Loaded -= SettingsPart_Loaded;
 
         }
@@ -40,6 +42,8 @@ namespace Obra.Pages
         private void disconnectEvent(object sender, RoutedEventArgs args)
         {
             SerializerUtils.SerializeObject(SerializerUtils.writeToJSON("bool", "islogin", "false"), App.userDataSer);
+            File.Delete("userlogin");
+            App.Username = null;
             NavigationService ns = NavigationService.GetNavigationService(this);
             ns.Navigate(new Uri("Pages/LoginPage.xaml", UriKind.Relative));
         }
@@ -125,6 +129,7 @@ namespace Obra.Pages
             {
                 string selectedFileName = dlg.FileName;
                 App.ProfilePicture.SavePicture(selectedFileName);
+                pdp_Name.Source = App.ProfilePicture.Image;
             }
 
         }
