@@ -16,7 +16,9 @@ namespace Obra.SQLTools.ProfessionalAccount
         private string _firstName;
         private int _telephone;
         private int _rate;
+        private string _job;
 
+        public string Job { get { return _job; }}
         public string Username { get { return _username; } }
         public string Password { get { return _password; } }
         public string Email { get { return _email; } }
@@ -33,7 +35,7 @@ namespace Obra.SQLTools.ProfessionalAccount
         }
 
         public ProfessionalAccount(string connection, string username, string password, string firstname, string email,
-               int telephone, int code)
+               int telephone, string job, int code)
         {
             conn = new MySqlConnection(connection);
             _mySQLConnect = new MySQLConnectUtility(conn);
@@ -43,6 +45,7 @@ namespace Obra.SQLTools.ProfessionalAccount
             _firstName = firstname;
             _telephone = telephone;
             _rate = -1;
+            _job = job;
             AddProfessional(code);
             _password = mySQLConnectio.SQLConnectUtility.Sha1(password);
 
@@ -54,8 +57,8 @@ namespace Obra.SQLTools.ProfessionalAccount
             {
                 conn.Open();
                 string sql =
-                    "INSERT INTO professional (username, password, email,namefirstname, telephone, rate) VALUES ('" + Username + "','" +
-                    SQLConnectUtility.Sha1(Password) + "','" + Email + "','" + FirstName  + "','" + Telephone + "','" + Rate + "')";
+                    "INSERT INTO professional (username, password, email,namefirstname, telephone, rate,job) VALUES ('" + Username + "','" +
+                    SQLConnectUtility.Sha1(Password) + "','" + Email + "','" + FirstName  + "','" + Telephone + "','" + Rate + "','" + Job + "')";
 
                 //, password, email, namefirstname, telephone, rate) VALUES ('" +
                 //      Username + "','" + SQLConnectUtility.Sha1(Password) + "','" + Email + "','" + FirstName + "','" +

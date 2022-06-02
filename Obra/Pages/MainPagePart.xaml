@@ -52,8 +52,14 @@
             </Button>
         </Grid >
         <ScrollViewer Background ="#233A8B" Grid.Column="1" Name="Scrollable" CanContentScroll="True">
-            <StackPanel Name="contentscroll">
-            </StackPanel>
+            <Grid x:Name="GridScroll">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"></ColumnDefinition>
+                    <ColumnDefinition Width="4*"></ColumnDefinition>
+                    <ColumnDefinition Width="1*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <StackPanel Grid.Column="1" Name="contentscroll"></StackPanel>
+            </Grid>
         </ScrollViewer>
         <StackPanel Grid.Column="2">
         <TextBox Name="search" TextWrapping="Wrap" BorderBrush="Gray" Height="20" VerticalAlignment="Top" MouseLeftButtonDown="OnSearchClick" KeyDown="OnKeyDown"/>

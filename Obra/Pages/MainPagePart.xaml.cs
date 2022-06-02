@@ -71,6 +71,7 @@ namespace Obra.Pages
                 //MessageBox.Show(individual.getAllProfessionalLocation().First().Value +" "+ " " + individual.getAllProfessionalLocation().First().Key +individual.getAllProfessionalLocation().Count);
                 Dictionary<string, string> dict = individual.getProfessionalByLocation(individual.getAllProfessionalLocation());
                 foreach (var item in dict){
+                   
                     stackpanel.Children.Add(createTextBlockStyle(item.Key, mySQLConnectio.SQLConnectUtility.getJob(item.Key, App.ConnectUtility.conn), Localisation.Localize.GetCityByIp(item.Value), "-1"));
                 }
             }
@@ -206,32 +207,47 @@ namespace Obra.Pages
         }
         private Border createTextBlockStyle(string username, string job, string city, string rate)
         {
-            
+            Grid grid = new Grid();
+            grid.ColumnDefinitions.Add(new ColumnDefinition() { Width = new GridLength(3, GridUnitType.Star) });
+            grid.ColumnDefinitions.Add(new ColumnDefinition() { Width = new GridLength(1, GridUnitType.Star) });
+            grid.RowDefinitions.Add(new RowDefinition());
+            grid.RowDefinitions.Add(new RowDefinition());
+            grid.RowDefinitions.Add(new RowDefinition());
+            grid.RowDefinitions.Add(new RowDefinition());
+
             var textBlock = new TextBlock();
-            textBlock.MouseLeftButtonDown += ContentClickable;
-            textBlock.Inlines.Add(new LineBreak());
-            textBlock.Inlines.Add(new Run(username) { FontWeight = FontWeights.Bold, BaselineAlignment = BaselineAlignment.Center});
-            textBlock.Inlines.Add(new LineBreak());
-            textBlock.Inlines.Add(new LineBreak());
-            textBlock.Inlines.Add(new LineBreak());
-            textBlock.Inlines.Add("Job: " + job);
-            textBlock.Inlines.Add(new LineBreak());
-            textBlock.Inlines.Add(new LineBreak());
-            textBlock.Inlines.Add("City: " + city);
-            textBlock.Inlines.Add(new LineBreak());
-            textBlock.Inlines.Add(new LineBreak());
-            textBlock.Inlines.Add("Rate: " + rate);
-            textBlock.Inlines.Add(new LineBreak());
-            textBlock.Inlines.Add(new LineBreak());
-            textBlock.Inlines.Add(new LineBreak()); textBlock.Inlines.Add(new LineBreak());
+            textBlock.Inlines.Add(new Run(username) { FontWeight = FontWeights.Bold, BaselineAlignment = BaselineAlignment.Center });
+            Grid.SetColumn(textBlock, 0);
+            Grid.SetRow(textBlock, 0);
+            var textBlock1 = new TextBlock();
+            textBlock1.Inlines.Add("Job: " + job);
+            Grid.SetColumn(textBlock1, 0);
+            Grid.SetRow(textBlock1, 1);
+            var textBlock2 = new TextBlock();
+            textBlock2.Inlines.Add("City: " + city);
+            Grid.SetColumn(textBlock2, 0);
+            Grid.SetRow(textBlock2, 2);
+            var textBlock3 = new TextBlock();
+            textBlock3.Inlines.Add("Rate: " + rate);
+            Grid.SetColumn(textBlock3, 0);
+            Grid.SetRow(textBlock3, 3);
+
+            //Image
+            Image img = new Image();
+            img.Source = App.ProfilePicture.LoadPicture(username);
+            Grid.SetColumn(img, 1);
+            Grid.SetRow(img, 0);
+            grid.Children.Add(textBlock);
+            grid.Children.Add(textBlock2);
+            grid.Children.Add(textBlock3);
+            grid.Children.Add(textBlock1);
+            grid.Children.Add(img);
             var border = new Border();
             border.BorderBrush = Brushes.Black;
             border.BorderThickness = new Thickness(1.5);
-            border.Child = textBlock;
-            border.HorizontalAlignment = HorizontalAlignment.Center;
+            border.Child = grid;
             border.Background = Brushes.White;
-            border.Width = Scrollable.Width - 20;
-            border.Width = 200;
+            border.Height = 200;
             return border;
         }
        
