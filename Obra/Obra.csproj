@@ -48,6 +48,7 @@
       <PackageReference Include="MySql.Data" Version="8.0.28" />
       <PackageReference Include="MySqlConnector" Version="2.1.8" />
       <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+      <PackageReference Include="Syncfusion.DocToPDFConverter.Wpf" Version="20.1.0.58" />
       <PackageReference Include="System.Device.Location.Portable" Version="1.0.0" />
     </ItemGroup>
 

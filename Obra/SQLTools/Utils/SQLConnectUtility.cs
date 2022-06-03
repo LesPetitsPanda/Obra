@@ -39,6 +39,77 @@ namespace mySQLConnectio
             conn.Close();
             return null;
         }
+        public static void addRate(string name, MySqlConnection conn, string rate)
+        { string s = getTotalRate(name, conn);
+            string sql;
+            if (s == "-1")
+            {
+               sql = "UPDATE professional SET " + "rate" + " = '" + rate + "' WHERE " + DataUpdateType.USERNAME + " = '" + name + "';";
+
+            }
+            else
+            {
+                sql  = "UPDATE professional SET " + "rate" + " = '" + s + ","+rate + "' WHERE " + DataUpdateType.USERNAME + " = '" + name + "';";
+            }
+            MySqlCommand command = new MySqlCommand(sql, conn);
+            command.ExecuteNonQuery();
+            conn.Close();
+        }
+
+        private static string getTotalRate(string name, MySqlConnection conn)
+        {
+            conn.Open();
+            MySqlCommand cmd = new MySqlCommand();
+            cmd.Connection = conn;
+            cmd.CommandText = "professional";
+            cmd.CommandType = CommandType.TableDirect;
+            MySqlDataReader read = cmd.ExecuteReader();
+            while (read.Read())
+            {
+                if (read.GetString(1) == name)
+                {
+                    string res = read.GetString(6);
+                    conn.Close();
+                    return res;
+                }
+            }
+            conn.Close();
+            return null;
+        }
+        public static string getRate(string name, MySqlConnection conn)
+        {
+            conn.Open();
+            MySqlCommand cmd = new MySqlCommand();
+            cmd.Connection = conn;
+            cmd.CommandText = "professional";
+            cmd.CommandType = CommandType.TableDirect;
+            MySqlDataReader read = cmd.ExecuteReader();
+            while (read.Read())
+            {
+                if (read.GetString(1) == name)
+                {
+                    string res = read.GetString(6);
+                    conn.Close();
+                    string[] temp = res.Split(new char[] {','});
+                    int rate = 0;
+                    foreach(string s in temp)
+                    {
+                        if(s == "-1")
+                        {
+                            return "Without rate";
+                        }
+                        else
+                        {
+                            rate+= int.Parse(s);
+                        }
+                    }
+                    return (rate/temp.Length).ToString();
+                }
+            }
+            conn.Close();
+            return null;
+        }
+
         public static List<string> getName(string job, MySqlConnection conn)
         {
             List<string> res = new List<string>();

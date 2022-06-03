@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "R5DR4JAeDCMbsMPBbB8m3FQJgVyPpppXJWDvSUxuQiMZR/1It/7Js+2Kz5LxfMDvyWLDgnDxiHsHlrbxJW18wQ==",
+  "dgSpecHash": "TMXH8DjCe9n/Jrjru5hRYBIy4GHnEhdcFM50seAuI57HjQJ72xC8pbWEZBQeL/qlelD79DLfNvDgC7ZI4u2m5w==",
   "success": true,
   "projectFilePath": "C:\\Users\\valgi\\Documents\\GitHub\\Obra\\Obra\\Obra.csproj",
   "expectedPackageFiles": [
@@ -22,6 +22,12 @@
     "C:\\Users\\valgi\\.nuget\\packages\\runtime.native.system.io.compression\\4.1.0\\runtime.native.system.io.compression.4.1.0.nupkg.sha512",
     "C:\\Users\\valgi\\.nuget\\packages\\runtime.native.system.net.http\\4.0.1\\runtime.native.system.net.http.4.0.1.nupkg.sha512",
     "C:\\Users\\valgi\\.nuget\\packages\\runtime.native.system.security.cryptography\\4.0.0\\runtime.native.system.security.cryptography.4.0.0.nupkg.sha512",
+    "C:\\Users\\valgi\\.nuget\\packages\\syncfusion.compression.base\\20.1.0.58\\syncfusion.compression.base.20.1.0.58.nupkg.sha512",
+    "C:\\Users\\valgi\\.nuget\\packages\\syncfusion.docio.wpf\\20.1.0.58\\syncfusion.docio.wpf.20.1.0.58.nupkg.sha512",
+    "C:\\Users\\valgi\\.nuget\\packages\\syncfusion.doctopdfconverter.wpf\\20.1.0.58\\syncfusion.doctopdfconverter.wpf.20.1.0.58.nupkg.sha512",
+    "C:\\Users\\valgi\\.nuget\\packages\\syncfusion.licensing\\20.1.0.58\\syncfusion.licensing.20.1.0.58.nupkg.sha512",
+    "C:\\Users\\valgi\\.nuget\\packages\\syncfusion.officechart.base\\20.1.0.58\\syncfusion.officechart.base.20.1.0.58.nupkg.sha512",
+    "C:\\Users\\valgi\\.nuget\\packages\\syncfusion.pdf.wpf\\20.1.0.58\\syncfusion.pdf.wpf.20.1.0.58.nupkg.sha512",
     "C:\\Users\\valgi\\.nuget\\packages\\system.appcontext\\4.1.0\\system.appcontext.4.1.0.nupkg.sha512",
     "C:\\Users\\valgi\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\valgi\\.nuget\\packages\\system.collections\\4.0.11\\system.collections.4.0.11.nupkg.sha512",

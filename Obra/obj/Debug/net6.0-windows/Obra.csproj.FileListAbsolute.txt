@@ -111,3 +111,9 @@ C:\Users\valgi\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\Obra.genrunti
 C:\Users\valgi\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\refint\Obra.dll
 C:\Users\valgi\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\Pages\MessageManager.g.cs
 C:\Users\valgi\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\Pages\MessageManager.baml
+C:\Users\valgi\Documents\GitHub\Obra\Obra\bin\Debug\net6.0-windows\Syncfusion.Licensing.dll
+C:\Users\valgi\Documents\GitHub\Obra\Obra\bin\Debug\net6.0-windows\Syncfusion.Compression.Base.dll
+C:\Users\valgi\Documents\GitHub\Obra\Obra\bin\Debug\net6.0-windows\Syncfusion.DocIO.Base.dll
+C:\Users\valgi\Documents\GitHub\Obra\Obra\bin\Debug\net6.0-windows\Syncfusion.DocToPdfConverter.Base.dll
+C:\Users\valgi\Documents\GitHub\Obra\Obra\bin\Debug\net6.0-windows\Syncfusion.OfficeChart.Base.dll
+C:\Users\valgi\Documents\GitHub\Obra\Obra\bin\Debug\net6.0-windows\Syncfusion.Pdf.Base.dll

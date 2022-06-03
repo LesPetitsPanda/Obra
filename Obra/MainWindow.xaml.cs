@@ -49,7 +49,7 @@ namespace Obra
                  {
                      this.Source = new Uri("Pages/LoginPage.xaml", UriKind.Relative);
                  }*/
-               this.Source = new Uri("Pages/LoginPage.xaml", UriKind.Relative);
+               this.Source = new Uri("Pages/ProfilsPRO.xaml", UriKind.Relative);
 
         }
 

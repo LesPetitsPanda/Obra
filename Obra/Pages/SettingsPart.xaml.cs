@@ -35,6 +35,7 @@ namespace Obra.Pages
             EmailBox.Text = App.ConnectUtility.getData(App.Username, mySQLConnectio.RowType.EMAIL);
             PasswordBox.Text = "***************";
             pdp_Name.Source = App.ProfilePicture.Image;
+            
             Loaded -= SettingsPart_Loaded;
 
         }
