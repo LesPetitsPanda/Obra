@@ -10,11 +10,11 @@ none
 false
 TRACE;RELEASE;NET;NET6_0;NETCOREAPP
 C:\Users\valgi\Documents\GitHub\Obra\Obra\App.xaml
-3-1018047692
+13-1839388339
 
-102133785811
-203-894015786
-MainWindow.xaml;Pages\LoginPage.xaml;Pages\RegisterPage.xaml;
+38-1804022778
+211-1523353515
+MainWindow.xaml;Pages\LoginPage.xaml;Pages\MainPagePart.xaml;Pages\MainPagePro.xaml;Pages\MessageManager.xaml;Pages\MessagePart.xaml;Pages\MessagePro.xaml;Pages\ProfilsPART.xaml;Pages\ProfilsPRO.xaml;Pages\RegisterPartPage.xaml;Pages\RegisterProPage.xaml;Pages\SettingsPart.xaml;Pages\SettingsPro.xaml;
 
 False
 

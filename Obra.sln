@@ -10,16 +10,32 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.editorconfig = .editorconfig
 	EndProjectSection
 EndProject
+Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "ObraSetup", "ObraSetup\ObraSetup.wixproj", "{6A8E825C-1AFC-4216-9520-D177D0EE9A69}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
 		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{F8E8731F-1247-47F3-A9DE-3AD65661FAD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F8E8731F-1247-47F3-A9DE-3AD65661FAD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8E8731F-1247-47F3-A9DE-3AD65661FAD8}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F8E8731F-1247-47F3-A9DE-3AD65661FAD8}.Debug|x86.Build.0 = Debug|Any CPU
 		{F8E8731F-1247-47F3-A9DE-3AD65661FAD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F8E8731F-1247-47F3-A9DE-3AD65661FAD8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8E8731F-1247-47F3-A9DE-3AD65661FAD8}.Release|x86.ActiveCfg = Release|Any CPU
+		{F8E8731F-1247-47F3-A9DE-3AD65661FAD8}.Release|x86.Build.0 = Release|Any CPU
+		{6A8E825C-1AFC-4216-9520-D177D0EE9A69}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{6A8E825C-1AFC-4216-9520-D177D0EE9A69}.Debug|Any CPU.Build.0 = Debug|x86
+		{6A8E825C-1AFC-4216-9520-D177D0EE9A69}.Debug|x86.ActiveCfg = Debug|x86
+		{6A8E825C-1AFC-4216-9520-D177D0EE9A69}.Debug|x86.Build.0 = Debug|x86
+		{6A8E825C-1AFC-4216-9520-D177D0EE9A69}.Release|Any CPU.ActiveCfg = Release|x86
+		{6A8E825C-1AFC-4216-9520-D177D0EE9A69}.Release|Any CPU.Build.0 = Release|x86
+		{6A8E825C-1AFC-4216-9520-D177D0EE9A69}.Release|x86.ActiveCfg = Release|x86
+		{6A8E825C-1AFC-4216-9520-D177D0EE9A69}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,7 @@
+C:\Users\valgi\Desktop\Superieur\ProjetS2\BuildProject\Obra.pdb
+C:\Users\valgi\Desktop\Superieur\ProjetS2\BuildProject\D3DCompiler_47_cor3.dll
+C:\Users\valgi\Desktop\Superieur\ProjetS2\BuildProject\PenImc_cor3.dll
+C:\Users\valgi\Desktop\Superieur\ProjetS2\BuildProject\PresentationNative_cor3.dll
+C:\Users\valgi\Desktop\Superieur\ProjetS2\BuildProject\vcruntime140_cor3.dll
+C:\Users\valgi\Desktop\Superieur\ProjetS2\BuildProject\wpfgfx_cor3.dll
+C:\Users\valgi\Desktop\Superieur\ProjetS2\BuildProject\Obra.exe
