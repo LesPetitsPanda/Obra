@@ -75,7 +75,6 @@ namespace Obra.Pages
                     stackpanel.Children.Add(createTextBlockStyle(item.Key, mySQLConnectio.SQLConnectUtility.getJob(item.Key, App.ConnectUtility.conn), Localisation.Localize.GetCityByIp(item.Value), "-1"));
                 }
             }
-            scrollViewer.Content = stackpanel;
             Loaded -= Scrollable_ScrollChanged;
         }
 
@@ -241,7 +240,7 @@ namespace Obra.Pages
             grid.Children.Add(textBlock2);
             grid.Children.Add(textBlock3);
             grid.Children.Add(textBlock1);
-            grid.Children.Add(img);
+            //grid.Children.Add(img);
             var border = new Border();
             border.BorderBrush = Brushes.Black;
             border.BorderThickness = new Thickness(1.5);

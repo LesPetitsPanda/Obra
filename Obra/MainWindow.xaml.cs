@@ -49,18 +49,14 @@ namespace Obra
                  {
                      this.Source = new Uri("Pages/LoginPage.xaml", UriKind.Relative);
                  }*/
-               this.Source = new Uri("Pages/ProfilsPRO.xaml", UriKind.Relative);
+               this.Source = new Uri("Pages/SettingsPART.xaml", UriKind.Relative);
 
         }
 
         protected override void OnClosed(EventArgs args)
         {
-            if (File.Exists("userip"))
-            {
-                File.Delete("userip");
-            }
+         
           base.OnClosed(args);
-          Application.Current.Dispatcher.InvokeShutdown();
           //  App.tcpClientUtils.Close();
         }
     }
