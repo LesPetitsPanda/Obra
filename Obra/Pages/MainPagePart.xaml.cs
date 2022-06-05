@@ -42,7 +42,7 @@ namespace Obra.Pages
         private void Message_Click(object sender, RoutedEventArgs e)
         {
             NavigationService ns = NavigationService.GetNavigationService(this);
-            ns.Navigate(new Uri("Pages/MessagePart.xaml", UriKind.Relative));
+            ns.Navigate(new Uri("Pages/MessageManager.xaml", UriKind.Relative));
         }
         private void Profile_Click(object sender, RoutedEventArgs e)
         {
@@ -55,8 +55,17 @@ namespace Obra.Pages
             TextBlock textBlock = (TextBlock)sender;
             if (textBlock.Inlines.Count == 3)
 #pragma warning disable CS8604 // Existence possible d'un argument de référence null.
-                LastResearch.WriteResearch(((Run)textBlock.Inlines.ToArray()[0]).Text, ((Run)textBlock.Inlines.ToArray()[2]).Text);
-                UpdateResearch();
+
+            LastResearch.WriteResearch(((Run)textBlock.Inlines.ToArray()[0]).Text, ((Run)textBlock.Inlines.ToArray()[2]).Text);
+            UpdateResearch();
+            MessageBoxResult messageBoxResult = MessageBox.Show("Are you sure do you want to send a private message to this person?", "Warning!", MessageBoxButton.YesNo);
+            if (messageBoxResult == MessageBoxResult.Yes)
+            {
+                MessagePart messagePart = new MessagePart();
+                messagePart.UsertoSend = ((TextBlock)sender).Text;
+                NavigationService ns = NavigationService.GetNavigationService(this);
+                ns.Navigate(new Uri("Pages/ProfilsPart.xaml", UriKind.Relative));
+            }
 #pragma warning restore CS8604 // Existence possible d'un argument de référence null.
             
         }
@@ -261,12 +270,25 @@ namespace Obra.Pages
 
             Grid.SetColumn(comboBox, 1);
             Grid.SetRow(comboBox, 3);
+
+            Image img2 = new Image();
+            img2.MouseDown += (sender, args) =>
+            {
+                FocusImage image = new FocusImage();
+                image.Image = App.ProfileCV.LoadPicture(username);
+                NavigationService ns = NavigationService.GetNavigationService(this);
+                ns.Navigate(image);
+            };
+            img2.Source = App.ProfileCV.LoadPicture(username);
+            Grid.SetColumn(img2, 1);
+            Grid.SetRow(img2, 2);
             grid.Children.Add(textBlock);
             grid.Children.Add(textBlock2);
             grid.Children.Add(textBlock3);
             grid.Children.Add(textBlock1);
             grid.Children.Add(img);
             grid.Children.Add(comboBox);
+            grid.Children.Add(img2);
             var border = new Border();
             border.BorderBrush = Brushes.Black;
             border.BorderThickness = new Thickness(1.5);

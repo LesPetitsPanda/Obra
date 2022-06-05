@@ -12,4 +12,8 @@
   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <SourceRoot Include="C:\Users\valgi\.nuget\packages\" />
   </ItemGroup>
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgSyncfusion_Shared_WPF Condition=" '$(PkgSyncfusion_Shared_WPF)' == '' ">C:\Users\valgi\.nuget\packages\syncfusion.shared.wpf\20.1.0.58</PkgSyncfusion_Shared_WPF>
+    <PkgSyncfusion_PdfViewer_WPF Condition=" '$(PkgSyncfusion_PdfViewer_WPF)' == '' ">C:\Users\valgi\.nuget\packages\syncfusion.pdfviewer.wpf\20.1.0.58</PkgSyncfusion_PdfViewer_WPF>
+  </PropertyGroup>
 </Project>

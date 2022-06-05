@@ -60,6 +60,7 @@
                 <Button Click="Save_Click" Content="Save"></Button>
                 <Button Click="Load_Click" Content="Load"></Button>
                 <Button Click="Export_Click" Content="Export"></Button>
+                <Button Click="Publish_Click" Content="Publish"></Button>
                 <TextBlock Text="Size" RenderTransformOrigin="0.468,0.91"></TextBlock>
                 <ComboBox Name="ComboBoxSize" Text="12" IsEditable="True" TextBoxBase.TextChanged="ComboBoxSize_SelectionChanged" HorizontalAlignment="Left" VerticalAlignment="Top"></ComboBox>
                 <TextBlock Text="Font" RenderTransformOrigin="0.468,0.91"></TextBlock>

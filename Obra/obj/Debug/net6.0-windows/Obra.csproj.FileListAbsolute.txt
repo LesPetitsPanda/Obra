@@ -117,3 +117,7 @@ C:\Users\valgi\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\refint\Obra.d
 C:\Users\valgi\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\Obra.pdb
 C:\Users\valgi\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\Obra.genruntimeconfig.cache
 C:\Users\valgi\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\ref\Obra.dll
+C:\Users\valgi\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\Pages\FocusImage.g.cs
+C:\Users\valgi\Documents\GitHub\Obra\Obra\bin\Debug\net6.0-windows\Syncfusion.PdfViewer.WPF.dll
+C:\Users\valgi\Documents\GitHub\Obra\Obra\bin\Debug\net6.0-windows\Syncfusion.Shared.WPF.dll
+C:\Users\valgi\Documents\GitHub\Obra\Obra\obj\Debug\net6.0-windows\Pages\FocusImage.baml

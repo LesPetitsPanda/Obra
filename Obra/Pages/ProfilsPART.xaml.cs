@@ -47,7 +47,7 @@ namespace Obra.Pages
         private void Message_Click(object sender, RoutedEventArgs e)
         {
             NavigationService ns = NavigationService.GetNavigationService(this);
-            ns.Navigate(new Uri("Pages/MessagePart.xaml", UriKind.Relative));
+            ns.Navigate(new Uri("Pages/MessageManager.xaml", UriKind.Relative));
         }
         private void Profile_Click(object sender, RoutedEventArgs e)
         {

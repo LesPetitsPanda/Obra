@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "TMXH8DjCe9n/Jrjru5hRYBIy4GHnEhdcFM50seAuI57HjQJ72xC8pbWEZBQeL/qlelD79DLfNvDgC7ZI4u2m5w==",
+  "dgSpecHash": "Spn7nlm5UiICDBoeHRC5qi61qZw/zVNmwMiHmHKswWvYQZJjYe1M7q428Dl1K69MGk/pt/yPBfyOcKjosjeGRQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\valgi\\Documents\\GitHub\\Obra\\Obra\\Obra.csproj",
   "expectedPackageFiles": [
@@ -28,6 +28,8 @@
     "C:\\Users\\valgi\\.nuget\\packages\\syncfusion.licensing\\20.1.0.58\\syncfusion.licensing.20.1.0.58.nupkg.sha512",
     "C:\\Users\\valgi\\.nuget\\packages\\syncfusion.officechart.base\\20.1.0.58\\syncfusion.officechart.base.20.1.0.58.nupkg.sha512",
     "C:\\Users\\valgi\\.nuget\\packages\\syncfusion.pdf.wpf\\20.1.0.58\\syncfusion.pdf.wpf.20.1.0.58.nupkg.sha512",
+    "C:\\Users\\valgi\\.nuget\\packages\\syncfusion.pdfviewer.wpf\\20.1.0.58\\syncfusion.pdfviewer.wpf.20.1.0.58.nupkg.sha512",
+    "C:\\Users\\valgi\\.nuget\\packages\\syncfusion.shared.wpf\\20.1.0.58\\syncfusion.shared.wpf.20.1.0.58.nupkg.sha512",
     "C:\\Users\\valgi\\.nuget\\packages\\system.appcontext\\4.1.0\\system.appcontext.4.1.0.nupkg.sha512",
     "C:\\Users\\valgi\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\valgi\\.nuget\\packages\\system.collections\\4.0.11\\system.collections.4.0.11.nupkg.sha512",

@@ -43,7 +43,14 @@ namespace Obra.Pages
         private void Profile_Click(object sender, RoutedEventArgs e)
         {
             NavigationService ns = NavigationService.GetNavigationService(this);
-            ns.Navigate(new Uri("Pages/Profils.xaml", UriKind.Relative));
+            if (App.ConnectUtility.isProfessional(App.Username))
+            {
+                ns.Navigate(new Uri("Pages/ProfilsPRO.xaml", UriKind.Relative));
+            }
+            else
+            {
+                ns.Navigate(new Uri("Pages/ProfilsPART.xaml", UriKind.Relative));
+            }
         }
 
         private void Username1_Click(object sender, RoutedEventArgs e)

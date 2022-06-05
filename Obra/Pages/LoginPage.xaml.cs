@@ -24,16 +24,16 @@ namespace Obra.Pages
             if (App.ConnectUtility.isProfessional(usernameBox.Text))
                 {
                     MainPageProEvent(sender, e);
-                    SerializerUtils.SerializeObject(SerializerUtils.writeToJSON("bool", "ispro", "true"), App.userDataSer);
+                    SerializerUtils.SerializeObject(SerializerUtils.writeToJSON("bool", "ispro", "true"), "islogin");
                 }
             else
                 {
                     MainPagePartEvent(sender, e);
-                    SerializerUtils.SerializeObject(SerializerUtils.writeToJSON("bool", "ispro", "false"), App.userDataSer);
+                    SerializerUtils.SerializeObject(SerializerUtils.writeToJSON("bool", "ispro", "false"), "islogin");
 
                 }
                 App.Username = usernameBox.Text;
-                SerializerUtils.SerializeObject(SerializerUtils.writeToJSON("bool", "islogin", "true"), App.userDataSer);
+                SerializerUtils.SerializeObject(SerializerUtils.writeToJSON("bool", "islogin", "true"), "islogin");
                 Localisation.Localize.GetIpOfUser();
             }
         else

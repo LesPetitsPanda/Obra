@@ -13,6 +13,7 @@
           "MySqlConnector": "2.1.8",
           "Newtonsoft.Json": "13.0.1",
           "Syncfusion.DocToPDFConverter.Wpf": "20.1.0.58",
+          "Syncfusion.PdfViewer.WPF": "20.1.0.58",
           "System.Device.Location.Portable": "1.0.0"
         },
         "runtime": {
@@ -266,6 +267,31 @@
         },
         "runtime": {
           "lib/net5.0-windows7.0/Syncfusion.Pdf.Base.dll": {
+            "assemblyVersion": "20.1500.0.58",
+            "fileVersion": "20.1500.0.58"
+          }
+        }
+      },
+      "Syncfusion.PdfViewer.WPF/20.1.0.58": {
+        "dependencies": {
+          "Syncfusion.Compression.Base": "20.1.0.58",
+          "Syncfusion.Licensing": "20.1.0.58",
+          "Syncfusion.Pdf.Wpf": "20.1.0.58",
+          "Syncfusion.Shared.WPF": "20.1.0.58"
+        },
+        "runtime": {
+          "lib/net5.0-windows7.0/Syncfusion.PdfViewer.WPF.dll": {
+            "assemblyVersion": "20.1500.0.58",
+            "fileVersion": "20.1500.0.58"
+          }
+        }
+      },
+      "Syncfusion.Shared.WPF/20.1.0.58": {
+        "dependencies": {
+          "Syncfusion.Licensing": "20.1.0.58"
+        },
+        "runtime": {
+          "lib/net5.0-windows7.0/Syncfusion.Shared.WPF.dll": {
             "assemblyVersion": "20.1500.0.58",
             "fileVersion": "20.1500.0.58"
           }
@@ -1047,6 +1073,20 @@
       "sha512": "sha512-6ccn7idNk4iVOIvk3Q8pfzKOA/CWQ/6KZTngu1uK//WjBHou7pEuuv33lkbhJ1SDy3DUdSl32JYduro77u/Cdw==",
       "path": "syncfusion.pdf.wpf/20.1.0.58",
       "hashPath": "syncfusion.pdf.wpf.20.1.0.58.nupkg.sha512"
+    },
+    "Syncfusion.PdfViewer.WPF/20.1.0.58": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6yn2WD97mHcWJRVbS+ZWiLeQQ3XYAUrSY1E/dvm7c07gO53FH++pD9B7LU1BUdMrwownqp1o6YVOPxA/IwEhJA==",
+      "path": "syncfusion.pdfviewer.wpf/20.1.0.58",
+      "hashPath": "syncfusion.pdfviewer.wpf.20.1.0.58.nupkg.sha512"
+    },
+    "Syncfusion.Shared.WPF/20.1.0.58": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-i6i77hKCvmXsQC9lFmRAZy3MYf554zxAnIGfSVh8KBv1DNfzmXZKQvBtBxvly/Ni7ncW6UUTXX7BeY21gbV+Gw==",
+      "path": "syncfusion.shared.wpf/20.1.0.58",
+      "hashPath": "syncfusion.shared.wpf.20.1.0.58.nupkg.sha512"
     },
     "System.AppContext/4.1.0": {
       "type": "package",

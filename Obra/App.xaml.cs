@@ -25,6 +25,13 @@ namespace Obra
         private static string username;
         private static ProfilePicture profilePicture;
         public static TcpClientUtils tcpClientUtils = new TcpClientUtils();
+        private static ProfileCV profileCV;
+
+        public static ProfileCV ProfileCV
+        {
+            get { return profileCV; }
+            set { profileCV = value; }
+        }
 
         public static ProfilePicture ProfilePicture
         {
@@ -50,6 +57,7 @@ namespace Obra
             
             //   tcpClientUtils.Connect();     
             profilePicture = new ProfilePicture();
+            profileCV = new ProfileCV();
         }
 
         

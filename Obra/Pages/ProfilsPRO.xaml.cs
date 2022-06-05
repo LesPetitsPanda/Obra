@@ -2,6 +2,8 @@
 using Syncfusion.Drawing;
 using Syncfusion.Pdf;
 using Syncfusion.Pdf.Graphics;
+using Syncfusion.Pdf.Parsing;
+using Syncfusion.Windows.PdfViewer;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -50,7 +52,7 @@ namespace Obra.Pages
         private void Message_Click(object sender, RoutedEventArgs e)
         {
             NavigationService ns = NavigationService.GetNavigationService(this);
-            ns.Navigate(new Uri("Pages/MessagePro.xaml", UriKind.Relative));
+            ns.Navigate(new Uri("Pages/MessageManager.xaml", UriKind.Relative));
         }
         private void Profile_Click(object sender, RoutedEventArgs e)
         {
@@ -60,7 +62,7 @@ namespace Obra.Pages
         private void Message(object sender, RoutedEventArgs e)
         {
             NavigationService ns = NavigationService.GetNavigationService(this);
-            ns.Navigate(new Uri("Pages/MessagePart.xaml", UriKind.Relative));
+            ns.Navigate(new Uri("Pages/MessageManager.xaml", UriKind.Relative));
         }
 
         private void New_Click(object sender, RoutedEventArgs e)
@@ -145,6 +147,45 @@ namespace Obra.Pages
         {
             var TextRange = new TextRange(rtb_editor.Selection.Start, rtb_editor.Selection.End);
             TextRange.ApplyPropertyValue(Inline.FontSizeProperty, ComboBoxSize.Text);
+        }
+
+        private void Publish_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBoxResult messageBoxResult = MessageBox.Show("Are you sure you want to publish your CV ?", "Warning", MessageBoxButton.YesNo);
+
+            if (messageBoxResult == MessageBoxResult.Yes)
+            {
+                
+                using (var stream = new FileStream("TempExport.rtf", FileMode.OpenOrCreate, FileAccess.Write))
+                {
+                    rtb_editor.SelectAll();
+                    rtb_editor.Selection.Save(stream, DataFormats.Rtf);
+                }
+                using (Syncfusion.DocIO.DLS.WordDocument wordDoc = new Syncfusion.DocIO.DLS.WordDocument("TempExport.rtf"))
+                {
+                    PdfViewerControl pdfViewerControl = new();
+                    
+                        Syncfusion.DocToPDFConverter.DocToPDFConverter converter = new Syncfusion.DocToPDFConverter.DocToPDFConverter();
+                        PdfDocument doc = converter.ConvertToPDF(wordDoc);
+                        MemoryStream pdfGenerated = new MemoryStream();
+                        doc.Form.Flatten = true;
+                        doc.Save(pdfGenerated);
+                        PdfLoadedDocument ldDoc = new PdfLoadedDocument(pdfGenerated);
+                        pdfViewerControl.Load(ldDoc);
+                        BitmapSource image = pdfViewerControl.ExportAsImage(0);
+                        if (image != null)
+                        {
+                            BitmapEncoder encoder = new JpegBitmapEncoder();
+                            encoder.Frames.Add(BitmapFrame.Create(image));
+                            using (FileStream stream = new FileStream("tempo.jpg", FileMode.Create))
+                            {
+                                encoder.Save(stream);
+                            }
+                        }   
+                }
+                App.ProfileCV.SavePicture("tempo.jpg");
+                File.Delete("TempExport.rtf");
+            }
         }
     }
 }

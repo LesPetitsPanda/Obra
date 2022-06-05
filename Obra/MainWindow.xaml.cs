@@ -28,35 +28,35 @@ namespace Obra
             InitializeComponent();
            Uri iconUri = new Uri("pack://application:,,,/Resources/mainlogo.ico", UriKind.RelativeOrAbsolute);
            this.Icon = BitmapFrame.Create(iconUri);
-               /* if(SerializerUtils.DeserializeObject(App.userDataSer, "bool", "islogin") == null)
-                 {
-                     this.Source = new Uri("Pages/LoginPage.xaml", UriKind.Relative);
-                 }
-                 else
-                if((string)SerializerUtils.DeserializeObject(App.userDataSer, "bool", "islogin") == "true")
-                 {
-                     if ( SerializerUtils.DeserializeObject(App.userDataSer, "bool", "ispro") == "true")
-                     {
-                         this.Source = new Uri("Pages/MainPagePro.xaml", UriKind.Relative);
-                     }
-                     else
-                     {
-                         this.Source = new Uri("Pages/MainPagePart.xaml", UriKind.Relative);
-                     }
+             if(SerializerUtils.DeserializeObject(App.userDataSer, "bool", "islogin") == null)
+              {
+                  this.Source = new Uri("Pages/LoginPage.xaml", UriKind.Relative);
+              }
+              else
+             if((string)SerializerUtils.DeserializeObject(App.userDataSer, "bool", "islogin") == "true")
+              {
+                  if ( SerializerUtils.DeserializeObject(App.userDataSer, "bool", "ispro") == "true")
+                  {
+                      this.Source = new Uri("Pages/MainPagePro.xaml", UriKind.Relative);
+                  }
+                  else
+                  {
+                      this.Source = new Uri("Pages/MainPagePart.xaml", UriKind.Relative);
+                  }
 
-                 }
-                 else
-                 {
-                     this.Source = new Uri("Pages/LoginPage.xaml", UriKind.Relative);
-                 }*/
-               this.Source = new Uri("Pages/MainPagePart.xaml", UriKind.Relative);
+              }
+              else
+              {
+                  this.Source = new Uri("Pages/LoginPage.xaml", UriKind.Relative);
+              }
+            //this.Source = new Uri("Pages/ProfilsPRO.xaml", UriKind.Relative);
 
         }
 
         protected override void OnClosed(EventArgs args)
         {
-         
-          base.OnClosed(args);
+
+            base.OnClosed(args);
           //  App.tcpClientUtils.Close();
         }
     }
