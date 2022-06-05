@@ -106,7 +106,7 @@ namespace Obra.Pages
             }
             SaveFileDialog saveFileDialog = new SaveFileDialog();
             saveFileDialog.DefaultExt = "*.pdf";
-            saveFileDialog.Filter = "*.pdf|All Files (*.*)|*.*";
+            saveFileDialog.Filter = "*.pdf|All Files (*.*)";
             if(saveFileDialog.ShowDialog() == true)
             {
                 using (Syncfusion.DocIO.DLS.WordDocument wordDoc = new Syncfusion.DocIO.DLS.WordDocument("TempExport.rtf"))

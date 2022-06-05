@@ -67,12 +67,13 @@ namespace Obra.Pages
             StackPanel? stackpanel = this.FindName("contentscroll") as StackPanel;
             if (scrollViewer != null)
             {
-                Individual individual = new Individual(Localisation.Localize.GetIpOfUser());
+                string ip = Localisation.Localize.GetIpOfUser();
+                Individual individual = new Individual(ip);
                 //MessageBox.Show(individual.getAllProfessionalLocation().First().Value +" "+ " " + individual.getAllProfessionalLocation().First().Key +individual.getAllProfessionalLocation().Count);
                 Dictionary<string, string> dict = individual.getProfessionalByLocation(individual.getAllProfessionalLocation());
                 foreach (var item in dict){
                    
-                    stackpanel.Children.Add(createTextBlockStyle(item.Key, mySQLConnectio.SQLConnectUtility.getJob(item.Key, App.ConnectUtility.conn), Localisation.Localize.GetCityByIp(item.Value), "-1"));
+                    stackpanel.Children.Add(createTextBlockStyle(item.Key, mySQLConnectio.SQLConnectUtility.getJob(item.Key, App.ConnectUtility.conn), Localisation.Localize.GetCityByIp(item.Value), mySQLConnectio.SQLConnectUtility.getRate(item.Key, App.ConnectUtility.conn)));
                 }
             }
             Loaded -= Scrollable_ScrollChanged;
@@ -236,11 +237,36 @@ namespace Obra.Pages
             img.Source = App.ProfilePicture.LoadPicture(username);
             Grid.SetColumn(img, 1);
             Grid.SetRow(img, 0);
+            //Rate
+
+
+            ComboBox comboBox = new ComboBox();
+            comboBox.ItemsSource = new List<int> { 0, 1, 2, 3, 4, 5 };
+            comboBox.SelectionChanged += (sender, args) =>
+            {
+                if (!Utils.RateManager.isAlreadyMarked("listrate", username))
+                {
+                    mySQLConnectio.SQLConnectUtility.addRate(username, App.ConnectUtility.conn, comboBox.SelectedItem.ToString());
+                    Utils.RateManager.AddMark("listrate", username);
+                }
+                else
+                {
+                    if (comboBox.SelectedItem != null)
+                    {
+                        MessageBox.Show("You have Already marked this person");
+                    }
+                }
+                comboBox.SelectedItem = null;
+            };
+
+            Grid.SetColumn(comboBox, 1);
+            Grid.SetRow(comboBox, 3);
             grid.Children.Add(textBlock);
             grid.Children.Add(textBlock2);
             grid.Children.Add(textBlock3);
             grid.Children.Add(textBlock1);
-            //grid.Children.Add(img);
+            grid.Children.Add(img);
+            grid.Children.Add(comboBox);
             var border = new Border();
             border.BorderBrush = Brushes.Black;
             border.BorderThickness = new Thickness(1.5);
@@ -249,6 +275,6 @@ namespace Obra.Pages
             border.Height = 200;
             return border;
         }
-       
+
     }
 }

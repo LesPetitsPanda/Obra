@@ -40,17 +40,20 @@ namespace mySQLConnectio
             return null;
         }
         public static void addRate(string name, MySqlConnection conn, string rate)
-        { string s = getTotalRate(name, conn);
+        {
+
+            string s = getTotalRate(name, conn);
             string sql;
             if (s == "-1")
             {
-               sql = "UPDATE professional SET " + "rate" + " = '" + rate + "' WHERE " + DataUpdateType.USERNAME + " = '" + name + "';";
+                sql = "UPDATE professional SET " + "rate" + " = '" + rate + "' WHERE " + DataUpdateType.USERNAME + " = '" + name + "';";
 
             }
             else
             {
-                sql  = "UPDATE professional SET " + "rate" + " = '" + s + ","+rate + "' WHERE " + DataUpdateType.USERNAME + " = '" + name + "';";
+                sql = "UPDATE professional SET " + "rate" + " = '" + s + "," + rate + "' WHERE " + DataUpdateType.USERNAME + " = '" + name + "';";
             }
+            conn.Open();
             MySqlCommand command = new MySqlCommand(sql, conn);
             command.ExecuteNonQuery();
             conn.Close();
@@ -90,20 +93,20 @@ namespace mySQLConnectio
                 {
                     string res = read.GetString(6);
                     conn.Close();
-                    string[] temp = res.Split(new char[] {','});
+                    string[] temp = res.Split(new char[] { ',' });
                     int rate = 0;
-                    foreach(string s in temp)
+                    foreach (string s in temp)
                     {
-                        if(s == "-1")
+                        if (s == "-1")
                         {
                             return "Without rate";
                         }
                         else
                         {
-                            rate+= int.Parse(s);
+                            rate += int.Parse(s);
                         }
                     }
-                    return (rate/temp.Length).ToString();
+                    return (rate / temp.Length).ToString();
                 }
             }
             conn.Close();

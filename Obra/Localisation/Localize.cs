@@ -59,11 +59,11 @@ namespace Obra.Localisation
 
         public static string GetIpOfUser()
         {
-            return "163.5.2.71";
             string address = "";
-            if(Utils.SerializerUtils.DeserializeObject("userip", "string", "ip") != null)
+            string res = (string)Utils.SerializerUtils.DeserializeObject("ip", "string", "userip");
+            if (res != null)
             {
-                return (string)Utils.SerializerUtils.DeserializeObject("usserip", "string", "ip");
+                return res;
             }
             WebRequest request = WebRequest.Create("http://checkip.dyndns.org/");
             using (WebResponse response = request.GetResponse())
@@ -75,7 +75,7 @@ namespace Obra.Localisation
             int first = address.IndexOf("Address: ") + 9;
             int last = address.LastIndexOf("</body>");
             address = address.Substring(first, last - first);
-            Utils.SerializerUtils.SerializeObject(Utils.SerializerUtils.writeToJSON("userip", "string", "ip"), address);
+            Utils.SerializerUtils.SerializeObject(Utils.SerializerUtils.writeToJSON("userip", "string",address), "ip");
             return address;
         }
     }
