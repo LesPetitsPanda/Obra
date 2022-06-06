@@ -60,7 +60,7 @@ namespace Obra.Localisation
         public static string GetIpOfUser()
         {
             return "90.114.187.121";
-            /*string address = "";
+            string address = "";
             string res = (string)Utils.SerializerUtils.DeserializeObject("ip", "string", "userip");
             if (res != null)
             {
@@ -77,7 +77,12 @@ namespace Obra.Localisation
             int last = address.LastIndexOf("</body>");
             address = address.Substring(first, last - first);
             Utils.SerializerUtils.SerializeObject(Utils.SerializerUtils.writeToJSON("userip", "string",address), "ip");
-            return address;*/
+            if(address == "")
+            {
+                return "90.114.187.121";
+            }
+            
+            return address;
         }
     }
 }

@@ -51,9 +51,8 @@
                 </Button.Template>
             </Button>
         </Grid>
-        <ScrollViewer Grid.Column="2" Background="White" Name="list_add">
-            <Button x:Name="Username1" Click="Username1_Click">Joseph</Button>
+        <ScrollViewer Grid.Column="2" Background="White">
+            <StackPanel x:Name="list_add"></StackPanel>
         </ScrollViewer>
-    
     </Grid>
 </Page>

@@ -24,6 +24,7 @@ namespace Obra.Pages
     /// </summary>
     public partial class MessagePart : Page
     {
+        private bool active = true;
         private TcpClient tcp;
         private Thread thrMessaging;
         private delegate void NewMessageCallBack(string strMessage);
@@ -43,11 +44,12 @@ namespace Obra.Pages
 
         private void Window_Closing(object sender, RoutedEventArgs e)
         {
-          
+            Finished();
             Unloaded -= Window_Closing;
         }
         private void SettingsPart_Click(object sender, RoutedEventArgs e)
         {
+           
             NavigationService ns = NavigationService.GetNavigationService(this);
             ns.Navigate(new Uri("Pages/SettingsPart.xaml", UriKind.Relative));
         }
@@ -86,12 +88,18 @@ namespace Obra.Pages
                 
             }
         }
-
+        private void Finished()
+        {
+            Stream stm = tcp.GetStream();
+            ASCIIEncoding asen = new ASCIIEncoding();
+            byte[] ba = asen.GetBytes("close");
+            stm.Write(ba, 0, ba.Length);
+        }
         private void SendMessage(string str)
         {
             Stream stm = tcp.GetStream();
             UpdateMessage(App.Username + ": " + str);
-            str = UsertoSend + ": " + str;
+            str = App.Username + ":" +UsertoSend + ":" + str;
             ASCIIEncoding asen = new ASCIIEncoding();
             byte[] ba = asen.GetBytes(str);
 
@@ -100,35 +108,35 @@ namespace Obra.Pages
             //Receive();
         }
 
+
         private void Receive()
         {
             Stream str = tcp.GetStream();
-            while (true)
+            while (active)
             {
+                string res = "";
                 byte[] bb = new byte[100];
-                try
+                int k = str.Read(bb, 0, 100);
+                for (int i = 0; i < k; i++)
+                    res += Convert.ToChar(bb[i]);
+                if (res == "close")
                 {
-                    string res = "";
-                    int k = str.Read(bb, 0, 100);
-                    for (int i = 0; i < k; i++)
-                        res += Convert.ToChar(bb[i]);
-                    if (res != "")
-                    {
-                        content_messages.Dispatcher.Invoke(new NewMessageCallBack(this.UpdateMessage), new object[] { res });
-                        Thread.Sleep(300);
-                    }
+                    active = false;
+                    thrMessaging.Join();
+                    tcp.Close();
                 }
-                catch (Exception ex)
+                else if (res != "")
                 {
-                    if (!tcp.Connected)
-                    {
-                        break;
-                    }
-                }
-            }
-            thrMessaging.Abort();
+                    StreamWriter streamReader = new StreamWriter(@"DataConv\" + res.Split()[1]);
+                    streamReader.Write(res);
+                    streamReader.Close();
+                    content_messages.Dispatcher.Invoke(new NewMessageCallBack(this.UpdateMessage), new object[] { res });
 
-        }
+                }
+               
+            }     
+            }
+        
         public void Connect()
         {
             tcp = new TcpClient();

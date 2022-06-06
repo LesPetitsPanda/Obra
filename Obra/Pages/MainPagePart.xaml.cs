@@ -61,10 +61,11 @@ namespace Obra.Pages
             MessageBoxResult messageBoxResult = MessageBox.Show("Are you sure do you want to send a private message to this person?", "Warning!", MessageBoxButton.YesNo);
             if (messageBoxResult == MessageBoxResult.Yes)
             {
+                Utils.MessageManagerUtils.AddMark("managemessage", textBlock.Text);
                 MessagePart messagePart = new MessagePart();
                 messagePart.UsertoSend = ((TextBlock)sender).Text;
                 NavigationService ns = NavigationService.GetNavigationService(this);
-                ns.Navigate(new Uri("Pages/ProfilsPart.xaml", UriKind.Relative));
+                ns.Navigate(messagePart);
             }
 #pragma warning restore CS8604 // Existence possible d'un argument de référence null.
             

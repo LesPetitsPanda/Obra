@@ -76,6 +76,7 @@ namespace Obra.Pages
                 MessageBoxResult selected = MessageBox.Show("The name can't be empty !");
 
             }
+            F.Inlines.Add(n + "\n");
             Names = listname;
             return names;
         }

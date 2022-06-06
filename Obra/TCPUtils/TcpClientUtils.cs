@@ -14,6 +14,7 @@ namespace Obra.TCPUtils
     {
         public TcpClient tcp;
         public Thread thrMessaging;
+        private bool active = true;
         public TcpClientUtils()
         {
         }
@@ -22,7 +23,7 @@ namespace Obra.TCPUtils
         public void SendMessage(string str, string UsertoSend)
         {
             Stream stm = tcp.GetStream();
-            str = App.Username +":"+ UsertoSend + ": " + str;
+            str = App.Username + ":" + UsertoSend + ": " + str;
             ASCIIEncoding asen = new ASCIIEncoding();
             byte[] ba = asen.GetBytes(str);
             stm.Write(ba, 0, ba.Length);
@@ -31,7 +32,7 @@ namespace Obra.TCPUtils
         public void Receive()
         {
             Stream str = tcp.GetStream();
-            while (true)
+            while (active)
             {
                 string res = "";
                 byte[] bb = new byte[100];
@@ -40,11 +41,12 @@ namespace Obra.TCPUtils
                     res += Convert.ToChar(bb[i]);
                 if (res != "")
                 {
-                    StreamWriter streamReader = new StreamWriter(@"DataConv\" +res.Split()[1]);
+                    StreamWriter streamReader = new StreamWriter(@"DataConv\" + res.Split()[1]);
                     streamReader.Write(res);
                     streamReader.Close();
                 }
             }
+            Console.WriteLine("changement de active nn opera");
 
         }
         public void Connect()
@@ -63,7 +65,8 @@ namespace Obra.TCPUtils
         }
         public void Close()
         {
-            Thread.Sleep(500);
+            active = false;
+            thrMessaging.Join();
             tcp.Close();
         }
     }

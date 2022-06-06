@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi"><?define Obra_TargetDir=$(var.Obra.TargetDir)?>
-	<Product Id="*" Name="ObraSetup" Language="1033" Version="1.0.0.0" Manufacturer="" UpgradeCode="351916a8-2c6e-453c-870a-9f39adb20a0a">
+	<Product Id="*" Name="ObraSetup" Language="1033" Version="1.0.0.0" Manufacturer="Obra" UpgradeCode="351916a8-2c6e-453c-870a-9f39adb20a0a">
 		<Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" />
 
 		<MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
 		<MediaTemplate />
 
-		<Feature Id="*" Title="ObraSetup" Level="1">
+		<Feature Id="Obra" Title="ObraSetup" Level="1">
 			<ComponentGroupRef Id="ProductComponents" />
+			<ComponentRef Id="ApplicationShortcut" />
+			<ComponentRef Id="ApplicationShortcutDesktop" />
 		</Feature>
 	</Product>
 
@@ -15,6 +17,10 @@
 		<Directory Id="TARGETDIR" Name="SourceDir">
 			<Directory Id="ProgramFilesFolder">
 				<Directory Id="INSTALLFOLDER" Name="ObraSetup" />
+				<Directory Id="ProgramMenuFolder">
+					<Directory Id="ApplicationProgramsFolder" Name="Obra"/>
+				</Directory>
+				<Directory Id="DesktopFolder" Name="Desktop"/>
 			</Directory>
 		</Directory>
 	</Fragment>
@@ -81,6 +87,12 @@
 			</Component>
 			<Component Id="Obra.pdb" Guid="716c5ff1-c850-4b67-9c60-2435a78a512b">
 			  <File Id="Obra.pdb" Name="Obra.pdb" Source="$(var.Obra_TargetDir)Obra.pdb" />
+			</Component>
+			<Component Id="Syncfusion.Shared.WPF.dll" Guid="ec0d3cd5-121b-4176-a385-09c6d3f2f4d0">
+			  <File Id="Syncfusion.Shared.WPF.dll" Name="Syncfusion.Shared.WPF.dll" Source="$(var.Obra_TargetDir)Syncfusion.Shared.WPF.dll" />
+			</Component>
+			<Component Id="Syncfusion.PdfViewer.WPF.dll" Guid="426d2cc9-33d8-47db-b617-3fd553637fa0">
+			  <File Id="Syncfusion.PdfViewer.WPF.dll" Name="Syncfusion.PdfViewer.WPF.dll" Source="$(var.Obra_TargetDir)Syncfusion.PdfViewer.WPF.dll" />
 			</Component>
 		</ComponentGroup>
 	</Fragment>

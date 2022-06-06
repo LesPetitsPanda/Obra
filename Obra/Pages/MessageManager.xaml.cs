@@ -23,6 +23,15 @@ namespace Obra.Pages
         public MessageManager()
         {
             InitializeComponent();
+            Loaded += MessageManager_Loaded;
+        }
+
+        private void MessageManager_Loaded(object sender, RoutedEventArgs e)
+        {
+            foreach (string s in Utils.MessageManagerUtils.getList("managemessage"))
+            {
+                list_add.Children.Add(createBlock(s));
+            }
         }
 
         private void SettingsPart_Click(object sender, RoutedEventArgs e)
@@ -49,7 +58,7 @@ namespace Obra.Pages
         private void Message_Click(object sender, RoutedEventArgs e)
         {
             NavigationService ns = NavigationService.GetNavigationService(this);
-            ns.Navigate(new Uri("Pages/MessagePart.xaml", UriKind.Relative));
+            ns.Navigate(new Uri("Pages/MessageManager.xaml", UriKind.Relative));
         }
         private void Profile_Click(object sender, RoutedEventArgs e)
         {
@@ -71,5 +80,35 @@ namespace Obra.Pages
             message.UserToSend = "Joseph";
             ns.Navigate(message);
         }
+        private Border createBlock(string username)
+        {
+            string[] s =  username.Split('\n');
+            Border border = new Border();
+            border.Height = 50;
+            border.BorderThickness = new Thickness(1.5);
+            border.BorderBrush = Brushes.Black;
+            Grid grid = new Grid();
+            grid.RowDefinitions.Add(new RowDefinition());
+            grid.RowDefinitions.Add(new RowDefinition());
+            TextBlock textBlock = new TextBlock();
+            textBlock.Text = s[0];
+            textBlock.HorizontalAlignment = HorizontalAlignment.Center;
+            Grid.SetRow(textBlock, 0);
+            grid.Children.Add(textBlock);
+            TextBlock textBlock1 = new TextBlock();
+            textBlock1.Text = "Metier: " + s[1];
+            textBlock1.HorizontalAlignment = HorizontalAlignment.Center;
+            Grid.SetRow(textBlock1, 1);
+            grid.Children.Add(textBlock1);
+            border.Child = grid;
+            border.MouseDown += (sender, args) => {
+                MessagePart messagePart = new MessagePart();
+                messagePart.UsertoSend = textBlock.Text;
+                NavigationService ns = NavigationService.GetNavigationService(this);
+                ns.Navigate(messagePart);
+            };
+            return border;
+        }
+  
     }
 }
