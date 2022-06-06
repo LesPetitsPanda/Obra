@@ -28,14 +28,14 @@ namespace Obra
             InitializeComponent();
            Uri iconUri = new Uri("pack://application:,,,/Resources/mainlogo.ico", UriKind.RelativeOrAbsolute);
            this.Icon = BitmapFrame.Create(iconUri);
-             if(SerializerUtils.DeserializeObject(App.userDataSer, "bool", "islogin") == null)
+             if(SerializerUtils.DeserializeObject("islogin", "bool", "islogin") == null)
               {
                   this.Source = new Uri("Pages/LoginPage.xaml", UriKind.Relative);
               }
               else
-             if((string)SerializerUtils.DeserializeObject(App.userDataSer, "bool", "islogin") == "true")
+             if((string)SerializerUtils.DeserializeObject("islogin", "bool", "islogin") == "true")
               {
-                  if ( SerializerUtils.DeserializeObject(App.userDataSer, "bool", "ispro") == "true")
+                  if ((string)SerializerUtils.DeserializeObject("ispro", "bool", "ispro") == "true")
                   {
                       this.Source = new Uri("Pages/MainPagePro.xaml", UriKind.Relative);
                   }

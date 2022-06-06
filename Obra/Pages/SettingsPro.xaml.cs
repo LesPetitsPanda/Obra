@@ -2,6 +2,7 @@
 using Obra.Utils;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -42,8 +43,9 @@ namespace Obra.Pages
 
         private void disconnectEvent(object sender, RoutedEventArgs args)
         {
-            SerializerUtils.SerializeObject(SerializerUtils.writeToJSON("bool", "islogin", "false"), App.userDataSer);
-            NavigationService ns = NavigationService.GetNavigationService(this);
+            SerializerUtils.SerializeObject(SerializerUtils.writeToJSON("bool", "islogin", "false"), "islogin");
+            File.Delete("userlogin");
+            File.Delete("ispro"); NavigationService ns = NavigationService.GetNavigationService(this);
             ns.Navigate(new Uri("Pages/LoginPage.xaml", UriKind.Relative));
         }
         private void SettingsPart_Click(object sender, RoutedEventArgs e)

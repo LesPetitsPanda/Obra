@@ -31,7 +31,26 @@ namespace Obra.Pages
             InitializeComponent();
             Loaded += FocusImage_Loaded;
         }
-
+        private void SettingsPart_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService ns = NavigationService.GetNavigationService(this);
+            ns.Navigate(new Uri("Pages/SettingsPart.xaml", UriKind.Relative));
+        }
+        private void Home_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService ns = NavigationService.GetNavigationService(this);
+            ns.Navigate(new Uri("Pages/MainPagePart.xaml", UriKind.Relative));
+        }
+        private void Message_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService ns = NavigationService.GetNavigationService(this);
+            ns.Navigate(new Uri("Pages/MessageManager.xaml", UriKind.Relative));
+        }
+        private void Profile_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService ns = NavigationService.GetNavigationService(this);
+            ns.Navigate(new Uri("Pages/ProfilsPart.xaml", UriKind.Relative));
+        }
         private void FocusImage_Loaded(object sender, RoutedEventArgs e)
         {
             img.Source = image;

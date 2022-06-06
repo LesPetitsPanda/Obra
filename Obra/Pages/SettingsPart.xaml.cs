@@ -42,8 +42,9 @@ namespace Obra.Pages
 
         private void disconnectEvent(object sender, RoutedEventArgs args)
         {
-            SerializerUtils.SerializeObject(SerializerUtils.writeToJSON("bool", "islogin", "false"), App.userDataSer);
+            SerializerUtils.SerializeObject(SerializerUtils.writeToJSON("bool", "islogin", "false"), "islogin");
             File.Delete("userlogin");
+            File.Delete("ispro");
             App.Username = null;
             NavigationService ns = NavigationService.GetNavigationService(this);
             ns.Navigate(new Uri("Pages/LoginPage.xaml", UriKind.Relative));
