@@ -21,7 +21,7 @@ namespace Obra
 
         public readonly static string userDataSer = "userlogin"; 
         private static MySQLConnectUtility __connect;
-        public static string connection = "server=162.19.74.161;database=world;username=val;port=3306;password=123456789";
+        public static string connection = "DATABASE";
         private static string username;
         private static ProfilePicture profilePicture;
         public static TcpClientUtils tcpClientUtils = new TcpClientUtils();
