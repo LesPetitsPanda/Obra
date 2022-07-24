@@ -5,18 +5,34 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
       xmlns:local="clr-namespace:Obra.Pages"
       mc:Ignorable="d"
-      Title="LoginPage" Height="450" Width="800">
-    <Grid>
-        <StackPanel>
-            <TextBox Name="usernameBox"  HorizontalAlignment="Center" Width="70"></TextBox>
-            <PasswordBox Name="PasswordBox"  HorizontalAlignment="Center" Width="70" ></PasswordBox>
-            <Button Content="Se connecter" Name="log" Click="login_Click"  HorizontalAlignment="Center"></Button>
+      ShowsNavigationUI="False"
+      Title="LoginPage" Background="#DDEAF7">
+    <Grid Height="265" Width="250">
+        <Border CornerRadius="10" Background="#A3CEF3" Margin="109,0,-109,0">
+            <StackPanel  Margin="0,30,0,-112">
+                <Border Width="138" Height="147" CornerRadius="10" Background="CornflowerBlue" >
+                    <StackPanel Margin="10,0,10,10">
+                        <TextBlock></TextBlock>
+                        <TextBlock Height="18" Width="118"><Run Text="            "/><Run Language="fr-fr" Text=" "/><Run Text="Login"/></TextBlock>
+                        <TextBox x:Name="usernameBox" Width="100" />
+                        <TextBlock Height="18" Width="146"><Run Language="fr-fr" Text="           "/><Run Text="Password"/></TextBlock>
+                        <PasswordBox x:Name="PasswordBox" Width="100" />
+                        <TextBlock HorizontalAlignment="Center"></TextBlock>
+                        <Button Content="Login" Background="CornflowerBlue"  x:Name="log" Click="Login_Click" BorderBrush="CornflowerBlue" Width="103"/>
+                        <TextBlock></TextBlock>
+                    </StackPanel>
+                </Border>
+                <Label Content="No account yet ? Register as:" Width="164" RenderTransformOrigin="0.48,-0.747" Height="30"/>
+                <Button Content="Individual account" Background="#A3CEF3" BorderBrush="#A3CEF3" Click="RegisterPart_Click" Width="162" />
+                <Button Content="Professionnal account" Background="#A3CEF3" BorderBrush="#A3CEF3" x:Name="inscription" Click="RegisterPro_Click" Width="172" Height="21"/>
+            </StackPanel>
+        </Border>
+        <StackPanel Margin="-241,0,179,0">
+            <Image x:Name="obraa" Source="/Resources/Logo 2.png" Height="228" Width="345"/>
         </StackPanel>
-        <TextBlock Height="20" HorizontalAlignment="Left" Margin="16,10,0,0" Name="textBlockHyperlink" VerticalAlignment="Top" Width="97" >
-            <Hyperlink Click="registerEvent">
-                <Run Text="Register"/>
-            </Hyperlink>
-        </TextBlock>
+        <StackPanel Margin="-190,132,199,75">
+            <Image x:Name="obra" Source="/Resources/Obra2.png" Height="50" Width="250">
+            </Image>
+        </StackPanel>
     </Grid>
-    
 </Page>

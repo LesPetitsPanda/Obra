@@ -8,8 +8,62 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <None Remove="Pages\Epita.png" />
+      <None Remove="Resources\home.png" />
+      <None Remove="Resources\Logo 1.png" />
+      <None Remove="Resources\Logo 2.png" />
+      <None Remove="Resources\Logo C.png" />
+      <None Remove="Resources\mainlogo.ico" />
+      <None Remove="Resources\Maison bleue.png" />
+      <None Remove="Resources\maison.png" />
+      <None Remove="Resources\messagerie.png" />
+      <None Remove="Resources\Messages.png" />
+      <None Remove="Resources\Obra.png" />
+      <None Remove="Resources\Obra2.png" />
+      <None Remove="Resources\PA.png" />
+      <None Remove="Resources\Parametres.png" />
+      <None Remove="Resources\profile.png" />
+      <None Remove="Resources\profils.png" />
+      <None Remove="Resources\Reglades.png" />
+      <None Remove="Resources\settings.png" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Include="..\.editorconfig" Link=".editorconfig" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Resource Include="Resources\home.png" />
+      <Resource Include="Resources\Logo 1.png" />
+      <Resource Include="Resources\Logo C.png" />
+      <Resource Include="Resources\Maison bleue.png" />
+      <Resource Include="Resources\maison.png" />
+      <Resource Include="Resources\messagerie.png" />
+      <Resource Include="Resources\Messages.png" />
+      <Resource Include="Resources\Obra.png" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="GeoCoordinate" Version="2.0.1" />
       <PackageReference Include="MySql.Data" Version="8.0.28" />
-      <PackageReference Include="MySqlConnector" Version="2.1.6" />
+      <PackageReference Include="MySqlConnector" Version="2.1.8" />
+      <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+      <PackageReference Include="Syncfusion.DocToPDFConverter.Wpf" Version="20.1.0.58" />
+      <PackageReference Include="Syncfusion.PdfViewer.WPF" Version="20.1.0.58" />
+      <PackageReference Include="System.Device.Location.Portable" Version="1.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Resource Include="Resources\Epita.png" />
+      <Resource Include="Resources\Logo 2.png" />
+      <Resource Include="Resources\mainlogo.ico" />
+      <Resource Include="Resources\Obra2.png" />
+      <Resource Include="Resources\PA.png" />
+      <Resource Include="Resources\Parametres.png" />
+      <Resource Include="Resources\profile.png" />
+      <Resource Include="Resources\profils.png" />
+      <Resource Include="Resources\Reglades.png" />
+      <Resource Include="Resources\settings.png" />
     </ItemGroup>
 
 </Project>

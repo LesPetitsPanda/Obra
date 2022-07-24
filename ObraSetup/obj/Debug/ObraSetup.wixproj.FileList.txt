@@ -1,0 +1,7 @@
+C:\Users\valgi\Documents\GitHub\Obra\ObraSetup\bin\Debug\cab1.cab
+C:\Users\valgi\Documents\GitHub\Obra\ObraSetup\bin\Debug\ObraSetup.msi
+C:\Users\valgi\Documents\GitHub\Obra\ObraSetup\bin\Debug\ObraSetup.wixpdb
+obj\Debug\Product.wixobj
+obj\Debug\ObraSetup.wixproj.BindContentsFileListnull.txt
+obj\Debug\ObraSetup.wixproj.BindOutputsFileListnull.txt
+obj\Debug\ObraSetup.wixproj.BindBuiltOutputsFileListnull.txt

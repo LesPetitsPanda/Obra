@@ -1,4 +1,7 @@
-﻿using System;
+﻿using Obra.Utils;
+using System;
+using System.IO;
+using System.Text.Json;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Navigation;
@@ -10,25 +13,57 @@ namespace Obra.Pages
         public LoginPage()
         {
             InitializeComponent();
+            
         }
 
-        private void login_Click(object sender, RoutedEventArgs e)
+        private void Login_Click(object sender, RoutedEventArgs e)
         {
         if(Obra.App.ConnectUtility.VerifyPassword(PasswordBox.Password, usernameBox.Text))
          {
             log.Content = "login";
-            Console.Write("okkk");
+            if (App.ConnectUtility.isProfessional(usernameBox.Text))
+                {
+                    MainPageProEvent(sender, e);
+                    SerializerUtils.SerializeObject(SerializerUtils.writeToJSON("bool", "ispro", "true"), "ispro");
+                }
+            else
+                {
+                    MainPagePartEvent(sender, e);
+                    SerializerUtils.SerializeObject(SerializerUtils.writeToJSON("bool", "ispro", "false"), "ispro");
+
+                }
+                App.Username = usernameBox.Text;
+                SerializerUtils.SerializeObject(SerializerUtils.writeToJSON("bool", "islogin", "true"), "islogin");
+                Localisation.Localize.GetIpOfUser();
             }
         else
          {
             log.Content = "not login";
          }
+            Utils.SerializerUtils.SerializeObject(Utils.SerializerUtils.writeToJSON("string", "username", usernameBox.Text), "userlogin");
+            App.Username = usernameBox.Text;
         }
-
-        private void registerEvent(object sender, RoutedEventArgs e)
+        private void MainPageProEvent(object sender, RoutedEventArgs e)
         {
             NavigationService ns = NavigationService.GetNavigationService(this);
-            ns.Navigate(new Uri("Pages/RegisterPage.xaml", UriKind.Relative));
+            ns.Navigate(new Uri("Pages/MainPagePro.xaml", UriKind.Relative));
         }
+
+        private void MainPagePartEvent(object sender, RoutedEventArgs e)
+        {
+            NavigationService ns = NavigationService.GetNavigationService(this);
+            ns.Navigate(new Uri("Pages/MainPagePart.xaml", UriKind.Relative));
+        }
+        private void RegisterPart_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService ns = NavigationService.GetNavigationService(this);
+            ns.Navigate(new Uri("Pages/RegisterPartPage.xaml", UriKind.Relative));
+        }
+        private void RegisterPro_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService ns = NavigationService.GetNavigationService(this);
+            ns.Navigate(new Uri("Pages/RegisterProPage.xaml", UriKind.Relative));
+        }
+
     }
 }

@@ -2,29 +2,43 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ca202c0-7d96-45d6-8c6a-a7bac7078b03" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Obra/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Obra/SQLTools/ConnexionToRegistration/DataUpdateType.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Obra/SQLTools/ConnexionToRegistration/MySQLConnect.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Obra/SQLTools/ConnexionToRegistration/RowType.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Obra/SQLTools/ProfessionalAccount/ProfessionalAccount.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Obra/SQLTools/Utils/SQLConnectUtility.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Obra/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Obra/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Obra/App.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Obra/App.xaml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Obra/MainWindow.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/Obra/MainWindow.xaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Obra/MainWindow.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Obra/MainWindow.xaml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Obra/Obra.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Obra/Obra.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/Obra/DesignTimeBuild/.dtbcache.v2" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/Obra/DesignTimeBuild/.dtbcache.v2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/Obra/project-colors.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/Obra/project-colors.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/Obra/v17/.futdcache.v1" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/Obra/v17/.futdcache.v1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/Obra/v17/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/Obra/v17/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obra/Pages/LoginPage.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Obra/Pages/LoginPage.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obra/SQLTools/ConnexionToRegistration/DataUpdateType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Obra/SQLTools/ConnexionToRegistration/DataUpdateType.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obra/SQLTools/ConnexionToRegistration/MySQLConnect.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Obra/SQLTools/ConnexionToRegistration/MySQLConnect.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obra/SQLTools/ConnexionToRegistration/RowType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Obra/SQLTools/ConnexionToRegistration/RowType.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obra/SQLTools/Utils/SQLConnectUtility.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Obra/SQLTools/Utils/SQLConnectUtility.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obra/bin/Debug/net6.0-windows/Obra.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/Obra/bin/Debug/net6.0-windows/Obra.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obra/bin/Debug/net6.0-windows/Obra.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Obra/bin/Debug/net6.0-windows/Obra.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obra/bin/Debug/net6.0-windows/Obra.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Obra/bin/Debug/net6.0-windows/Obra.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obra/bin/Debug/net6.0-windows/Obra.runtimeconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/Obra/bin/Debug/net6.0-windows/Obra.runtimeconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obra/bin/Debug/net6.0-windows/ref/Obra.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Obra/bin/Debug/net6.0-windows/ref/Obra.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obra/obj/Debug/net6.0-windows/MainWindow.baml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Obra/obj/Debug/net6.0-windows/MainWindow.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Obra/obj/Debug/net6.0-windows/MainWindow.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Obra/obj/Debug/net6.0-windows/Obra.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Obra/obj/Debug/net6.0-windows/Obra.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Obra/obj/Debug/net6.0-windows/Obra.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Obra/obj/Debug/net6.0-windows/Obra.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Obra/obj/Debug/net6.0-windows/Obra.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Obra/obj/Debug/net6.0-windows/Obra.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Obra/obj/Debug/net6.0-windows/Obra_MarkupCompile.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Obra/obj/Debug/net6.0-windows/Obra_MarkupCompile.lref" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obra/obj/Debug/net6.0-windows/MainWindow.g.i.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Obra/obj/Debug/net6.0-windows/MainWindow.g.i.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obra/obj/Debug/net6.0-windows/Obra.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Obra/obj/Debug/net6.0-windows/Obra.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obra/obj/Debug/net6.0-windows/Obra.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Obra/obj/Debug/net6.0-windows/Obra.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obra/obj/Debug/net6.0-windows/Obra.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Obra/obj/Debug/net6.0-windows/Obra.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obra/obj/Debug/net6.0-windows/Obra.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Obra/obj/Debug/net6.0-windows/Obra.genruntimeconfig.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obra/obj/Debug/net6.0-windows/Obra.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Obra/obj/Debug/net6.0-windows/Obra.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obra/obj/Debug/net6.0-windows/Obra_MarkupCompile.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Obra/obj/Debug/net6.0-windows/Obra_MarkupCompile.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obra/obj/Debug/net6.0-windows/Obra_MarkupCompile.i.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Obra/obj/Debug/net6.0-windows/Obra_MarkupCompile.i.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obra/obj/Debug/net6.0-windows/Obra_MarkupCompile.lref" beforeDir="false" afterPath="$PROJECT_DIR$/Obra/obj/Debug/net6.0-windows/Obra_MarkupCompile.lref" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obra/obj/Debug/net6.0-windows/Pages/LoginPage.baml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obra/obj/Debug/net6.0-windows/Pages/LoginPage.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Obra/obj/Debug/net6.0-windows/Pages/LoginPage.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obra/obj/Debug/net6.0-windows/Pages/LoginPage.g.i.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Obra/obj/Debug/net6.0-windows/Pages/LoginPage.g.i.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obra/obj/Debug/net6.0-windows/Pages/RegisterPage.baml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obra/obj/Debug/net6.0-windows/Pages/RegisterPage.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Obra/obj/Debug/net6.0-windows/Pages/RegisterPage.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obra/obj/Debug/net6.0-windows/Pages/RegisterPage.g.i.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Obra/obj/Debug/net6.0-windows/Pages/RegisterPage.g.i.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obra/obj/Debug/net6.0-windows/ref/Obra.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Obra/obj/Debug/net6.0-windows/ref/Obra.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Obra/obj/Obra.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Obra/obj/Obra.csproj.nuget.dgspec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Obra/obj/Obra.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/Obra/obj/Obra.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Obra/obj/Obra.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/Obra/obj/Obra.csproj.nuget.g.targets" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Obra/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Obra/obj/project.assets.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Obra/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Obra/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Obra/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Obra/obj/project.packagespec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Obra/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Obra/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -77,6 +91,9 @@
       <option name="presentableId" value="Default" />
       <updated>1645036329093</updated>
       <workItem from="1645036333784" duration="11300000" />
+      <workItem from="1645300124559" duration="1000" />
+      <workItem from="1645300243461" duration="1000" />
+      <workItem from="1645346408185" duration="34000" />
     </task>
     <servers />
   </component>
@@ -84,7 +101,7 @@
     <option name="version" value="3" />
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
-  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -96,6 +113,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />

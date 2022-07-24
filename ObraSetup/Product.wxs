@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi"><?define Obra_TargetDir=$(var.Obra.TargetDir)?>
+	<Product Id="*" Name="ObraSetup" Language="1033" Version="1.0.0.0" Manufacturer="Obra" UpgradeCode="351916a8-2c6e-453c-870a-9f39adb20a0a">
+		<Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" />
+
+		<MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
+		<MediaTemplate />
+
+		<Feature Id="Obra" Title="ObraSetup" Level="1">
+			<ComponentGroupRef Id="ProductComponents" />
+			<ComponentRef Id="ApplicationShortcut" />
+			<ComponentRef Id="ApplicationShortcutDesktop" />
+		</Feature>
+	</Product>
+
+	<Fragment>
+		<Directory Id="TARGETDIR" Name="SourceDir">
+			<Directory Id="ProgramFilesFolder">
+				<Directory Id="INSTALLFOLDER" Name="ObraSetup" />
+				<Directory Id="ProgramMenuFolder">
+					<Directory Id="ApplicationProgramsFolder" Name="Obra"/>
+				</Directory>
+				<Directory Id="DesktopFolder" Name="Desktop"/>
+			</Directory>
+		</Directory>
+	</Fragment>
+
+	<Fragment>
+		<ComponentGroup Id="ProductComponents" Directory="INSTALLFOLDER">
+			<!-- TODO: Remove the comments around this Component element and the ComponentRef below in order to add resources to this installer. -->
+			<!-- <Component Id="ProductComponent"> -->
+				<!-- TODO: Insert files, registry keys, and other resources here. -->
+			<!-- </Component> -->
+			<Component Id="ZstdNet.dll" Guid="453ddfec-b6ee-4e57-b68a-1a0c8a45c319">
+			  <File Id="ZstdNet.dll" Name="ZstdNet.dll" Source="$(var.Obra_TargetDir)ZstdNet.dll" />
+			</Component>
+			<Component Id="Google.Protobuf.dll" Guid="8b5c6edf-3701-4994-9e94-bc7d41ae4ab4">
+			  <File Id="Google.Protobuf.dll" Name="Google.Protobuf.dll" Source="$(var.Obra_TargetDir)Google.Protobuf.dll" />
+			</Component>
+			<Component Id="System.Device.Portable.dll" Guid="0d9a5133-8455-43db-a878-c17f051cbf40">
+			  <File Id="System.Device.Portable.dll" Name="System.Device.Portable.dll" Source="$(var.Obra_TargetDir)System.Device.Portable.dll" />
+			</Component>
+			<Component Id="Newtonsoft.Json.dll" Guid="cc4277d7-feee-4c01-8da3-45dbc0a02c65">
+			  <File Id="Newtonsoft.Json.dll" Name="Newtonsoft.Json.dll" Source="$(var.Obra_TargetDir)Newtonsoft.Json.dll" />
+			</Component>
+			<Component Id="Syncfusion.Pdf.Base.dll" Guid="1853e410-d5f7-4061-804c-7e6514164c99">
+			  <File Id="Syncfusion.Pdf.Base.dll" Name="Syncfusion.Pdf.Base.dll" Source="$(var.Obra_TargetDir)Syncfusion.Pdf.Base.dll" />
+			</Component>
+			<Component Id="Syncfusion.DocToPdfConverter.Base.dll" Guid="564587d1-e6cd-488b-833f-442840ed135c">
+			  <File Id="Syncfusion.DocToPdfConverter.Base.dll" Name="Syncfusion.DocToPdfConverter.Base.dll" Source="$(var.Obra_TargetDir)Syncfusion.DocToPdfConverter.Base.dll" />
+			</Component>
+			<Component Id="MySql.Data.dll" Guid="6384cf1b-128c-4efd-93c9-fe002ccc9c8a">
+			  <File Id="MySql.Data.dll" Name="MySql.Data.dll" Source="$(var.Obra_TargetDir)MySql.Data.dll" />
+			</Component>
+			<Component Id="Syncfusion.DocIO.Base.dll" Guid="53d1551c-bb1f-47db-b4a3-94c4aef7f517">
+			  <File Id="Syncfusion.DocIO.Base.dll" Name="Syncfusion.DocIO.Base.dll" Source="$(var.Obra_TargetDir)Syncfusion.DocIO.Base.dll" />
+			</Component>
+			<Component Id="Obra.dll" Guid="cac7522f-a0ab-4882-9bb0-95dd2c5f956c">
+			  <File Id="Obra.dll" Name="Obra.dll" Source="$(var.Obra_TargetDir)Obra.dll" />
+			</Component>
+			<Component Id="Syncfusion.OfficeChart.Base.dll" Guid="d76bae3a-93cc-4a7b-833c-61953335d83b">
+			  <File Id="Syncfusion.OfficeChart.Base.dll" Name="Syncfusion.OfficeChart.Base.dll" Source="$(var.Obra_TargetDir)Syncfusion.OfficeChart.Base.dll" />
+			</Component>
+			<Component Id="Syncfusion.Licensing.dll" Guid="d05cd255-edfa-4db3-91d1-8caa9c667171">
+			  <File Id="Syncfusion.Licensing.dll" Name="Syncfusion.Licensing.dll" Source="$(var.Obra_TargetDir)Syncfusion.Licensing.dll" />
+			</Component>
+			<Component Id="Obra.runtimeconfig.json" Guid="7598fb73-3e80-455d-8a23-be8775caf5dd">
+			  <File Id="Obra.runtimeconfig.json" Name="Obra.runtimeconfig.json" Source="$(var.Obra_TargetDir)Obra.runtimeconfig.json" />
+			</Component>
+			<Component Id="Syncfusion.Compression.Base.dll" Guid="f890b374-de79-4512-9f45-3e0f0cf07de3">
+			  <File Id="Syncfusion.Compression.Base.dll" Name="Syncfusion.Compression.Base.dll" Source="$(var.Obra_TargetDir)Syncfusion.Compression.Base.dll" />
+			</Component>
+			<Component Id="Ubiety.Dns.Core.dll" Guid="0f1d3df9-c6c3-424f-809f-ae0a099ed302">
+			  <File Id="Ubiety.Dns.Core.dll" Name="Ubiety.Dns.Core.dll" Source="$(var.Obra_TargetDir)Ubiety.Dns.Core.dll" />
+			</Component>
+			<Component Id="BouncyCastle.Crypto.dll" Guid="40bd32ee-808c-4428-9e7a-95b1705c219e">
+			  <File Id="BouncyCastle.Crypto.dll" Name="BouncyCastle.Crypto.dll" Source="$(var.Obra_TargetDir)BouncyCastle.Crypto.dll" />
+			</Component>
+			<Component Id="K4os.Hash.xxHash.dll" Guid="28fb1362-539e-4ff3-8d3f-285be5726e0d">
+			  <File Id="K4os.Hash.xxHash.dll" Name="K4os.Hash.xxHash.dll" Source="$(var.Obra_TargetDir)K4os.Hash.xxHash.dll" />
+			</Component>
+			<Component Id="K4os.Compression.LZ4.dll" Guid="797c362d-20c6-417b-93ae-7c7895a6760e">
+			  <File Id="K4os.Compression.LZ4.dll" Name="K4os.Compression.LZ4.dll" Source="$(var.Obra_TargetDir)K4os.Compression.LZ4.dll" />
+			</Component>
+			<Component Id="K4os.Compression.LZ4.Streams.dll" Guid="2d64967b-85dc-4dd4-8580-0c694281e77c">
+			  <File Id="K4os.Compression.LZ4.Streams.dll" Name="K4os.Compression.LZ4.Streams.dll" Source="$(var.Obra_TargetDir)K4os.Compression.LZ4.Streams.dll" />
+			</Component>
+			<Component Id="Obra.pdb" Guid="716c5ff1-c850-4b67-9c60-2435a78a512b">
+			  <File Id="Obra.pdb" Name="Obra.pdb" Source="$(var.Obra_TargetDir)Obra.pdb" />
+			</Component>
+			<Component Id="Syncfusion.Shared.WPF.dll" Guid="ec0d3cd5-121b-4176-a385-09c6d3f2f4d0">
+			  <File Id="Syncfusion.Shared.WPF.dll" Name="Syncfusion.Shared.WPF.dll" Source="$(var.Obra_TargetDir)Syncfusion.Shared.WPF.dll" />
+			</Component>
+			<Component Id="Syncfusion.PdfViewer.WPF.dll" Guid="426d2cc9-33d8-47db-b617-3fd553637fa0">
+			  <File Id="Syncfusion.PdfViewer.WPF.dll" Name="Syncfusion.PdfViewer.WPF.dll" Source="$(var.Obra_TargetDir)Syncfusion.PdfViewer.WPF.dll" />
+			</Component>
+		</ComponentGroup>
+	</Fragment>
+</Wix>

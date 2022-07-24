@@ -1,0 +1,203 @@
+﻿++Solution 'Obra' ‎(1 sur 1 projets)
+i:{00000000-0000-0000-0000-000000000000}:Obra.sln
+++Solution Items
+i:{00000000-0000-0000-0000-000000000000}:Solution Items
+++.editorconfig
+i:{46698d77-dbe6-4a78-92dc-c79c2c31eec4}:C:\Users\valgi\Documents\GitHub\Obra\.editorconfig
+i:{f8e8731f-1247-47f3-a9de-3ad65661fad8}:c:\users\valgi\documents\github\obra\.editorconfig
+++Obra
+i:{00000000-0000-0000-0000-000000000000}:Obra
+++Dépendances
+i:{f8e8731f-1247-47f3-a9de-3ad65661fad8}:>8120
+++Algorithm
+i:{f8e8731f-1247-47f3-a9de-3ad65661fad8}:c:\users\valgi\documents\github\obra\obra\algorithm\
+++Localisation
+i:{f8e8731f-1247-47f3-a9de-3ad65661fad8}:c:\users\valgi\documents\github\obra\obra\localisation\
+++Pages
+i:{f8e8731f-1247-47f3-a9de-3ad65661fad8}:c:\users\valgi\documents\github\obra\obra\pages\
+++CVCreatorPage.xaml
+++CVCreatorPage.xaml.cs
+++LoginPage.xaml
+i:{f8e8731f-1247-47f3-a9de-3ad65661fad8}:c:\users\valgi\documents\github\obra\obra\pages\loginpage.xaml
+++LoginPage.xaml.cs
+i:{f8e8731f-1247-47f3-a9de-3ad65661fad8}:c:\users\valgi\documents\github\obra\obra\pages\loginpage.xaml.cs
+++MainPagePart.xaml
+i:{f8e8731f-1247-47f3-a9de-3ad65661fad8}:c:\users\valgi\documents\github\obra\obra\pages\mainpagepart.xaml
+++MainPagePart.xaml.cs
+i:{f8e8731f-1247-47f3-a9de-3ad65661fad8}:c:\users\valgi\documents\github\obra\obra\pages\mainpagepart.xaml.cs
+++MainPagePro.xaml
+i:{f8e8731f-1247-47f3-a9de-3ad65661fad8}:c:\users\valgi\documents\github\obra\obra\pages\mainpagepro.xaml
+++MessageManager.xaml
+i:{f8e8731f-1247-47f3-a9de-3ad65661fad8}:c:\users\valgi\documents\github\obra\obra\pages\messagemanager.xaml
+++MessageManager.xaml.cs
+i:{f8e8731f-1247-47f3-a9de-3ad65661fad8}:c:\users\valgi\documents\github\obra\obra\pages\messagemanager.xaml.cs
+++MessagePart.xaml
+i:{f8e8731f-1247-47f3-a9de-3ad65661fad8}:c:\users\valgi\documents\github\obra\obra\pages\messagepart.xaml
+++MessagePart.xaml.cs
+i:{f8e8731f-1247-47f3-a9de-3ad65661fad8}:c:\users\valgi\documents\github\obra\obra\pages\messagepart.xaml.cs
+++MessagePro.xaml
+i:{f8e8731f-1247-47f3-a9de-3ad65661fad8}:c:\users\valgi\documents\github\obra\obra\pages\messagepro.xaml
+++ProfilsPART.xaml
+i:{f8e8731f-1247-47f3-a9de-3ad65661fad8}:c:\users\valgi\documents\github\obra\obra\pages\profilspart.xaml
+++ProfilsPART.xaml.cs
+i:{f8e8731f-1247-47f3-a9de-3ad65661fad8}:c:\users\valgi\documents\github\obra\obra\pages\profilspart.xaml.cs
+++ProfilsPRO.xaml
+i:{f8e8731f-1247-47f3-a9de-3ad65661fad8}:c:\users\valgi\documents\github\obra\obra\pages\profilspro.xaml
+++ProfilsPRO.xaml.cs
+i:{f8e8731f-1247-47f3-a9de-3ad65661fad8}:c:\users\valgi\documents\github\obra\obra\pages\profilspro.xaml.cs
+++RegisterPartPage.xaml
+i:{f8e8731f-1247-47f3-a9de-3ad65661fad8}:c:\users\valgi\documents\github\obra\obra\pages\registerpartpage.xaml
+++RegisterPartPage.xaml.cs
+i:{f8e8731f-1247-47f3-a9de-3ad65661fad8}:c:\users\valgi\documents\github\obra\obra\pages\registerpartpage.xaml.cs
+++RegisterProPage.xaml
+i:{f8e8731f-1247-47f3-a9de-3ad65661fad8}:c:\users\valgi\documents\github\obra\obra\pages\registerpropage.xaml
+++RegisterProPage.xaml.cs
+i:{f8e8731f-1247-47f3-a9de-3ad65661fad8}:c:\users\valgi\documents\github\obra\obra\pages\registerpropage.xaml.cs
+++SettingsPart.xaml
+i:{f8e8731f-1247-47f3-a9de-3ad65661fad8}:c:\users\valgi\documents\github\obra\obra\pages\settingspart.xaml
+++SettingsPart.xaml.cs
+i:{f8e8731f-1247-47f3-a9de-3ad65661fad8}:c:\users\valgi\documents\github\obra\obra\pages\settingspart.xaml.cs
+++SettingsPro.xaml
+i:{f8e8731f-1247-47f3-a9de-3ad65661fad8}:c:\users\valgi\documents\github\obra\obra\pages\settingspro.xaml
+++SettingsPro.xaml.cs
+i:{f8e8731f-1247-47f3-a9de-3ad65661fad8}:c:\users\valgi\documents\github\obra\obra\pages\settingspro.xaml.cs
+++Resources
+i:{f8e8731f-1247-47f3-a9de-3ad65661fad8}:c:\users\valgi\documents\github\obra\obra\resources\
+++SQLTools
+i:{f8e8731f-1247-47f3-a9de-3ad65661fad8}:c:\users\valgi\documents\github\obra\obra\sqltools\
+++TCPUtils
+i:{f8e8731f-1247-47f3-a9de-3ad65661fad8}:c:\users\valgi\documents\github\obra\obra\tcputils\
+++Utils
+i:{f8e8731f-1247-47f3-a9de-3ad65661fad8}:c:\users\valgi\documents\github\obra\obra\utils\
+i:{f8e8731f-1247-47f3-a9de-3ad65661fad8}:c:\users\valgi\documents\github\obra\obra\algorithm\utils\
+i:{f8e8731f-1247-47f3-a9de-3ad65661fad8}:c:\users\valgi\documents\github\obra\obra\sqltools\utils\
+++App.xaml
+i:{f8e8731f-1247-47f3-a9de-3ad65661fad8}:c:\users\valgi\documents\github\obra\obra\app.xaml
+++AssemblyInfo.cs
+i:{f8e8731f-1247-47f3-a9de-3ad65661fad8}:c:\users\valgi\documents\github\obra\obra\assemblyinfo.cs
+++CVCreator.cs
+i:{f8e8731f-1247-47f3-a9de-3ad65661fad8}:c:\users\valgi\documents\github\obra\obra\cvcreator.cs
+++DIspose.cs
+i:{f8e8731f-1247-47f3-a9de-3ad65661fad8}:c:\users\valgi\documents\github\obra\obra\dispose.cs
+++MainWindow.xaml
+i:{f8e8731f-1247-47f3-a9de-3ad65661fad8}:c:\users\valgi\documents\github\obra\obra\mainwindow.xaml
+++MainWindow.xaml.cs
+i:{f8e8731f-1247-47f3-a9de-3ad65661fad8}:c:\users\valgi\documents\github\obra\obra\mainwindow.xaml.cs
+++Analyseurs
+i:{f8e8731f-1247-47f3-a9de-3ad65661fad8}:analyseurs
+++Frameworks
+i:{f8e8731f-1247-47f3-a9de-3ad65661fad8}:frameworks
+++Packages
+i:{f8e8731f-1247-47f3-a9de-3ad65661fad8}:packages
+++Individual.cs
+i:{f8e8731f-1247-47f3-a9de-3ad65661fad8}:c:\users\valgi\documents\github\obra\obra\algorithm\individual.cs
+++IProfile.cs
+i:{f8e8731f-1247-47f3-a9de-3ad65661fad8}:c:\users\valgi\documents\github\obra\obra\algorithm\iprofile.cs
+++ProfessionalAlgortihm.cs
+i:{f8e8731f-1247-47f3-a9de-3ad65661fad8}:c:\users\valgi\documents\github\obra\obra\algorithm\professionalalgortihm.cs
+++ProfileType.cs
+i:{f8e8731f-1247-47f3-a9de-3ad65661fad8}:c:\users\valgi\documents\github\obra\obra\algorithm\profiletype.cs
+++SearcherProfessional.cs
+i:{f8e8731f-1247-47f3-a9de-3ad65661fad8}:c:\users\valgi\documents\github\obra\obra\algorithm\searcherprofessional.cs
+++IpInfo.cs
+i:{f8e8731f-1247-47f3-a9de-3ad65661fad8}:c:\users\valgi\documents\github\obra\obra\localisation\ipinfo.cs
+++Localize.cs
+i:{f8e8731f-1247-47f3-a9de-3ad65661fad8}:c:\users\valgi\documents\github\obra\obra\localisation\localize.cs
+++MainPagePro.xaml.cs
+i:{f8e8731f-1247-47f3-a9de-3ad65661fad8}:c:\users\valgi\documents\github\obra\obra\pages\mainpagepro.xaml.cs
+++MessagePro.xaml.cs
+i:{f8e8731f-1247-47f3-a9de-3ad65661fad8}:c:\users\valgi\documents\github\obra\obra\pages\messagepro.xaml.cs
+++Epita.png
+i:{f8e8731f-1247-47f3-a9de-3ad65661fad8}:c:\users\valgi\documents\github\obra\obra\resources\epita.png
+++home.png
+i:{f8e8731f-1247-47f3-a9de-3ad65661fad8}:c:\users\valgi\documents\github\obra\obra\resources\home.png
+++Logo 1.png
+i:{f8e8731f-1247-47f3-a9de-3ad65661fad8}:c:\users\valgi\documents\github\obra\obra\resources\logo 1.png
+++Logo 2.png
+i:{f8e8731f-1247-47f3-a9de-3ad65661fad8}:c:\users\valgi\documents\github\obra\obra\resources\logo 2.png
+++Logo C.png
+i:{f8e8731f-1247-47f3-a9de-3ad65661fad8}:c:\users\valgi\documents\github\obra\obra\resources\logo c.png
+++mainlogo.ico
+i:{f8e8731f-1247-47f3-a9de-3ad65661fad8}:c:\users\valgi\documents\github\obra\obra\resources\mainlogo.ico
+++Maison bleue
+i:{f8e8731f-1247-47f3-a9de-3ad65661fad8}:c:\users\valgi\documents\github\obra\obra\resources\maison bleue
+++Maison bleue.png
+i:{f8e8731f-1247-47f3-a9de-3ad65661fad8}:c:\users\valgi\documents\github\obra\obra\resources\maison bleue.png
+++maison.png
+i:{f8e8731f-1247-47f3-a9de-3ad65661fad8}:c:\users\valgi\documents\github\obra\obra\resources\maison.png
+++messagerie.png
+i:{f8e8731f-1247-47f3-a9de-3ad65661fad8}:c:\users\valgi\documents\github\obra\obra\resources\messagerie.png
+++Messages.png
+i:{f8e8731f-1247-47f3-a9de-3ad65661fad8}:c:\users\valgi\documents\github\obra\obra\resources\messages.png
+++Obra.png
+i:{f8e8731f-1247-47f3-a9de-3ad65661fad8}:c:\users\valgi\documents\github\obra\obra\resources\obra.png
+++Obra2.png
+i:{f8e8731f-1247-47f3-a9de-3ad65661fad8}:c:\users\valgi\documents\github\obra\obra\resources\obra2.png
+++PA.png
+i:{f8e8731f-1247-47f3-a9de-3ad65661fad8}:c:\users\valgi\documents\github\obra\obra\resources\pa.png
+++Parametres.png
+i:{f8e8731f-1247-47f3-a9de-3ad65661fad8}:c:\users\valgi\documents\github\obra\obra\resources\parametres.png
+++profile.png
+i:{f8e8731f-1247-47f3-a9de-3ad65661fad8}:c:\users\valgi\documents\github\obra\obra\resources\profile.png
+++profils.png
+i:{f8e8731f-1247-47f3-a9de-3ad65661fad8}:c:\users\valgi\documents\github\obra\obra\resources\profils.png
+++Reglades.png
+i:{f8e8731f-1247-47f3-a9de-3ad65661fad8}:c:\users\valgi\documents\github\obra\obra\resources\reglades.png
+++settings.png
+i:{f8e8731f-1247-47f3-a9de-3ad65661fad8}:c:\users\valgi\documents\github\obra\obra\resources\settings.png
+++ConnexionToRegistration
+i:{f8e8731f-1247-47f3-a9de-3ad65661fad8}:c:\users\valgi\documents\github\obra\obra\sqltools\connexiontoregistration\
+++ProfessionalAccount
+i:{f8e8731f-1247-47f3-a9de-3ad65661fad8}:c:\users\valgi\documents\github\obra\obra\sqltools\professionalaccount\
+++LoadMessagesUser.cs
+i:{f8e8731f-1247-47f3-a9de-3ad65661fad8}:c:\users\valgi\documents\github\obra\obra\tcputils\loadmessagesuser.cs
+++TcpClientUtils.cs
+i:{f8e8731f-1247-47f3-a9de-3ad65661fad8}:c:\users\valgi\documents\github\obra\obra\tcputils\tcpclientutils.cs
+++EmailManager.cs
+i:{f8e8731f-1247-47f3-a9de-3ad65661fad8}:c:\users\valgi\documents\github\obra\obra\utils\emailmanager.cs
+++LastResearch.cs
+i:{f8e8731f-1247-47f3-a9de-3ad65661fad8}:c:\users\valgi\documents\github\obra\obra\utils\lastresearch.cs
+++LoginMemory.cs
+i:{f8e8731f-1247-47f3-a9de-3ad65661fad8}:c:\users\valgi\documents\github\obra\obra\utils\loginmemory.cs
+++ProfilePicture.cs
+i:{f8e8731f-1247-47f3-a9de-3ad65661fad8}:c:\users\valgi\documents\github\obra\obra\utils\profilepicture.cs
+++RandomUtils.cs
+i:{f8e8731f-1247-47f3-a9de-3ad65661fad8}:c:\users\valgi\documents\github\obra\obra\utils\randomutils.cs
+++SerializerUtils.cs
+i:{f8e8731f-1247-47f3-a9de-3ad65661fad8}:c:\users\valgi\documents\github\obra\obra\utils\serializerutils.cs
+++App.xaml.cs
+i:{f8e8731f-1247-47f3-a9de-3ad65661fad8}:c:\users\valgi\documents\github\obra\obra\app.xaml.cs
+++Microsoft.CodeAnalysis.CSharp.NetAnalyzers
+i:{f8e8731f-1247-47f3-a9de-3ad65661fad8}:c:\program files\dotnet\sdk\6.0.202\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+++Microsoft.CodeAnalysis.NetAnalyzers
+i:{f8e8731f-1247-47f3-a9de-3ad65661fad8}:c:\program files\dotnet\sdk\6.0.202\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+++System.Text.Json.SourceGeneration
+i:{f8e8731f-1247-47f3-a9de-3ad65661fad8}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.4\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+++Microsoft.NETCore.App
+i:{f8e8731f-1247-47f3-a9de-3ad65661fad8}:c:\users\valgi\documents\github\obra\obra\microsoft.netcore.app
+++Microsoft.WindowsDesktop.App.WPF
+i:{f8e8731f-1247-47f3-a9de-3ad65661fad8}:c:\users\valgi\documents\github\obra\obra\microsoft.windowsdesktop.app.wpf
+++GeoCoordinate (2.0.1)
+i:{f8e8731f-1247-47f3-a9de-3ad65661fad8}:>8130
+++MySql.Data (8.0.28)
+i:{f8e8731f-1247-47f3-a9de-3ad65661fad8}:>8131
+++MySqlConnector (2.1.8)
+i:{f8e8731f-1247-47f3-a9de-3ad65661fad8}:>8129
+++Newtonsoft.Json (13.0.1)
+i:{f8e8731f-1247-47f3-a9de-3ad65661fad8}:>8128
+++Syncfusion.DocToPDFConverter.Wpf (20.1.0.58)
+i:{f8e8731f-1247-47f3-a9de-3ad65661fad8}:>8335
+++System.Device.Location.Portable (1.0.0)
+i:{f8e8731f-1247-47f3-a9de-3ad65661fad8}:>8133
+++DictionaryUtils.cs
+i:{f8e8731f-1247-47f3-a9de-3ad65661fad8}:c:\users\valgi\documents\github\obra\obra\algorithm\utils\dictionaryutils.cs
+++DataUpdateType.cs
+i:{f8e8731f-1247-47f3-a9de-3ad65661fad8}:c:\users\valgi\documents\github\obra\obra\sqltools\connexiontoregistration\dataupdatetype.cs
+++MySQLConnectUtility.cs
+i:{f8e8731f-1247-47f3-a9de-3ad65661fad8}:c:\users\valgi\documents\github\obra\obra\sqltools\connexiontoregistration\mysqlconnectutility.cs
+++RowType.cs
+i:{f8e8731f-1247-47f3-a9de-3ad65661fad8}:c:\users\valgi\documents\github\obra\obra\sqltools\connexiontoregistration\rowtype.cs
+++ProfessionalAccount.cs
+i:{f8e8731f-1247-47f3-a9de-3ad65661fad8}:c:\users\valgi\documents\github\obra\obra\sqltools\professionalaccount\professionalaccount.cs
+++SQLConnectUtility.cs
+i:{f8e8731f-1247-47f3-a9de-3ad65661fad8}:c:\users\valgi\documents\github\obra\obra\sqltools\utils\sqlconnectutility.cs

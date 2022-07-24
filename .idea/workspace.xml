@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d456591d-bf2f-4533-bc2d-65adbf69d683" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.vs/Obra/DesignTimeBuild/.dtbcache.v2" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/Obra/DesignTimeBuild/.dtbcache.v2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/Obra/v17/.futdcache.v1" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/Obra/v17/.futdcache.v1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/Obra/v17/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/Obra/v17/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/Obra/v17/fileList.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/Obra/v17/fileList.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obra.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Obra.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obra/Obra.csproj.user" beforeDir="false" afterPath="$PROJECT_DIR$/Obra/Obra.csproj.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obra/bin/Release/net6.0-windows/MySqlConnector.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Obra/bin/Release/net6.0-windows/MySqlConnector.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obra/bin/Release/net6.0-windows/Obra.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/Obra/bin/Release/net6.0-windows/Obra.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obra/bin/Release/net6.0-windows/Obra.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Obra/bin/Release/net6.0-windows/Obra.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obra/bin/Release/net6.0-windows/Obra.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Obra/bin/Release/net6.0-windows/Obra.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obra/bin/Release/net6.0-windows/Obra.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Obra/bin/Release/net6.0-windows/Obra.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obra/bin/Release/net6.0-windows/ref/Obra.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obra/obj/Debug/net6.0-windows/Obra.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Obra/obj/Debug/net6.0-windows/Obra.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obra/obj/Debug/net6.0-windows/Obra.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Obra/obj/Debug/net6.0-windows/Obra.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obra/obj/Release/net6.0-windows/App.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Obra/obj/Release/net6.0-windows/App.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obra/obj/Release/net6.0-windows/MainWindow.baml" beforeDir="false" afterPath="$PROJECT_DIR$/Obra/obj/Release/net6.0-windows/MainWindow.baml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obra/obj/Release/net6.0-windows/MainWindow.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Obra/obj/Release/net6.0-windows/MainWindow.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obra/obj/Release/net6.0-windows/Obra.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Obra/obj/Release/net6.0-windows/Obra.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obra/obj/Release/net6.0-windows/Obra.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Obra/obj/Release/net6.0-windows/Obra.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obra/obj/Release/net6.0-windows/Obra.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Obra/obj/Release/net6.0-windows/Obra.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obra/obj/Release/net6.0-windows/Obra.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Obra/obj/Release/net6.0-windows/Obra.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obra/obj/Release/net6.0-windows/Obra.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Obra/obj/Release/net6.0-windows/Obra.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obra/obj/Release/net6.0-windows/Obra.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Obra/obj/Release/net6.0-windows/Obra.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obra/obj/Release/net6.0-windows/Obra.g.resources" beforeDir="false" afterPath="$PROJECT_DIR$/Obra/obj/Release/net6.0-windows/Obra.g.resources" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obra/obj/Release/net6.0-windows/Obra.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Obra/obj/Release/net6.0-windows/Obra.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obra/obj/Release/net6.0-windows/Obra_MarkupCompile.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Obra/obj/Release/net6.0-windows/Obra_MarkupCompile.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obra/obj/Release/net6.0-windows/Obra_MarkupCompile.lref" beforeDir="false" afterPath="$PROJECT_DIR$/Obra/obj/Release/net6.0-windows/Obra_MarkupCompile.lref" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obra/obj/Release/net6.0-windows/Pages/LoginPage.baml" beforeDir="false" afterPath="$PROJECT_DIR$/Obra/obj/Release/net6.0-windows/Pages/LoginPage.baml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obra/obj/Release/net6.0-windows/Pages/LoginPage.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Obra/obj/Release/net6.0-windows/Pages/LoginPage.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obra/obj/Release/net6.0-windows/Pages/RegisterPage.baml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obra/obj/Release/net6.0-windows/Pages/RegisterPage.g.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obra/obj/Release/net6.0-windows/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Obra/obj/Release/net6.0-windows/apphost.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obra/obj/Release/net6.0-windows/ref/Obra.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Obra/obj/Release/net6.0-windows/ref/Obra.dll" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2A4OMvcBolAXQqlS3uPKR5y5Tta" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.first.check.clang-format" value="false" />
+    <property name="cidr.known.project.marker" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d456591d-bf2f-4533-bc2d-65adbf69d683" name="Changes" comment="" />
+      <created>1654265350247</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1654265350247</updated>
+      <workItem from="1654265353871" duration="98000" />
+      <workItem from="1654265505090" duration="88000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

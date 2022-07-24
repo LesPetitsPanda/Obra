@@ -1,0 +1,75 @@
+﻿<Page x:Class="Obra.Pages.RegisterPartPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Obra.Pages"
+      mc:Ignorable="d" 
+      ShowsNavigationUI="False"
+       MouseDown="Popup_disabled"
+      Title="RegisterPartPage" Background="#DDEAF7" >
+
+    <Grid Height="265" Width="250">
+        <Border CornerRadius="10" Background="#A3CEF3" Margin="109,0,-109,0">
+            <StackPanel  Margin="0,30,0,-112">
+                <Border Width="138" Height="200" CornerRadius="10" Background="CornflowerBlue" >
+                    <StackPanel Margin="10,0,10,10">
+                        <TextBlock></TextBlock>
+                        <TextBlock HorizontalAlignment="Center"> Name of account</TextBlock>
+                        <TextBox Name="usernameBox" HorizontalAlignment="Center" Width="100"></TextBox>
+                        <Popup Placement="Bottom" Name="PopupUsername" IsOpen="False"
+                   PlacementTarget="{Binding ElementName=usernameBox}">
+                            <TextBlock Height="60" Width="200" 
+                           Background="#E33F3F"
+                           TextWrapping="Wrap" > Username already exist !</TextBlock>
+                        </Popup>
+                        <TextBlock Name="pass" HorizontalAlignment="Center"> Password</TextBlock>
+                        <PasswordBox Name="PasswordBox"  HorizontalAlignment="Center" Width="100"></PasswordBox>
+                        <Popup Placement="Bottom" Name="PopupPassword" IsOpen="False"
+                   PlacementTarget="{Binding ElementName=PasswordBox}">
+                            <TextBlock Height="60" Width="200" 
+                           Background="#E33F3F"
+                           TextWrapping="Wrap" > The password is too long or too short !</TextBlock>
+                        </Popup>
+                        <TextBlock HorizontalAlignment="Center"> Password confirmation</TextBlock>
+                        <PasswordBox Name="PasswordBoxAgain"  HorizontalAlignment="Center" Width="100"></PasswordBox>
+                        <Popup Placement="Bottom" Name="PopupPasswordAgain" IsOpen="False"
+                   PlacementTarget="{Binding ElementName=PasswordBox}">
+                            <TextBlock Height="60" Width="200" 
+                           Background="#E33F3F"
+                           TextWrapping="Wrap" > The password is not the same !</TextBlock>
+                        </Popup>
+                        <TextBlock HorizontalAlignment="Center"> E-Mail</TextBlock>
+                        <TextBox Name="emailBox"  HorizontalAlignment="Center" Width="100"></TextBox>
+                        <Popup Placement="Bottom" Name="PopupEmail" IsOpen="False" 
+                   PlacementTarget="{Binding ElementName=emailBox}">
+                            <TextBlock Height="60" Width="200" 
+                           Background="#E33F3F"
+                           TextWrapping="Wrap" > Wrong email or email is already used !</TextBlock>
+                        </Popup>
+                        <TextBlock HorizontalAlignment="Center"></TextBlock>
+                        <Button Content="Register" Click="Register_OnClick" Background="CornflowerBlue" BorderBrush="CornflowerBlue" HorizontalAlignment="Center"></Button>
+                        <TextBlock HorizontalAlignment="Center"></TextBlock>
+                    </StackPanel>
+                </Border>
+                <Button Content="Return"  Background="#A3CEF3" BorderBrush="#A3CEF3" Click="Back_OnClick"  HorizontalAlignment="Center"></Button>
+            </StackPanel>
+        </Border>
+        <StackPanel Margin="-241,0,179,0">
+            <Image x:Name="obraa" Source="/Resources/Logo 2.png" Height="228" Width="345"/>
+        </StackPanel>
+        <StackPanel Margin="-190,132,199,75">
+            <Image x:Name="obra" Source="/Resources/Obra2.png" Height="50" Width="250">
+            </Image>
+        </StackPanel>
+        <Popup Name="Confirm" IsOpen="False" VerticalAlignment="Center" Width="150">
+            <StackPanel>
+                <TextBlock Background="White" Name="text_confirm">Enter your code here:</TextBlock>
+                <TextBox Name="confirm_register"></TextBox>
+                <Button Click="Confirm_OnClick">Confirm</Button>
+                <Button Click="Cancelled_OnClick">Return</Button>
+            </StackPanel>
+        </Popup>
+    </Grid>
+   
+</Page>
